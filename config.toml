@@ -18,7 +18,7 @@ home = [ "HTML", "RSS", "JSON"]
   # Author of the site, will be used in meta information
   author = "Pulkit Agrawal"
   # Description of the site, will be used in meta information
-  description = ""
+  description = "Purpose of this repository is create cheatsheet for own and also help everyone. "
   # Shows a checkmark for visited pages on the menu
   showVisitedLinks = false
   # Disable search function. It will hide search bar
@@ -47,11 +47,17 @@ identifier = "ds"
 url = "https://github.com/agrawal-pulkit/hackersoon-cheatsheet/"
 weight = 10
 
-# [[menu.shortcuts]]
-# name = "<i class='fas fa-bookmark'></i> Hugo Documentation"
-# identifier = "hugodoc"
-# url = "https://gohugo.io/"
-# weight = 20
+[[menu.shortcuts]]
+name = "<i class='fas fa-bookmark'></i> Contibution Guide"
+identifier = "contributions"
+url = "/contribution-guide"
+weight = 20
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-camera'></i> Showcase"
+identifier = "showcase"
+url = "/showcase"
+weight = 25
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-bullhorn'></i> Credits"

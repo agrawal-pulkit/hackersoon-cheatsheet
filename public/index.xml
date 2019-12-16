@@ -6,10 +6,23 @@
     <description>Recent content on Hackersoon - Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Dec 2019 02:17:40 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 17 Dec 2019 00:25:19 +0530</lastBuildDate>
     
 	<atom:link href="https://docs.hackersoon.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Examples</title>
+      <link>https://docs.hackersoon.com/showcase/</link>
+      <pubDate>Tue, 17 Dec 2019 00:25:19 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/showcase/</guid>
+      <description>some useful editing examples for this website.
+ Gist Example
+   YouTube Example
+    Reference Example
+ docker</description>
+    </item>
     
     <item>
       <title>Goroutine</title>
@@ -52,30 +65,12 @@ helm upgrade &amp;lt;name&amp;gt; &amp;lt;path-tohelm-chart&amp;gt; --namespace 
     </item>
     
     <item>
-      <title>gist-test</title>
-      <link>https://docs.hackersoon.com/examples/gist-input/</link>
-      <pubDate>Wed, 11 Dec 2019 10:24:28 +0530</pubDate>
+      <title>Contribution Guide</title>
+      <link>https://docs.hackersoon.com/contribution-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.hackersoon.com/examples/gist-input/</guid>
-      <description> </description>
-    </item>
-    
-    <item>
-      <title>ref-test</title>
-      <link>https://docs.hackersoon.com/examples/ref/</link>
-      <pubDate>Wed, 11 Dec 2019 10:24:28 +0530</pubDate>
-      
-      <guid>https://docs.hackersoon.com/examples/ref/</guid>
-      <description>gist-test</description>
-    </item>
-    
-    <item>
-      <title>YouTube</title>
-      <link>https://docs.hackersoon.com/examples/youtube-video/</link>
-      <pubDate>Wed, 11 Dec 2019 10:24:28 +0530</pubDate>
-      
-      <guid>https://docs.hackersoon.com/examples/youtube-video/</guid>
-      <description>   </description>
+      <guid>https://docs.hackersoon.com/contribution-guide/</guid>
+      <description></description>
     </item>
     
     <item>
