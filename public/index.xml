@@ -53,28 +53,28 @@ helm upgrade &amp;lt;name&amp;gt; &amp;lt;path-tohelm-chart&amp;gt; --namespace 
     
     <item>
       <title>gist-test</title>
-      <link>https://docs.hackersoon.com/basics/gist-input/</link>
+      <link>https://docs.hackersoon.com/examples/gist-input/</link>
       <pubDate>Wed, 11 Dec 2019 10:24:28 +0530</pubDate>
       
-      <guid>https://docs.hackersoon.com/basics/gist-input/</guid>
+      <guid>https://docs.hackersoon.com/examples/gist-input/</guid>
       <description> </description>
     </item>
     
     <item>
       <title>ref-test</title>
-      <link>https://docs.hackersoon.com/basics/ref-test/</link>
+      <link>https://docs.hackersoon.com/examples/ref/</link>
       <pubDate>Wed, 11 Dec 2019 10:24:28 +0530</pubDate>
       
-      <guid>https://docs.hackersoon.com/basics/ref-test/</guid>
+      <guid>https://docs.hackersoon.com/examples/ref/</guid>
       <description>gist-test</description>
     </item>
     
     <item>
       <title>YouTube</title>
-      <link>https://docs.hackersoon.com/basics/youtube-video/</link>
+      <link>https://docs.hackersoon.com/examples/youtube-video/</link>
       <pubDate>Wed, 11 Dec 2019 10:24:28 +0530</pubDate>
       
-      <guid>https://docs.hackersoon.com/basics/youtube-video/</guid>
+      <guid>https://docs.hackersoon.com/examples/youtube-video/</guid>
       <description>   </description>
     </item>
     

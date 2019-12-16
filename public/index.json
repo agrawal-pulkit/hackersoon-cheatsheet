@@ -7,13 +7,6 @@
 	"content": "Golang  Goroutine     "
 },
 {
-	"uri": "https://docs.hackersoon.com/basics/",
-	"title": "Basics",
-	"tags": [],
-	"description": "",
-	"content": "Chapter 1 Basics This chapter is Collections of simple things which is used in Programming.\n"
-},
-{
 	"uri": "https://docs.hackersoon.com/commands/",
 	"title": "Commands",
 	"tags": [],
@@ -68,6 +61,13 @@
 	"tags": [],
 	"description": "",
 	"content": "  nc # Listener: nc -l 1234 \u0026gt; out.file # Producer: nc -w 3 \u0026lt;ip\u0026gt; 1234 \u0026lt; out.file  find which service is running and process info netstat -nltp #porcess ps -ef pas aux  change the boot disk size of instance without restart lsblk growpart /dev/sda 1 resize2fs /dev/sda1 df -h  check disk size df -h du -csh * "
+},
+{
+	"uri": "https://docs.hackersoon.com/examples/",
+	"title": "Examples",
+	"tags": [],
+	"description": "",
+	"content": "  gist-test     ref-test     YouTube     "
 },
 {
 	"uri": "https://docs.hackersoon.com/programming/golang/goroutine/",
@@ -154,21 +154,21 @@
 	"content": "  Elasticsearch installation in Ubuntu: apt-get update apt-get install python-minimal apt-get install openjdk-8-jdk wget https://download.elastic.co/elasticsearch/release/org/elasticsearch/distribution/deb/elasticsearch/2.4.0/elasticsearch-2.4.0.deb dpkg -i elasticsearch-2.4.0.deb cd /etc/elasticsearch vim elasticsearch.yml update network.host with private ip of the server service elasticsearch start service elasticsearch status curl ip:9200/ "
 },
 {
-	"uri": "https://docs.hackersoon.com/basics/gist-input/",
+	"uri": "https://docs.hackersoon.com/examples/gist-input/",
 	"title": "gist-test",
 	"tags": [],
 	"description": "",
 	"content": " "
 },
 {
-	"uri": "https://docs.hackersoon.com/basics/ref-test/",
+	"uri": "https://docs.hackersoon.com/examples/ref/",
 	"title": "ref-test",
 	"tags": [],
 	"description": "",
 	"content": "gist-test\n"
 },
 {
-	"uri": "https://docs.hackersoon.com/basics/youtube-video/",
+	"uri": "https://docs.hackersoon.com/examples/youtube-video/",
 	"title": "YouTube",
 	"tags": [],
 	"description": "",
@@ -179,7 +179,7 @@
 	"title": "",
 	"tags": [],
 	"description": "",
-	"content": "Cheat Sheet  Basics    gist-test   ref-test   YouTube    Commands    Docker   Tumx\u0026#43;iterm   Networking   Ansible   Git   Kubernetes    Programming    Golang    Installations    Mac_setup   Consul_vault   Minikube   Docker   ElasticSearch    Databases    Mongodb    "
+	"content": "Cheat Sheet  Commands    Docker   Tumx\u0026#43;iterm   Networking   Ansible   Git   Kubernetes    Programming    Golang    Installations    Mac_setup   Consul_vault   Minikube   Docker   ElasticSearch    Databases    Mongodb    Examples    gist-test   ref-test   YouTube    "
 },
 {
 	"uri": "https://docs.hackersoon.com/categories/",

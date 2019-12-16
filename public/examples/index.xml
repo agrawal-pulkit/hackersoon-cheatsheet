@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Examples on Hackersoon - Documentation</title>
+    <link>https://docs.hackersoon.com/examples/</link>
+    <description>Recent content in Examples on Hackersoon - Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Dec 2019 00:25:19 +0530</lastBuildDate>
+    
+	<atom:link href="https://docs.hackersoon.com/examples/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>gist-test</title>
+      <link>https://docs.hackersoon.com/examples/gist-input/</link>
+      <pubDate>Wed, 11 Dec 2019 10:24:28 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/examples/gist-input/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>ref-test</title>
+      <link>https://docs.hackersoon.com/examples/ref/</link>
+      <pubDate>Wed, 11 Dec 2019 10:24:28 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/examples/ref/</guid>
+      <description>gist-test</description>
+    </item>
+    
+    <item>
+      <title>YouTube</title>
+      <link>https://docs.hackersoon.com/examples/youtube-video/</link>
+      <pubDate>Wed, 11 Dec 2019 10:24:28 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/examples/youtube-video/</guid>
+      <description>   </description>
+    </item>
+    
+  </channel>
+</rss>
