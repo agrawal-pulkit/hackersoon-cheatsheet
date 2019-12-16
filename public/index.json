@@ -1,5 +1,12 @@
 [
 {
+	"uri": "https://docs.hackersoon.com/interviews/algorithms/",
+	"title": "Algorithms",
+	"tags": [],
+	"description": "",
+	"content": "Algorithms  "
+},
+{
 	"uri": "https://docs.hackersoon.com/programming/golang/",
 	"title": "Golang",
 	"tags": [],
@@ -7,11 +14,32 @@
 	"content": "Golang  Goroutine     "
 },
 {
+	"uri": "https://docs.hackersoon.com/interviews/ds/",
+	"title": "Data Sturctures",
+	"tags": [],
+	"description": "",
+	"content": "Data Structure  "
+},
+{
 	"uri": "https://docs.hackersoon.com/commands/",
 	"title": "Commands",
 	"tags": [],
 	"description": "",
 	"content": "Commands This Chapter is collections of command which is frequently used in Development.\n Docker     Tumx\u0026#43;iterm     Networking     Ansible     Git     Kubernetes    Helm      "
+},
+{
+	"uri": "https://docs.hackersoon.com/interviews/problemsolving/",
+	"title": "Problem Solving",
+	"tags": [],
+	"description": "",
+	"content": "Problem Solving  "
+},
+{
+	"uri": "https://docs.hackersoon.com/interviews/systemdesign/",
+	"title": "System Design",
+	"tags": [],
+	"description": "",
+	"content": "System Design  "
 },
 {
 	"uri": "https://docs.hackersoon.com/programming/",
@@ -47,6 +75,13 @@
 	"tags": [],
 	"description": "",
 	"content": "  Check docker version\ndocker version  Docker container\n#get runnig and non running docker container docker ps docker ps -a # remove docker container docker rm $(docker ps -aq)  Docker images\ndocker images #delete all docker images sudo docker kill $(sudo docker ps -aq) docker rmi $(docker images -q)  Docker build\ndocker build -t {name} .  Docker run\ndocker run -it {image} -p expose_port:internal_port  Exec in Docker container\ndocker exec -it {container} /bin/sh  Docker run\ndocker run --mount type=bind,source=\u0026quot;$(pwd)\u0026quot;/data,target=/home/data -it \u0026lt;name_of_container\u0026gt;  "
+},
+{
+	"uri": "https://docs.hackersoon.com/interviews/",
+	"title": "Interview Prepartion",
+	"tags": [],
+	"description": "",
+	"content": "System Design  Algorithms   Data Sturctures   Problem Solving   System Design   "
 },
 {
 	"uri": "https://docs.hackersoon.com/commands/tumx+iterm/",
@@ -158,7 +193,7 @@
 	"title": "",
 	"tags": [],
 	"description": "",
-	"content": "Cheat Sheet  Commands    Docker   Tumx\u0026#43;iterm   Networking   Ansible   Git   Kubernetes    Programming    Golang    Installations    Mac_setup   Consul_vault   Minikube   Docker   ElasticSearch    Databases    Mongodb    "
+	"content": "Cheat Sheet  Commands    Docker   Tumx\u0026#43;iterm   Networking   Ansible   Git   Kubernetes    Programming    Golang    Installations    Mac_setup   Consul_vault   Minikube   Docker   ElasticSearch    Databases    Mongodb    Interview Prepartion    Algorithms   Data Sturctures   Problem Solving   System Design    "
 },
 {
 	"uri": "https://docs.hackersoon.com/categories/",

@@ -8,7 +8,7 @@
 <meta name="author" content="Pulkit Agrawal">
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Docker :: Hackersoon - Documentation</title>
+    <title>Problem Solving :: Hackersoon - Documentation</title>
 
     
     <link href="/css/nucleus.css?1576525671" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/commands/docker/">
+  <body class="" data-url="/interviews/problemsolving/">
     <nav id="sidebar" class="">
 
 
@@ -77,7 +77,7 @@
   
     
     <li data-nav-id="/commands/" title="Commands" class="dd-item 
-        parent
+        
         
         
         ">
@@ -104,8 +104,8 @@
   
     
     <li data-nav-id="/commands/docker/" title="Docker" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/commands/docker/">
@@ -641,7 +641,7 @@
   
     
     <li data-nav-id="/interviews/" title="Interview Prepartion" class="dd-item 
-        
+        parent
         
         
         ">
@@ -716,8 +716,8 @@
   
     
     <li data-nav-id="/interviews/problemsolving/" title="Problem Solving" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/interviews/problemsolving/">
@@ -816,7 +816,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/agrawal-pulkit/hackersoon-cheatsheet/edit/master/content/commands/docker/_index.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/agrawal-pulkit/hackersoon-cheatsheet/edit/master/content/interviews/problemsolving/_index.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -830,8 +830,6 @@
                           <i class="fas fa-bars"></i>
                         </a>
                     </span>
-                  
-                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
                   
                   <span class="links">
                  
@@ -847,7 +845,7 @@
             
           
           
-            <a href='/'></a> > <a href='/commands/'>Commands</a> > Docker
+            <a href='/'></a> > <a href='/interviews/'>Interview Prepartion</a> > Problem Solving
           
          
           
@@ -858,13 +856,6 @@
                   </span>
                 </div>
                 
-                    <div class="progress">
-    <div class="wrapper">
-<nav id="TableOfContents"></nav>
-    </div>
-</div>
-
-                
               </div>
             </div>
             
@@ -872,12 +863,9 @@
         
         </div>
         
+          <div id="chapter">
+        
         <div id="body-inner">
-          
-            <h1>
-              
-              Docker
-            </h1>
           
 
         
@@ -885,7 +873,9 @@
 
 
 
-	
+	<!-- raw HTML omitted -->
+<h1 id="problem-solving">Problem Solving</h1>
+
 
 
 
@@ -908,36 +898,6 @@
 	
 </ul>
 
-<p>Check docker version</p>
-<pre><code>docker version
-</code></pre>
-<p>Docker container</p>
-<pre><code>#get runnig and non running docker container 
-docker ps
-docker ps -a 
-
-# remove docker container
-docker rm $(docker ps -aq)
-</code></pre>
-<p>Docker images</p>
-<pre><code>docker images 
-
-#delete all docker images
-sudo docker kill $(sudo docker ps -aq)
-docker rmi $(docker images -q)
-</code></pre>
-<p>Docker build</p>
-<pre><code>docker build -t {name}  .
-</code></pre>
-<p>Docker run</p>
-<pre><code>docker run -it {image} -p expose_port:internal_port
-</code></pre>
-<p>Exec in Docker container</p>
-<pre><code>docker exec -it {container} /bin/sh
-</code></pre>
-<p>Docker run</p>
-<pre><code>docker run  --mount type=bind,source=&quot;$(pwd)&quot;/data,target=/home/data -it &lt;name_of_container&gt;
-</code></pre>
 
 
 
@@ -950,6 +910,8 @@ docker rmi $(docker images -q)
 	
 </footer>
 
+        
+            </div> 
         
         </div> 
         
@@ -981,6 +943,8 @@ docker rmi $(docker images -q)
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -996,26 +960,6 @@ docker rmi $(docker images -q)
             
             
                 
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -1089,106 +1033,6 @@ docker rmi $(docker images -q)
                     
 
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
             
         
                     
@@ -1220,54 +1064,6 @@ docker rmi $(docker images -q)
                     
             
         
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
                     
             
         
@@ -1369,6 +1165,22 @@ docker rmi $(docker images -q)
                     
 
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1392,6 +1204,162 @@ docker rmi $(docker images -q)
             
             
                 
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -1416,10 +1384,10 @@ docker rmi $(docker images -q)
 	 
 	 
 		
-			<a class="nav nav-prev" href="/commands/" title="Commands"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/interviews/ds/" title="Data Sturctures"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/commands/tumx&#43;iterm/" title="Tumx&#43;iterm" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/interviews/systemdesign/" title="System Design" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
