@@ -203,7 +203,7 @@
 	"content": ""
 },
 {
-	"uri": "https://docs.hackersoon.com/contribution-guide/",
+	"uri": "https://docs.hackersoon.com/contribution/",
 	"title": "Contribution Guide",
 	"tags": [],
 	"description": "",
@@ -214,7 +214,7 @@
 	"title": "Credits",
 	"tags": [],
 	"description": "",
-	"content": "Contributors Thanks to them for making Open Source Software a better place ! .ghContributors { display: flex; flex-flow: wrap; align-content: flex-start } .ghContributorsdiv { width: 100%; display: inline-flex; margin-bottom: 20px; } .ghContributorsdiv label { padding-left: 4px; } .ghContributorsdiv span { font-size: x-medium; padding-left: 10px; }   @agrawal-pulkit 1 commits  \nPackages and libraries https://learn.netlify.com/en/\n"
+	"content": "Contributors Thanks to them for making Open Source Software a better place ! .ghContributors { display: flex; flex-flow: wrap; align-content: flex-start } .ghContributorsdiv { width: 100%; display: inline-flex; margin-bottom: 20px; } .ghContributorsdiv label { padding-left: 4px; } .ghContributorsdiv span { font-size: x-medium; padding-left: 10px; }   @agrawal-pulkit 1 commits  \nPackages and libraries  hugo learn theme shortcodes  "
 },
 {
 	"uri": "https://docs.hackersoon.com/tags/",

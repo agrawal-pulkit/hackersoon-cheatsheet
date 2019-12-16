@@ -66,10 +66,10 @@ helm upgrade &amp;lt;name&amp;gt; &amp;lt;path-tohelm-chart&amp;gt; --namespace 
     
     <item>
       <title>Contribution Guide</title>
-      <link>https://docs.hackersoon.com/contribution-guide/</link>
+      <link>https://docs.hackersoon.com/contribution/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.hackersoon.com/contribution-guide/</guid>
+      <guid>https://docs.hackersoon.com/contribution/</guid>
       <description></description>
     </item>
     
@@ -80,7 +80,7 @@ helm upgrade &amp;lt;name&amp;gt; &amp;lt;path-tohelm-chart&amp;gt; --namespace 
       
       <guid>https://docs.hackersoon.com/credits/</guid>
       <description>Contributors Thanks to them for making Open Source Software a better place ! .ghContributors { display: flex; flex-flow: wrap; align-content: flex-start } .ghContributorsdiv { width: 100%; display: inline-flex; margin-bottom: 20px; } .ghContributorsdiv label { padding-left: 4px; } .ghContributorsdiv span { font-size: x-medium; padding-left: 10px; }   @agrawal-pulkit 1 commits  
-Packages and libraries https://learn.netlify.com/en/</description>
+Packages and libraries  hugo learn theme shortcodes  </description>
     </item>
     
   </channel>

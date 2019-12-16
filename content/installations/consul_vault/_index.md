@@ -9,6 +9,7 @@ weight: 999
 
 
 ### This tutorial is to setup consul and vault in mac.
+
 Install consul using homebrew:
 
     brew install consul
@@ -23,6 +24,7 @@ Run consul and vault in your system:
     Vault server -dev
 
 #### Consul: key/value
+
 Create a key/value in consul.
 
     consul kv put test/data/key value

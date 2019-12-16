@@ -50,7 +50,7 @@ weight = 10
 [[menu.shortcuts]]
 name = "<i class='fas fa-bookmark'></i> Contibution Guide"
 identifier = "contributions"
-url = "/contribution-guide"
+url = "/contribution"
 weight = 20
 
 [[menu.shortcuts]]
