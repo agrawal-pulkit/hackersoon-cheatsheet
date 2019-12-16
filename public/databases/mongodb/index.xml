@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mongodb on Hackersoon - Documentation</title>
+    <link>https://docs.hackersoon.com/databases/mongodb/</link>
+    <description>Recent content in Mongodb on Hackersoon - Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Dec 2019 01:40:15 +0530</lastBuildDate>
+    
+	<atom:link href="https://docs.hackersoon.com/databases/mongodb/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pymongo_client</title>
+      <link>https://docs.hackersoon.com/databases/mongodb/pymongo_client/</link>
+      <pubDate>Thu, 12 Dec 2019 01:41:04 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/databases/mongodb/pymongo_client/</guid>
+      <description>  mongo connection in python with pymongo from pymongo import MongoClient client=MongoClient(&#39;mongodb://&amp;lt;username&amp;gt;:&amp;lt;password&amp;gt;@&amp;lt;ip&amp;gt;:&amp;lt;port&amp;gt;/&amp;lt;database&amp;gt;?authSource=&amp;lt;database&amp;gt;&#39;) db=client[&#39;db_name&#39;] db.collection_names()  </description>
+    </item>
+    
+  </channel>
+</rss>

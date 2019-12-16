@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.61.0" />
+    <meta name="description" content="">
+<meta name="author" content="Pulkit Agrawal">
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+    <title>Vault Acl :: Hackersoon - Documentation</title>
+
+    
+    <link href="/css/nucleus.css?1576521505" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1576521505" rel="stylesheet">
+    <link href="/css/hybrid.css?1576521505" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1576521505" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1576521505" rel="stylesheet">
+    <link href="/css/auto-complete.css?1576521505" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1576521505" rel="stylesheet">
+    <link href="/css/theme.css?1576521505" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1576521505" rel="stylesheet">
+    
+      <link href="/css/theme-blue.css?1576521505" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1576521505"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/installations/consul_vault/vault_acl/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+    <img src="/images/logo.png" >
+  </a>
+  
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1576521505"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1576521505"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/docs.hackersoon.com";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1576521505"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/basics/" title="Basics" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/basics/">
+          <b></b>Basics
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/gist-input/" title="gist-test" class="dd-item ">
+        <a href="/basics/gist-input/">
+        gist-test
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/ref-test/" title="ref-test" class="dd-item ">
+        <a href="/basics/ref-test/">
+        ref-test
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/youtube-video/" title="YouTube" class="dd-item ">
+        <a href="/basics/youtube-video/">
+        YouTube
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/commands/" title="Commands" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/commands/">
+          <b></b>Commands
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/commands/docker/" title="Docker" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/commands/docker/">
+          Docker
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/commands/tumx&#43;iterm/" title="Tumx&#43;iterm" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/commands/tumx&#43;iterm/">
+          Tumx&#43;iterm
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/commands/networking/" title="Networking" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/commands/networking/">
+          Networking
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/commands/ansible/" title="Ansible" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/commands/ansible/">
+          Ansible
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/commands/git/" title="Git" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/commands/git/">
+          Git
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/commands/kubernetes/" title="Kubernetes" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/commands/kubernetes/">
+          Kubernetes
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/commands/kubernetes/helm/" title="Helm" class="dd-item ">
+        <a href="/commands/kubernetes/helm/">
+        Helm
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/programming/" title="Programming" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/programming/">
+          <b></b>Programming
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/programming/golang/" title="Golang" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/programming/golang/">
+          <b></b>Golang
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/programming/golang/goroutine/" title="Goroutine" class="dd-item ">
+        <a href="/programming/golang/goroutine/">
+        Goroutine
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/installations/" title="Installations" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/installations/">
+          <b></b>Installations
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/installations/mac_setup/" title="Mac_setup" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/installations/mac_setup/">
+          Mac_setup
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/installations/consul_vault/" title="Consul_vault" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/installations/consul_vault/">
+          Consul_vault
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/installations/consul_vault/vault_acl/" title="Vault Acl" class="dd-item active">
+        <a href="/installations/consul_vault/vault_acl/">
+        Vault Acl
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/installations/minikube/" title="Minikube" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/installations/minikube/">
+          Minikube
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/installations/docker/" title="Docker" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/installations/docker/">
+          Docker
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/installations/elasticsearch/" title="ElasticSearch" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/installations/elasticsearch/">
+          ElasticSearch
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/databases/" title="Databases" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/databases/">
+          <b></b>Databases
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/databases/mongodb/" title="Mongodb" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/databases/mongodb/">
+          Mongodb
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/databases/mongodb/pymongo_client/" title="Pymongo_client" class="dd-item ">
+        <a href="/databases/mongodb/pymongo_client/">
+        Pymongo_client
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/agrawal-pulkit/hackersoon-cheatsheet/"><i class='fab fa-github'></i> Github repo</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://docs.hackersoon.com/credits"><i class='fas fa-bullhorn'></i> Credits</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/agrawal-pulkit/hackersoon-cheatsheet/edit/master/content/installations/consul_vault/vault_acl.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/installations/'>Installations</a> > <a href='/installations/consul_vault/'>Consul_vault</a> > Vault Acl
+          
+         
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents"></nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Vault Acl
+            </h1>
+          
+
+        
+
+
+
+
+
+
+
+
+
+
+<ul class="children children-li">
+	
+
+	
+		
+	
+
+	
+
+	
+		
+	
+
+	
+</ul>
+
+<h2 id="authenticatin-methods"><strong>Authenticatin Methods</strong></h2>
+<p>Different types of authentication methods:</p>
+<ul>
+<li>Internal Authentication</li>
+<li>External Authentication</li>
+<li>Multiple Authentication</li>
+</ul>
+<h2 id="commands-for-create-authentication-methods"><strong>Commands for create authentication methods</strong></h2>
+<h3 id="enable-an-auth-method"><strong>Enable an auth method</strong></h3>
+<pre><code>vault auth enable [method]
+</code></pre>
+<h3 id="write-config-to-an-auth-method"><strong>Write Config to an auth method</strong></h3>
+<pre><code>vault write auth/[method]/config
+</code></pre>
+<h3 id="add-a-role-to-the-auth-method"><strong>Add a role to the auth method</strong></h3>
+<pre><code>vault write auth/[method]/role/[rolename]
+</code></pre>
+<h3 id="disable-an-auth-method"><strong>Disable an auth method</strong></h3>
+<pre><code>vault auth disable [method]
+</code></pre>
+<h2 id="enable-userpass-method"><strong>Enable userpass method</strong></h2>
+<h3 id="add-envirnmont-variables"><strong>Add envirnmont variables</strong></h3>
+<pre><code>export VAULT_ADDR='http://127.0.0.1:8200/'
+export VAULT_TOKEN=&lt;token&gt;
+</code></pre>
+<h3 id="check-auth-list"><strong>Check auth list</strong></h3>
+<pre><code>vault auth list
+</code></pre>
+<h3 id="enable-userpass-auth-method"><strong>Enable userpass auth method</strong></h3>
+<ul>
+<li>Using vault cli</li>
+</ul>
+<pre><code>    vault auth enable userpass
+</code></pre><ul>
+<li>using curl api</li>
+</ul>
+<pre><code>    cutl --header &quot;x-Vault-Token: $VAULT_TOKEN&quot; --request POST \ --data '{&quot;type&quot;:&quot;userpass&quot;}' $VAULT_ADDR/v1/sys/auth/userpass
+</code></pre><h3 id="add-a-user-to-the-userpass-auth-method"><strong>Add a user to the userpass auth method</strong></h3>
+<h3 id="create-a-user-with-password"><strong>create a user with password</strong></h3>
+<pre><code>vault write auth/userpass/users/&lt;username&gt; password=&lt;****&gt;
+</code></pre>
+<h3 id="get-users-from-userpass-methos"><strong>get users from userpass methos</strong></h3>
+<pre><code>vault list auth/userpass/users
+</code></pre>
+<h3 id="login-in-vault-with-new-userpass-user-credential"><strong>login in vault with new userpass user credential</strong></h3>
+<ul>
+<li>login in new user</li>
+</ul>
+<pre><code>    vault login -method=userpass username=&lt;username&gt;
+</code></pre><ul>
+<li>set vault token as new token</li>
+</ul>
+<pre><code>    export VAULT_TOKEN=&lt;new token&gt;
+    vault token lookup
+</code></pre><h3 id="remove-account"><strong>Remove account</strong></h3>
+<pre><code>vault delete auth/username/users/&lt;username&gt;
+</code></pre>
+<h2 id="vault-policies"><strong>Vault Policies</strong></h2>
+<ul>
+<li>Wallet policies use for provide the role based access.</li>
+<li>Who, What and How?</li>
+<li>we can use hcl or json templates for writing the policy files(mostly HCL)</li>
+<li>variables for identity</li>
+</ul>
+<p><code>Sample Plolicy document</code></p>
+<pre><code>path &quot;path_of_secret_data/[*]&quot; {
+    capabilities = [&quot;create&quot;, &quot;read&quot;, &quot;update&quot;, &quot;list&quot;, &quot;delete&quot;]
+    required_parameters = [&quot;param_names&quot;]
+    allowed_parameters = {
+        param_name = [&quot;any&quot;]
+    }
+    denied_parameter = {
+        param_name = [&quot;any&quot;]
+    }
+}
+</code></pre>
+<h3 id="useful-commands-for-vault-policies"><strong>Useful commands for vault policies</strong></h3>
+<h3 id="list-policies"><strong>list policies</strong></h3>
+<pre><code>vault policy list
+</code></pre>
+<h3 id="create-a-policy"><strong>create a policy</strong></h3>
+<pre><code>vault policy write [policy] [policy_file.hcl]
+</code></pre>
+<h3 id="update-a-policy"><strong>update a policy</strong></h3>
+<pre><code>vault write sys/policy/[policy] policy=[policy_file.hcl]
+</code></pre>
+<h3 id="delete-a-policy"><strong>delete a policy</strong></h3>
+<pre><code>vault delete sys/policy/[policy]
+</code></pre>
+<h3 id="create-a-sample-policy"><strong>Create a sample policy</strong></h3>
+<ul>
+<li>create a sample policy file</li>
+</ul>
+<pre><code>    cat &gt; sample_policy.hcl
+    path &quot;kv-v2/*&quot; {
+        capabilities = [&quot;create&quot;, &quot;read&quot;, &quot;update&quot;, &quot;list&quot;, &quot;delete&quot;]
+    }
+    
+    path &quot;kv-v2/appId*&quot; {
+        capabilities = [&quot;create&quot;, &quot;read&quot;, &quot;update&quot;, &quot;list&quot;, &quot;delete&quot;]
+    
+        allowed_parameters = {
+            &quot;api-key&quot;= []
+            &quot;environment&quot; = [&quot;dev&quot;, &quot;staging&quot;]
+            &quot;description&quot; = []
+        }
+    }
+    
+    path &quot;secret/data/{{identity.entity.id}}/*&quot; {
+        capabilities = [&quot;create&quot;, &quot;read&quot;, &quot;update&quot;, &quot;delete&quot;]
+    }
+    
+    path &quot;secret/metadata/{{identity.entity.id}}/*&quot; {
+        capabilities = [&quot;list&quot;]
+    }
+</code></pre><ul>
+<li>run create policy command</li>
+</ul>
+<pre><code>    vault policy write dev1 sample-policy.hcl
+</code></pre><ul>
+<li>create a userpass with policy</li>
+</ul>
+<pre><code>    vault write auth/userpass/users/&lt;username&gt; password=&lt;****&gt; pol
+</code></pre>
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/installations/consul_vault/" title="Consul_vault"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/installations/minikube/" title="Minikube" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1576521505"></script>
+    <script src="/js/perfect-scrollbar.min.js?1576521505"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1576521505"></script>
+    <script src="/js/jquery.sticky.js?1576521505"></script>
+    <script src="/js/featherlight.min.js?1576521505"></script>
+    <script src="/js/highlight.pack.js?1576521505"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1576521505"></script>
+    <script src="/js/learn.js?1576521505"></script>
+    <script src="/js/hugo-learn.js?1576521505"></script>
+
+    <link href="/mermaid/mermaid.css?1576521505" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1576521505"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

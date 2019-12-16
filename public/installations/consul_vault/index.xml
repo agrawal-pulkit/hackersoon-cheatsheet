@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Consul_vault on Hackersoon - Documentation</title>
+    <link>https://docs.hackersoon.com/installations/consul_vault/</link>
+    <description>Recent content in Consul_vault on Hackersoon - Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Dec 2019 02:12:50 +0530</lastBuildDate>
+    
+	<atom:link href="https://docs.hackersoon.com/installations/consul_vault/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vault Acl</title>
+      <link>https://docs.hackersoon.com/installations/consul_vault/vault_acl/</link>
+      <pubDate>Thu, 12 Dec 2019 02:12:50 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/installations/consul_vault/vault_acl/</guid>
+      <description>Authenticatin Methods Different types of authentication methods:
+ Internal Authentication External Authentication Multiple Authentication  Commands for create authentication methods Enable an auth method vault auth enable [method]  Write Config to an auth method vault write auth/[method]/config  Add a role to the auth method vault write auth/[method]/role/[rolename]  Disable an auth method vault auth disable [method]  Enable userpass method Add envirnmont variables export VAULT_ADDR=&#39;http://127.0.0.1:8200/&#39; export VAULT_TOKEN=&amp;lt;token&amp;gt;  Check auth list vault auth list  Enable userpass auth method  Using vault cli   vault auth enable userpass  using curl api   cutl --header &amp;quot;x-Vault-Token: $VAULT_TOKEN&amp;quot; --request POST \ --data &#39;{&amp;quot;type&amp;quot;:&amp;quot;userpass&amp;quot;}&#39; $VAULT_ADDR/v1/sys/auth/userpass Add a user to the userpass auth method create a user with password vault write auth/userpass/users/&amp;lt;username&amp;gt; password=&amp;lt;****&amp;gt;  get users from userpass methos vault list auth/userpass/users  login in vault with new userpass user credential  login in new user   vault login -method=userpass username=&amp;lt;username&amp;gt;  set vault token as new token   export VAULT_TOKEN=&amp;lt;new token&amp;gt; vault token lookup Remove account vault delete auth/username/users/&amp;lt;username&amp;gt;  Vault Policies  Wallet policies use for provide the role based access.</description>
+    </item>
+    
+  </channel>
+</rss>

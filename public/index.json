@@ -1,0 +1,204 @@
+[
+{
+	"uri": "https://docs.hackersoon.com/programming/golang/",
+	"title": "Golang",
+	"tags": [],
+	"description": "",
+	"content": "Golang  Goroutine     "
+},
+{
+	"uri": "https://docs.hackersoon.com/basics/",
+	"title": "Basics",
+	"tags": [],
+	"description": "",
+	"content": "Chapter 1 Basics This chapter is Collections of simple things which is used in Programming.\n"
+},
+{
+	"uri": "https://docs.hackersoon.com/commands/",
+	"title": "Commands",
+	"tags": [],
+	"description": "",
+	"content": "Commands This Chapter is collections of command which is frequently used in Development.\n Docker     Tumx\u0026#43;iterm     Networking     Ansible     Git     Kubernetes    Helm      "
+},
+{
+	"uri": "https://docs.hackersoon.com/programming/",
+	"title": "Programming",
+	"tags": [],
+	"description": "",
+	"content": "Programming This chapter is collection of useful stuffs of various programming languages.\n Golang    Goroutine      "
+},
+{
+	"uri": "https://docs.hackersoon.com/installations/mac_setup/",
+	"title": "Mac_setup",
+	"tags": [],
+	"description": "",
+	"content": "  Follow this guide to setup mac https://sourabhbajaj.com/mac-setup/\nother useful softwares brew install watch brew install httpie #kubernetes brew install kubectx brew install stern  Zsh themes themes\n"
+},
+{
+	"uri": "https://docs.hackersoon.com/installations/",
+	"title": "Installations",
+	"tags": [],
+	"description": "",
+	"content": "Installations This chapter is collection of various installations which is used in software development.\n Mac_setup     Consul_vault    Vault Acl      Minikube     Docker     ElasticSearch     "
+},
+{
+	"uri": "https://docs.hackersoon.com/databases/",
+	"title": "Databases",
+	"tags": [],
+	"description": "",
+	"content": "Chapter 4 Databases This Chapter is collections of databases related stuffs which is frequently used in Development.\n Mongodb    Pymongo_client      "
+},
+{
+	"uri": "https://docs.hackersoon.com/commands/docker/",
+	"title": "Docker",
+	"tags": [],
+	"description": "",
+	"content": "  Check docker version\ndocker version  Docker container\n#get runnig and non running docker container docker ps docker ps -a # remove docker container docker rm $(docker ps -aq)  Docker images\ndocker images #delete all docker images sudo docker kill $(sudo docker ps -aq) docker rmi $(docker images -q)  Docker build\ndocker build -t {name} .  Docker run\ndocker run -it {image} -p expose_port:internal_port  Exec in Docker container\ndocker exec -it {container} /bin/sh  Docker run\ndocker run --mount type=bind,source=\u0026quot;$(pwd)\u0026quot;/data,target=/home/data -it \u0026lt;name_of_container\u0026gt;  "
+},
+{
+	"uri": "https://docs.hackersoon.com/commands/tumx+iterm/",
+	"title": "Tumx+iterm",
+	"tags": [],
+	"description": "",
+	"content": "  Tmux to use Tmux with Iterm2, you only need to provide an extra option (-CC) for Tmux commands:\n# create a new session* tmux -CC # create a new tmux session* tmux new -s \u0026lt;session-name\u0026gt; # attach to a session* tmux -CC a -t \u0026lt;session-name\u0026gt;  iterm2 best cheat sheet https://gist.github.com/squarism/ae3613daf5c01a98ba3a\ntmux cheatsheet https://devhints.io/tmux\n"
+},
+{
+	"uri": "https://docs.hackersoon.com/commands/networking/",
+	"title": "Networking",
+	"tags": [],
+	"description": "",
+	"content": "  nc # Listener: nc -l 1234 \u0026gt; out.file # Producer: nc -w 3 \u0026lt;ip\u0026gt; 1234 \u0026lt; out.file  find which service is running and process info netstat -nltp #porcess ps -ef pas aux  change the boot disk size of instance without restart lsblk growpart /dev/sda 1 resize2fs /dev/sda1 df -h  check disk size df -h du -csh * "
+},
+{
+	"uri": "https://docs.hackersoon.com/programming/golang/goroutine/",
+	"title": "Goroutine",
+	"tags": [],
+	"description": "",
+	"content": "  This is useful for understand golang goroutines.\n"
+},
+{
+	"uri": "https://docs.hackersoon.com/commands/ansible/",
+	"title": "Ansible",
+	"tags": [],
+	"description": "",
+	"content": "   list ansible dynamic inventory   ansible-inventory -i \u0026lt;inventory-path\u0026gt; --list  run ansible playbook   anible-playbook -i \u0026lt;inventory-path\u0026gt; \u0026lt;playbook\u0026gt;.yml -t tag --user=\u0026lt;user\u0026gt;  "
+},
+{
+	"uri": "https://docs.hackersoon.com/commands/git/",
+	"title": "Git",
+	"tags": [],
+	"description": "",
+	"content": "  1. Squash multiple git commit into one  check how much commit you want to squash.   git log -\u0026lt;n\u0026gt;  rebase head with particular commit.   git rebase -i HEAD~\u0026lt;n\u0026gt;  change n-1 commit from pick to squash(s). save file and again add commit message. force push head branch   git push -f origin head 2. amend a new commit in last commit  amend a new changes in last commit   git commit --amend git push -u origin head 3. cherry pick  Cherry picking in Git means to choose a commit from one branch and apply it onto another.   Make sure you are on the branch you want to apply the commit to.  git checkout master Execute the following:\ngit cherry-pick \u0026lt;commit-hash\u0026gt;  "
+},
+{
+	"uri": "https://docs.hackersoon.com/commands/kubernetes/helm/",
+	"title": "Helm",
+	"tags": [],
+	"description": "",
+	"content": "get helm charts\nhelm ls --all #get specific helm chart helm ls --all \u0026lt;name\u0026gt;  how to install a helm chart\nhelm install --name \u0026lt;name\u0026gt; \u0026lt;path-tohelm-chart\u0026gt; --namespace \u0026lt;namespace\u0026gt; #use a specific values file helm install --name \u0026lt;name\u0026gt; \u0026lt;path-tohelm-chart\u0026gt; --namespace \u0026lt;namespace\u0026gt; -f \u0026lt;path-to-yaml-file\u0026gt; #more updated helm install --name \u0026lt;name\u0026gt; \u0026lt;path-tohelm-chart\u0026gt; --namespace \u0026lt;namespace\u0026gt; --wait --timeout 1200 --set 'image.tag=latest' -f \u0026lt;path-to-yaml-file\u0026gt;  how to install a helm chart\nhelm upgrade \u0026lt;name\u0026gt; \u0026lt;path-tohelm-chart\u0026gt; --namespace \u0026lt;namespace\u0026gt;  delete a helm chart\nhelm del --purge \u0026lt;name\u0026gt;  "
+},
+{
+	"uri": "https://docs.hackersoon.com/commands/kubernetes/",
+	"title": "Kubernetes",
+	"tags": [],
+	"description": "",
+	"content": "  Helm     alias k=kubectl  get objects\nk get pods -n \u0026lt;namespace\u0026gt; k get deployments -n \u0026lt;namespace\u0026gt; k get services -n \u0026lt;namespace\u0026gt; # example k get \u0026lt;object\u0026gt; -n \u0026lt;namespace\u0026gt; # get in all namespaces k get \u0026lt;object\u0026gt; --all-namespaces  edit kubernetes objects\nk edit \u0026lt;object\u0026gt; \u0026lt;name\u0026gt; -n \u0026lt;namespace\u0026gt;  describe kubernetes objects\nk describe \u0026lt;object\u0026gt; \u0026lt;name\u0026gt; -n \u0026lt;namespace\u0026gt;  delete object\nk delete \u0026lt;object\u0026gt; -n \u0026lt;namespace\u0026gt;  enter inside a container\nk exec -it \u0026lt;pod_name\u0026gt; -n \u0026lt;namespace\u0026gt; /bin/sh  scale a deployment\nkubectl scale deployment \u0026lt;deployment_name\u0026gt; --replicas=\u0026lt;number of replica\u0026gt; # scale all deployment with one command kubectl get deploy -n \u0026lt;namespace\u0026gt; -o name | xargs -I % kubectl scale % --replicas=1 -n services  get all pods which is running on a particular node:\nkubectl get pods --all-namespaces -o wide --field-selector spec.nodeName=\u0026lt;node-name\u0026gt;  Secrets\nk get secrets -n \u0026lt;namespace\u0026gt; # get a particular secret k get secret -n \u0026lt;namespace\u0026gt; -o yaml # copy secret value and decode it echo \u0026quot;value\u0026quot; | base64 -D  "
+},
+{
+	"uri": "https://docs.hackersoon.com/installations/consul_vault/",
+	"title": "Consul_vault",
+	"tags": [],
+	"description": "",
+	"content": "  Vault Acl     This tutorial is to setup consul and vault in mac. Install consul using homebrew:\nbrew install consul  Install vault using homebrew:\nbrew install vault  Run consul and vault in your system:\nConsul agent — dev Vault server -dev  Consul: key/value Create a key/value in consul.\nconsul kv put test/data/key value  This command will create hierarchy test=\u0026gt;data=\u0026gt; {key: value} Get a key/value from the consul.\nconsul kv get test/data/key value  Vault: key/value Vault Authentication after installation Unseal vault using master keys these keys created for the first time. please contact an administrator for getting keys.\nvault operator unseal  Login in the vault using the root token.\nvault login  Enable key-value in vault this is for the first time enable.\nvault secrets enable -path=kv kv-v2  Create a key value in the vault.\nvault kv put kv-v2/hello key=value  output:\nKey Value --- ----- created_time 2019-07-10T07:52:26.062739464Z deletion_time n/a destroyed false version 1  get a key-value from the vault.\nvault kv get kv-v2/hello  output:\nKey Value --- ----- created_time 2019-07-10T07:52:26.062739464Z deletion_time n/a destroyed false version 1 === Data === Key Value --- ----- key value  "
+},
+{
+	"uri": "https://docs.hackersoon.com/installations/consul_vault/vault_acl/",
+	"title": "Vault Acl",
+	"tags": [],
+	"description": "",
+	"content": "  Authenticatin Methods Different types of authentication methods:\n Internal Authentication External Authentication Multiple Authentication  Commands for create authentication methods Enable an auth method vault auth enable [method]  Write Config to an auth method vault write auth/[method]/config  Add a role to the auth method vault write auth/[method]/role/[rolename]  Disable an auth method vault auth disable [method]  Enable userpass method Add envirnmont variables export VAULT_ADDR='http://127.0.0.1:8200/' export VAULT_TOKEN=\u0026lt;token\u0026gt;  Check auth list vault auth list  Enable userpass auth method  Using vault cli   vault auth enable userpass  using curl api   cutl --header \u0026quot;x-Vault-Token: $VAULT_TOKEN\u0026quot; --request POST \\ --data '{\u0026quot;type\u0026quot;:\u0026quot;userpass\u0026quot;}' $VAULT_ADDR/v1/sys/auth/userpass Add a user to the userpass auth method create a user with password vault write auth/userpass/users/\u0026lt;username\u0026gt; password=\u0026lt;****\u0026gt;  get users from userpass methos vault list auth/userpass/users  login in vault with new userpass user credential  login in new user   vault login -method=userpass username=\u0026lt;username\u0026gt;  set vault token as new token   export VAULT_TOKEN=\u0026lt;new token\u0026gt; vault token lookup Remove account vault delete auth/username/users/\u0026lt;username\u0026gt;  Vault Policies  Wallet policies use for provide the role based access. Who, What and How? we can use hcl or json templates for writing the policy files(mostly HCL) variables for identity  Sample Plolicy document\npath \u0026quot;path_of_secret_data/[*]\u0026quot; { capabilities = [\u0026quot;create\u0026quot;, \u0026quot;read\u0026quot;, \u0026quot;update\u0026quot;, \u0026quot;list\u0026quot;, \u0026quot;delete\u0026quot;] required_parameters = [\u0026quot;param_names\u0026quot;] allowed_parameters = { param_name = [\u0026quot;any\u0026quot;] } denied_parameter = { param_name = [\u0026quot;any\u0026quot;] } }  Useful commands for vault policies list policies vault policy list  create a policy vault policy write [policy] [policy_file.hcl]  update a policy vault write sys/policy/[policy] policy=[policy_file.hcl]  delete a policy vault delete sys/policy/[policy]  Create a sample policy  create a sample policy file   cat \u0026gt; sample_policy.hcl path \u0026quot;kv-v2/*\u0026quot; { capabilities = [\u0026quot;create\u0026quot;, \u0026quot;read\u0026quot;, \u0026quot;update\u0026quot;, \u0026quot;list\u0026quot;, \u0026quot;delete\u0026quot;] } path \u0026quot;kv-v2/appId*\u0026quot; { capabilities = [\u0026quot;create\u0026quot;, \u0026quot;read\u0026quot;, \u0026quot;update\u0026quot;, \u0026quot;list\u0026quot;, \u0026quot;delete\u0026quot;] allowed_parameters = { \u0026quot;api-key\u0026quot;= [] \u0026quot;environment\u0026quot; = [\u0026quot;dev\u0026quot;, \u0026quot;staging\u0026quot;] \u0026quot;description\u0026quot; = [] } } path \u0026quot;secret/data/{{identity.entity.id}}/*\u0026quot; { capabilities = [\u0026quot;create\u0026quot;, \u0026quot;read\u0026quot;, \u0026quot;update\u0026quot;, \u0026quot;delete\u0026quot;] } path \u0026quot;secret/metadata/{{identity.entity.id}}/*\u0026quot; { capabilities = [\u0026quot;list\u0026quot;] }  run create policy command   vault policy write dev1 sample-policy.hcl  create a userpass with policy   vault write auth/userpass/users/\u0026lt;username\u0026gt; password=\u0026lt;****\u0026gt; pol  "
+},
+{
+	"uri": "https://docs.hackersoon.com/installations/minikube/",
+	"title": "Minikube",
+	"tags": [],
+	"description": "",
+	"content": "  Minikube Installation of minikube in mac using homebrew  Install kubectl  brew install kubectl Install virtualbox  brew cask install virtualbox  Allow firewall for oracle software installation. (security \u0026amp; privacy)\n  Install minikube\n  brew cask install minikube Start minikube  minikube start  "
+},
+{
+	"uri": "https://docs.hackersoon.com/databases/mongodb/pymongo_client/",
+	"title": "Pymongo_client",
+	"tags": [],
+	"description": "",
+	"content": "  mongo connection in python with pymongo from pymongo import MongoClient client=MongoClient('mongodb://\u0026lt;username\u0026gt;:\u0026lt;password\u0026gt;@\u0026lt;ip\u0026gt;:\u0026lt;port\u0026gt;/\u0026lt;database\u0026gt;?authSource=\u0026lt;database\u0026gt;') db=client['db_name'] db.collection_names()  "
+},
+{
+	"uri": "https://docs.hackersoon.com/databases/mongodb/",
+	"title": "Mongodb",
+	"tags": [],
+	"description": "",
+	"content": "  Pymongo_client     "
+},
+{
+	"uri": "https://docs.hackersoon.com/installations/docker/",
+	"title": "Docker",
+	"tags": [],
+	"description": "",
+	"content": "  Docker installation in MAC: brew install docker  "
+},
+{
+	"uri": "https://docs.hackersoon.com/installations/elasticsearch/",
+	"title": "ElasticSearch",
+	"tags": [],
+	"description": "",
+	"content": "  Elasticsearch installation in Ubuntu: apt-get update apt-get install python-minimal apt-get install openjdk-8-jdk wget https://download.elastic.co/elasticsearch/release/org/elasticsearch/distribution/deb/elasticsearch/2.4.0/elasticsearch-2.4.0.deb dpkg -i elasticsearch-2.4.0.deb cd /etc/elasticsearch vim elasticsearch.yml update network.host with private ip of the server service elasticsearch start service elasticsearch status curl ip:9200/ "
+},
+{
+	"uri": "https://docs.hackersoon.com/basics/gist-input/",
+	"title": "gist-test",
+	"tags": [],
+	"description": "",
+	"content": " "
+},
+{
+	"uri": "https://docs.hackersoon.com/basics/ref-test/",
+	"title": "ref-test",
+	"tags": [],
+	"description": "",
+	"content": "gist-test\n"
+},
+{
+	"uri": "https://docs.hackersoon.com/basics/youtube-video/",
+	"title": "YouTube",
+	"tags": [],
+	"description": "",
+	"content": "   "
+},
+{
+	"uri": "https://docs.hackersoon.com/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "Cheat Sheet  Basics    gist-test   ref-test   YouTube    Commands    Docker   Tumx\u0026#43;iterm   Networking   Ansible   Git   Kubernetes    Programming    Golang    Installations    Mac_setup   Consul_vault   Minikube   Docker   ElasticSearch    Databases    Mongodb    "
+},
+{
+	"uri": "https://docs.hackersoon.com/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://docs.hackersoon.com/credits/",
+	"title": "Credits",
+	"tags": [],
+	"description": "",
+	"content": "Contributors Thanks to them for making Open Source Software a better place ! .ghContributors { display: flex; flex-flow: wrap; align-content: flex-start } .ghContributorsdiv { width: 100%; display: inline-flex; margin-bottom: 20px; } .ghContributorsdiv label { padding-left: 4px; } .ghContributorsdiv span { font-size: x-medium; padding-left: 10px; }   @agrawal-pulkit 1 commits  \nPackages and libraries https://learn.netlify.com/en/\n"
+},
+{
+	"uri": "https://docs.hackersoon.com/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on Hackersoon - Documentation</title>
+    <link>https://docs.hackersoon.com/commands/git/</link>
+    <description>Recent content in Git on Hackersoon - Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Dec 2019 22:57:44 +0530</lastBuildDate>
+    
+	<atom:link href="https://docs.hackersoon.com/commands/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

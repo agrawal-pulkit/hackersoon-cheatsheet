@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hackersoon - Documentation</title>
+    <link>https://docs.hackersoon.com/</link>
+    <description>Recent content on Hackersoon - Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Dec 2019 02:17:40 +0530</lastBuildDate>
+    
+	<atom:link href="https://docs.hackersoon.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Goroutine</title>
+      <link>https://docs.hackersoon.com/programming/golang/goroutine/</link>
+      <pubDate>Sun, 15 Dec 2019 02:17:40 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/programming/golang/goroutine/</guid>
+      <description>This is useful for understand golang goroutines.</description>
+    </item>
+    
+    <item>
+      <title>Helm</title>
+      <link>https://docs.hackersoon.com/commands/kubernetes/helm/</link>
+      <pubDate>Thu, 12 Dec 2019 22:57:37 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/commands/kubernetes/helm/</guid>
+      <description>get helm charts
+helm ls --all #get specific helm chart helm ls --all &amp;lt;name&amp;gt;  how to install a helm chart
+helm install --name &amp;lt;name&amp;gt; &amp;lt;path-tohelm-chart&amp;gt; --namespace &amp;lt;namespace&amp;gt; #use a specific values file helm install --name &amp;lt;name&amp;gt; &amp;lt;path-tohelm-chart&amp;gt; --namespace &amp;lt;namespace&amp;gt; -f &amp;lt;path-to-yaml-file&amp;gt; #more updated helm install --name &amp;lt;name&amp;gt; &amp;lt;path-tohelm-chart&amp;gt; --namespace &amp;lt;namespace&amp;gt; --wait --timeout 1200 --set &#39;image.tag=latest&#39; -f &amp;lt;path-to-yaml-file&amp;gt;  how to install a helm chart
+helm upgrade &amp;lt;name&amp;gt; &amp;lt;path-tohelm-chart&amp;gt; --namespace &amp;lt;namespace&amp;gt;  delete a helm chart</description>
+    </item>
+    
+    <item>
+      <title>Vault Acl</title>
+      <link>https://docs.hackersoon.com/installations/consul_vault/vault_acl/</link>
+      <pubDate>Thu, 12 Dec 2019 02:12:50 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/installations/consul_vault/vault_acl/</guid>
+      <description>Authenticatin Methods Different types of authentication methods:
+ Internal Authentication External Authentication Multiple Authentication  Commands for create authentication methods Enable an auth method vault auth enable [method]  Write Config to an auth method vault write auth/[method]/config  Add a role to the auth method vault write auth/[method]/role/[rolename]  Disable an auth method vault auth disable [method]  Enable userpass method Add envirnmont variables export VAULT_ADDR=&#39;http://127.0.0.1:8200/&#39; export VAULT_TOKEN=&amp;lt;token&amp;gt;  Check auth list vault auth list  Enable userpass auth method  Using vault cli   vault auth enable userpass  using curl api   cutl --header &amp;quot;x-Vault-Token: $VAULT_TOKEN&amp;quot; --request POST \ --data &#39;{&amp;quot;type&amp;quot;:&amp;quot;userpass&amp;quot;}&#39; $VAULT_ADDR/v1/sys/auth/userpass Add a user to the userpass auth method create a user with password vault write auth/userpass/users/&amp;lt;username&amp;gt; password=&amp;lt;****&amp;gt;  get users from userpass methos vault list auth/userpass/users  login in vault with new userpass user credential  login in new user   vault login -method=userpass username=&amp;lt;username&amp;gt;  set vault token as new token   export VAULT_TOKEN=&amp;lt;new token&amp;gt; vault token lookup Remove account vault delete auth/username/users/&amp;lt;username&amp;gt;  Vault Policies  Wallet policies use for provide the role based access.</description>
+    </item>
+    
+    <item>
+      <title>Pymongo_client</title>
+      <link>https://docs.hackersoon.com/databases/mongodb/pymongo_client/</link>
+      <pubDate>Thu, 12 Dec 2019 01:41:04 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/databases/mongodb/pymongo_client/</guid>
+      <description>  mongo connection in python with pymongo from pymongo import MongoClient client=MongoClient(&#39;mongodb://&amp;lt;username&amp;gt;:&amp;lt;password&amp;gt;@&amp;lt;ip&amp;gt;:&amp;lt;port&amp;gt;/&amp;lt;database&amp;gt;?authSource=&amp;lt;database&amp;gt;&#39;) db=client[&#39;db_name&#39;] db.collection_names()  </description>
+    </item>
+    
+    <item>
+      <title>gist-test</title>
+      <link>https://docs.hackersoon.com/basics/gist-input/</link>
+      <pubDate>Wed, 11 Dec 2019 10:24:28 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/basics/gist-input/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>ref-test</title>
+      <link>https://docs.hackersoon.com/basics/ref-test/</link>
+      <pubDate>Wed, 11 Dec 2019 10:24:28 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/basics/ref-test/</guid>
+      <description>gist-test</description>
+    </item>
+    
+    <item>
+      <title>YouTube</title>
+      <link>https://docs.hackersoon.com/basics/youtube-video/</link>
+      <pubDate>Wed, 11 Dec 2019 10:24:28 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/basics/youtube-video/</guid>
+      <description>   </description>
+    </item>
+    
+    <item>
+      <title>Credits</title>
+      <link>https://docs.hackersoon.com/credits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.hackersoon.com/credits/</guid>
+      <description>Contributors Thanks to them for making Open Source Software a better place ! .ghContributors { display: flex; flex-flow: wrap; align-content: flex-start } .ghContributorsdiv { width: 100%; display: inline-flex; margin-bottom: 20px; } .ghContributorsdiv label { padding-left: 4px; } .ghContributorsdiv span { font-size: x-medium; padding-left: 10px; }   @agrawal-pulkit 1 commits  
+Packages and libraries https://learn.netlify.com/en/</description>
+    </item>
+    
+  </channel>
+</rss>
