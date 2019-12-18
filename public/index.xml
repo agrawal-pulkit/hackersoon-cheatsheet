@@ -65,6 +65,15 @@ helm upgrade &amp;lt;name&amp;gt; &amp;lt;path-tohelm-chart&amp;gt; --namespace 
     </item>
     
     <item>
+      <title>Heapsort</title>
+      <link>https://docs.hackersoon.com/interviews/algorithms/sorting/heapsort/</link>
+      <pubDate>Wed, 11 Dec 2019 11:14:00 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/interviews/algorithms/sorting/heapsort/</guid>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; }   heapsort  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35  &amp;#34;&amp;#34;&amp;#34;This method is used for heapify the array. every time when we remove a element from array.&amp;#34;&amp;#34;&amp;#34; def heapify(arr, n, i): largest = i r = 2*i + 1 l = 2*i + 2 if l &amp;lt; n and arr[i] &amp;lt; arr[l]: largest = l if r &amp;lt; n and arr[largest] &amp;lt; arr[r]: largest = r if largest !</description>
+    </item>
+    
+    <item>
       <title>Contribution Guide</title>
       <link>https://docs.hackersoon.com/contribution/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -79,7 +88,7 @@ helm upgrade &amp;lt;name&amp;gt; &amp;lt;path-tohelm-chart&amp;gt; --namespace 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.hackersoon.com/credits/</guid>
-      <description>Contributors Thanks to them for making Open Source Software a better place ! .ghContributors { display: flex; flex-flow: wrap; align-content: flex-start } .ghContributorsdiv { width: 100%; display: inline-flex; margin-bottom: 20px; } .ghContributorsdiv label { padding-left: 4px; } .ghContributorsdiv span { font-size: x-medium; padding-left: 10px; }   @agrawal-pulkit 1 commits  
+      <description>Contributors Thanks to them for making Open Source Software a better place ! .ghContributors { display: flex; flex-flow: wrap; align-content: flex-start } .ghContributorsdiv { width: 100%; display: inline-flex; margin-bottom: 20px; } .ghContributorsdiv label { padding-left: 4px; } .ghContributorsdiv span { font-size: x-medium; padding-left: 10px; }   @agrawal-pulkit 8 commits  
 Packages and libraries  hugo learn theme shortcodes  </description>
     </item>
     

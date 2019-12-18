@@ -8,7 +8,7 @@
 <meta name="author" content="Pulkit Agrawal">
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Mac_setup :: Hackersoon - Documentation</title>
+    <title>Heapsort :: Hackersoon - Documentation</title>
 
     
     <link href="/css/nucleus.css?1576696905" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/installations/mac_setup/">
+  <body class="" data-url="/interviews/algorithms/sorting/heapsort/">
     <nav id="sidebar" class="">
 
 
@@ -371,7 +371,7 @@
   
     
     <li data-nav-id="/installations/" title="Installations" class="dd-item 
-        parent
+        
         
         
         ">
@@ -398,8 +398,8 @@
   
     
     <li data-nav-id="/installations/mac_setup/" title="Mac_setup" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/installations/mac_setup/">
@@ -641,7 +641,7 @@
   
     
     <li data-nav-id="/interviews/" title="Interview Prepartion" class="dd-item 
-        
+        parent
         
         
         ">
@@ -668,7 +668,7 @@
   
     
     <li data-nav-id="/interviews/algorithms/" title="Algorithms" class="dd-item 
-        
+        parent
         
         
         ">
@@ -695,7 +695,7 @@
   
     
     <li data-nav-id="/interviews/algorithms/sorting/" title="Sorting" class="dd-item 
-        
+        parent
         
         
         ">
@@ -719,7 +719,7 @@
  
   
     
-      <li data-nav-id="/interviews/algorithms/sorting/heapsort/" title="Heapsort" class="dd-item ">
+      <li data-nav-id="/interviews/algorithms/sorting/heapsort/" title="Heapsort" class="dd-item active">
         <a href="/interviews/algorithms/sorting/heapsort/">
         Heapsort
         
@@ -881,7 +881,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/agrawal-pulkit/hackersoon-cheatsheet/edit/master/content/installations/mac_setup/_index.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/agrawal-pulkit/hackersoon-cheatsheet/edit/master/content/interviews/algorithms/sorting/heapsort.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -912,7 +912,19 @@
             
           
           
-            <a href='/'></a> > <a href='/installations/'>Installations</a> > Mac_setup
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/interviews/'>Interview Prepartion</a> > <a href='/interviews/algorithms/'>Algorithms</a> > <a href='/interviews/algorithms/sorting/'>Sorting</a> > Heapsort
+          
+         
+          
+         
           
          
           
@@ -941,7 +953,7 @@
           
             <h1>
               
-              Mac_setup
+              Heapsort
             </h1>
           
 
@@ -949,53 +961,106 @@
 
 
 
+<style type="text/css">
+    .caption {
+      text-align: center;
+      background-color: grey;
+      color: white;
+      font-weight: normal;
+      padding: 2px;
+    }
+</style>
 
-	
+<figure class="code">
+  <figcaption class="caption">
+   <span> heapsort</span>
+  </figcaption>
+  <div class="codewrapper">
+    <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">This method is used for heapify the array. </span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">every time when we remove a element from array.</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">heapify</span>(arr, n, i):
+    largest <span style="color:#f92672">=</span> i
+    r <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+    l <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>i <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>
 
+    <span style="color:#66d9ef">if</span> l <span style="color:#f92672">&lt;</span> n <span style="color:#f92672">and</span> arr[i] <span style="color:#f92672">&lt;</span> arr[l]:
+        largest <span style="color:#f92672">=</span> l
 
+    <span style="color:#66d9ef">if</span> r <span style="color:#f92672">&lt;</span> n <span style="color:#f92672">and</span> arr[largest] <span style="color:#f92672">&lt;</span> arr[r]:
+        largest <span style="color:#f92672">=</span> r
 
+    <span style="color:#66d9ef">if</span> largest <span style="color:#f92672">!=</span> i:
+        arr[i], arr[largest] <span style="color:#f92672">=</span> arr[largest], arr[i]
+        heapify(arr, n, largest)
 
+<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">Actual impelementation of heap short algorithm.</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">heapsort</span>(arr):
+    n <span style="color:#f92672">=</span> len(arr)
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(n, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
+        heapify(arr, n , i)
+    <span style="color:#66d9ef">print</span>(arr)
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(n<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
+        arr[<span style="color:#ae81ff">0</span>], arr[i] <span style="color:#f92672">=</span> arr[i], arr[<span style="color:#ae81ff">0</span>]
+        heapify(arr, i, <span style="color:#ae81ff">0</span>)
 
-
-<ul class="children children-li">
-	
-
-	
-		
-	
-
-	
-
-	
-		
-	
-
-	
-</ul>
-
-<h3 id="follow-this-guide-to-setup-mac">Follow this guide to setup mac</h3>
-<p><a href="https://sourabhbajaj.com/mac-setup/">https://sourabhbajaj.com/mac-setup/</a></p>
-<h3 id="other-useful-softwares">other useful softwares</h3>
-<pre><code>brew install watch
-brew install httpie
-
-#kubernetes
-brew install kubectx
-brew install stern
-</code></pre>
-<p><strong>Zsh themes</strong>
-<a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes">themes</a></p>
-
-
-
-
-
+<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">__main__</span><span style="color:#e6db74">&#34;</span>:
+    arr <span style="color:#f92672">=</span> [ <span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">13</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>]
+    heapsort(arr)
+    <span style="color:#66d9ef">print</span>(arr)</code></pre></td></tr></table>
+</div>
+</div>
+  </div>
+</figure>
 
 
 
 <footer class=" footline" >
 	
 </footer>
+
 
         
         </div> 
@@ -1211,7 +1276,6 @@ brew install stern
             
                 
                     
-                    
                 
                 
 
@@ -1226,7 +1290,6 @@ brew install stern
             
             
                 
-                    
                     
                 
                 
@@ -1243,9 +1306,6 @@ brew install stern
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1380,20 +1440,6 @@ brew install stern
             
                 
                     
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1410,6 +1456,23 @@ brew install stern
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
                 
                 
 
@@ -1422,6 +1485,7 @@ brew install stern
             
             
                 
+                    
                     
                 
                 
@@ -1444,6 +1508,9 @@ brew install stern
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1500,10 +1567,10 @@ brew install stern
 	 
 	 
 		
-			<a class="nav nav-prev" href="/installations/" title="Installations"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/interviews/algorithms/sorting/" title="Sorting"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/installations/consul_vault/" title="Consul_vault" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/interviews/ds/" title="Data Sturctures" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1533,3 +1600,4 @@ brew install stern
 
   </body>
 </html>
+
