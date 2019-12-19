@@ -65,12 +65,174 @@ helm upgrade &amp;lt;name&amp;gt; &amp;lt;path-tohelm-chart&amp;gt; --namespace 
     </item>
     
     <item>
+      <title>AVL</title>
+      <link>https://docs.hackersoon.com/interviews/algorithms/tree/avl-tree/</link>
+      <pubDate>Wed, 11 Dec 2019 11:14:00 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/interviews/algorithms/tree/avl-tree/</guid>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; }   AVL Tree  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166  class Node: def __init__(self, data): self.</description>
+    </item>
+    
+    <item>
+      <title>BellmanFord</title>
+      <link>https://docs.hackersoon.com/interviews/algorithms/graph/bellmanford/</link>
+      <pubDate>Wed, 11 Dec 2019 11:14:00 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/interviews/algorithms/graph/bellmanford/</guid>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; }   Bellman Ford  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124  import sys class Vertex: def __init__(self, name): self.</description>
+    </item>
+    
+    <item>
+      <title>BFS</title>
+      <link>https://docs.hackersoon.com/interviews/algorithms/tree/bfs/</link>
+      <pubDate>Wed, 11 Dec 2019 11:14:00 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/interviews/algorithms/tree/bfs/</guid>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; }   Breadth First Search  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40  class Node: def __init__(self, name): self.name = name self.adjacencyList = [] self.</description>
+    </item>
+    
+    <item>
+      <title>Binary Tree Views</title>
+      <link>https://docs.hackersoon.com/interviews/algorithms/tree/binary-tree-view/</link>
+      <pubDate>Wed, 11 Dec 2019 11:14:00 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/interviews/algorithms/tree/binary-tree-view/</guid>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; }   Binary Tree Views  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70  class Node: def __init__(self, data): self.</description>
+    </item>
+    
+    <item>
+      <title>BST</title>
+      <link>https://docs.hackersoon.com/interviews/algorithms/tree/binary-search-tree/</link>
+      <pubDate>Wed, 11 Dec 2019 11:14:00 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/interviews/algorithms/tree/binary-search-tree/</guid>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; }   Binary Search Tree  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122  &amp;#34;&amp;#34;&amp;#34;Implementation of Binary Search Tree&amp;#34;&amp;#34;&amp;#34; class Node: def __init__(self, data): self.</description>
+    </item>
+    
+    <item>
+      <title>Circular Queue</title>
+      <link>https://docs.hackersoon.com/interviews/ds/queue/queue_circular/</link>
+      <pubDate>Wed, 11 Dec 2019 11:14:00 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/interviews/ds/queue/queue_circular/</guid>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; }   Circular Queue  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50  class Empty(Exception): pass class CircularQueue: class _Node: def __init__(self, element, next): self.</description>
+    </item>
+    
+    <item>
+      <title>DFS</title>
+      <link>https://docs.hackersoon.com/interviews/algorithms/tree/dfs/</link>
+      <pubDate>Wed, 11 Dec 2019 11:14:00 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/interviews/algorithms/tree/dfs/</guid>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; }   Deapth First Search  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56  &amp;#34;&amp;#34;&amp;#34;initiaze a tree node&amp;#34;&amp;#34;&amp;#34; class Node: def __init__(self, name): self.</description>
+    </item>
+    
+    <item>
+      <title>Dijkstra</title>
+      <link>https://docs.hackersoon.com/interviews/algorithms/graph/dijkstra/</link>
+      <pubDate>Wed, 11 Dec 2019 11:14:00 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/interviews/algorithms/graph/dijkstra/</guid>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; }   Dijkstra  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109  import sys import heapq class Edge: def __init__(self, weight, startVertex, targetVertex): self.</description>
+    </item>
+    
+    <item>
       <title>Heapsort</title>
       <link>https://docs.hackersoon.com/interviews/algorithms/sorting/heapsort/</link>
       <pubDate>Wed, 11 Dec 2019 11:14:00 +0530</pubDate>
       
       <guid>https://docs.hackersoon.com/interviews/algorithms/sorting/heapsort/</guid>
-      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; }   heapsort  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35  &amp;#34;&amp;#34;&amp;#34;This method is used for heapify the array. every time when we remove a element from array.&amp;#34;&amp;#34;&amp;#34; def heapify(arr, n, i): largest = i r = 2*i + 1 l = 2*i + 2 if l &amp;lt; n and arr[i] &amp;lt; arr[l]: largest = l if r &amp;lt; n and arr[largest] &amp;lt; arr[r]: largest = r if largest !</description>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; }   heapsort  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37  &amp;#34;&amp;#34;&amp;#34;This method is used for heapify the array. every time when we remove a element from array.</description>
+    </item>
+    
+    <item>
+      <title>Mergesort</title>
+      <link>https://docs.hackersoon.com/interviews/algorithms/sorting/mergesort/</link>
+      <pubDate>Wed, 11 Dec 2019 11:14:00 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/interviews/algorithms/sorting/mergesort/</guid>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; }   mergesort  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61  &amp;#34;&amp;#34;&amp;#34;merge logic:This function merge two shorted arrays into one sorted array.</description>
+    </item>
+    
+    <item>
+      <title>Positional List</title>
+      <link>https://docs.hackersoon.com/interviews/ds/linkedlist/positionallist/</link>
+      <pubDate>Wed, 11 Dec 2019 11:14:00 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/interviews/ds/linkedlist/positionallist/</guid>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; }   Positional List  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123  class Empty(Exception): pass class _DoublyLinkedBase: class _Node: __slots__ = &amp;#39;_element&amp;#39;, &amp;#39;_prev&amp;#39;, &amp;#39;_next&amp;#39; def __init__(self, element, prev, next): self.</description>
+    </item>
+    
+    <item>
+      <title>Queue dll</title>
+      <link>https://docs.hackersoon.com/interviews/ds/queue/queue_dll/</link>
+      <pubDate>Wed, 11 Dec 2019 11:14:00 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/interviews/ds/queue/queue_dll/</guid>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; }   Queue dll  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74  class Empty(Exception): pass class _DoublyLinkedBase: class _Node: __slots__ = &amp;#39;_element&amp;#39;, &amp;#39;_prev&amp;#39;, &amp;#39;_next&amp;#39; def __init__(self, element, prev, next): self.</description>
+    </item>
+    
+    <item>
+      <title>Queue List</title>
+      <link>https://docs.hackersoon.com/interviews/ds/queue/queue_list/</link>
+      <pubDate>Wed, 11 Dec 2019 11:14:00 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/interviews/ds/queue/queue_list/</guid>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; }   Queue List  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47  class Empty(Exception): pass class ArrayQueue: DEFAULT_CAPACITY = 10 def __init__(self): self.</description>
+    </item>
+    
+    <item>
+      <title>Queue LL</title>
+      <link>https://docs.hackersoon.com/interviews/ds/queue/queue_ll/</link>
+      <pubDate>Wed, 11 Dec 2019 11:14:00 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/interviews/ds/queue/queue_ll/</guid>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; }   Queue LL  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46  class Empty(Exception): pass class LinkedQueue: class _Node: __slots__ = &amp;#39;_element&amp;#39;, &amp;#39;_next&amp;#39; def __init__(self, element, next): self.</description>
+    </item>
+    
+    <item>
+      <title>Quicksort</title>
+      <link>https://docs.hackersoon.com/interviews/algorithms/sorting/quicksort/</link>
+      <pubDate>Wed, 11 Dec 2019 11:14:00 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/interviews/algorithms/sorting/quicksort/</guid>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; }   quicksort  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34  &amp;#34;&amp;#34;&amp;#34;partition logic in quicksort.&amp;#34;&amp;#34;&amp;#34; def partition(arr, low, high): i = low -1 pivot = arr[high] for j in range(low, high): if arr[j] &amp;lt; pivot: i += 1 arr[i], arr[j] = arr[j], arr[i] arr[i+1], arr[high] = arr[high], arr[i+1] return i+1 &amp;#34;&amp;#34;&amp;#34;Actual impelementation of quick short algorithm.</description>
+    </item>
+    
+    <item>
+      <title>Sliding Window</title>
+      <link>https://docs.hackersoon.com/interviews/problemsolving/sliding_window/</link>
+      <pubDate>Wed, 11 Dec 2019 11:14:00 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/interviews/problemsolving/sliding_window/</guid>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; }   sliding window  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  def max_sum_window_sliding(l, n, k): print(l, n, k) current_sum = 0 if n&amp;lt;k: return False for i in range(k): current_sum += l[i] print(current_sum) max_sum = current_sum for i in range(n-k): print(l[k+i],l[i]) current_sum = current_sum + l[k+i]-l[i] print(current_sum) if max_sum &amp;lt; current_sum: max_sum = current_sum return max_sum max_sum_value = max_sum_window_sliding([1, 4, 2, 10, 23, 3, 1, 0, 20], 9, 4) print(max_sum_value)     </description>
+    </item>
+    
+    <item>
+      <title>Stack List</title>
+      <link>https://docs.hackersoon.com/interviews/ds/stack/stack_list/</link>
+      <pubDate>Wed, 11 Dec 2019 11:14:00 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/interviews/ds/stack/stack_list/</guid>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; }   Stack List  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45  &amp;#34;&amp;#34;&amp;#34;Implementing a stack using python list.&amp;#34;&amp;#34;&amp;#34; class Empty(Exception): pass class ArrayStack: def __init__(self): self.</description>
+    </item>
+    
+    <item>
+      <title>Stack LL</title>
+      <link>https://docs.hackersoon.com/interviews/ds/stack/stack_ll/</link>
+      <pubDate>Wed, 11 Dec 2019 11:14:00 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/interviews/ds/stack/stack_ll/</guid>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; }   Stack LL  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39  class Empty(Exception): pass class LinkedStack: class _Node: __slots__ = &amp;#39;_element&amp;#39;, &amp;#39;_next&amp;#39; def __init__(self, element, next): self.</description>
+    </item>
+    
+    <item>
+      <title>Trapping Rain Problem</title>
+      <link>https://docs.hackersoon.com/interviews/problemsolving/trapping-rain-problem/</link>
+      <pubDate>Wed, 11 Dec 2019 11:14:00 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/interviews/problemsolving/trapping-rain-problem/</guid>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; }   Trapping Rain Problem  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32  # Python program to find maximum amount of water that can # be trapped within given set of bars.</description>
     </item>
     
     <item>

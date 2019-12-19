@@ -37,8 +37,10 @@ def heapsort(arr):
         arr[0], arr[i] = arr[i], arr[0]
         heapify(arr, i, 0)
 
+# sample input
+
 if __name__ == "__main__":
     arr = [ 12, 11, 13, 5, 6, 7]
     heapsort(arr)
-    print(arr)
+    print("sorted array: ", arr)
 {{< /codecaption >}}

@@ -3,7 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://docs.hackersoon.com/interviews/algorithms/graph/</loc>
+    <lastmod>2019-12-19T00:42:50+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.hackersoon.com/interviews/ds/linkedlist/</loc>
+    <lastmod>2019-12-19T00:42:50+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.hackersoon.com/interviews/ds/queue/</loc>
+    <lastmod>2019-12-19T00:42:50+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://docs.hackersoon.com/interviews/algorithms/sorting/</loc>
+    <lastmod>2019-12-19T00:42:50+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.hackersoon.com/interviews/ds/stack/</loc>
+    <lastmod>2019-12-19T00:42:50+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.hackersoon.com/interviews/algorithms/tree/</loc>
     <lastmod>2019-12-19T00:42:50+05:30</lastmod>
   </url>
   
@@ -133,6 +158,46 @@
   </url>
   
   <url>
+    <loc>https://docs.hackersoon.com/interviews/algorithms/tree/avl-tree/</loc>
+    <lastmod>2019-12-11T11:14:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.hackersoon.com/interviews/algorithms/graph/bellmanford/</loc>
+    <lastmod>2019-12-11T11:14:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.hackersoon.com/interviews/algorithms/tree/bfs/</loc>
+    <lastmod>2019-12-11T11:14:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.hackersoon.com/interviews/algorithms/tree/binary-tree-view/</loc>
+    <lastmod>2019-12-11T11:14:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.hackersoon.com/interviews/algorithms/tree/binary-search-tree/</loc>
+    <lastmod>2019-12-11T11:14:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.hackersoon.com/interviews/ds/queue/queue_circular/</loc>
+    <lastmod>2019-12-11T11:14:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.hackersoon.com/interviews/algorithms/tree/dfs/</loc>
+    <lastmod>2019-12-11T11:14:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.hackersoon.com/interviews/algorithms/graph/dijkstra/</loc>
+    <lastmod>2019-12-11T11:14:00+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://docs.hackersoon.com/installations/docker/</loc>
     <lastmod>2019-12-11T11:14:00+05:30</lastmod>
   </url>
@@ -144,6 +209,56 @@
   
   <url>
     <loc>https://docs.hackersoon.com/interviews/algorithms/sorting/heapsort/</loc>
+    <lastmod>2019-12-11T11:14:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.hackersoon.com/interviews/algorithms/sorting/mergesort/</loc>
+    <lastmod>2019-12-11T11:14:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.hackersoon.com/interviews/ds/linkedlist/positionallist/</loc>
+    <lastmod>2019-12-11T11:14:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.hackersoon.com/interviews/ds/queue/queue_dll/</loc>
+    <lastmod>2019-12-11T11:14:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.hackersoon.com/interviews/ds/queue/queue_list/</loc>
+    <lastmod>2019-12-11T11:14:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.hackersoon.com/interviews/ds/queue/queue_ll/</loc>
+    <lastmod>2019-12-11T11:14:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.hackersoon.com/interviews/algorithms/sorting/quicksort/</loc>
+    <lastmod>2019-12-11T11:14:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.hackersoon.com/interviews/problemsolving/sliding_window/</loc>
+    <lastmod>2019-12-11T11:14:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.hackersoon.com/interviews/ds/stack/stack_list/</loc>
+    <lastmod>2019-12-11T11:14:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.hackersoon.com/interviews/ds/stack/stack_ll/</loc>
+    <lastmod>2019-12-11T11:14:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.hackersoon.com/interviews/problemsolving/trapping-rain-problem/</loc>
     <lastmod>2019-12-11T11:14:00+05:30</lastmod>
   </url>
   
