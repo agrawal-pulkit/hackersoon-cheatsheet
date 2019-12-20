@@ -11,20 +11,20 @@
     <title>Heapsort :: Hackersoon - Documentation</title>
 
     
-    <link href="/css/nucleus.css?1576818752" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1576818752" rel="stylesheet">
-    <link href="/css/hybrid.css?1576818752" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1576818752" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1576818752" rel="stylesheet">
-    <link href="/css/auto-complete.css?1576818752" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1576818752" rel="stylesheet">
-    <link href="/css/theme.css?1576818752" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1576818752" rel="stylesheet">
+    <link href="/css/nucleus.css?1576872222" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1576872222" rel="stylesheet">
+    <link href="/css/hybrid.css?1576872222" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1576872222" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1576872222" rel="stylesheet">
+    <link href="/css/auto-complete.css?1576872222" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1576872222" rel="stylesheet">
+    <link href="/css/theme.css?1576872222" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1576872222" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1576818752" rel="stylesheet">
+      <link href="/css/theme-blue.css?1576872222" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1576818752"></script>
+    <script src="/js/jquery-3.3.1.min.js?1576872222"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1576818752"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1576818752"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1576872222"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1576872222"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.hackersoon.com";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1576818752"></script>
+<script type="text/javascript" src="/js/search.js?1576872222"></script>
 
     
   </div>
@@ -1496,30 +1496,54 @@
 
 
 <style type="text/css">
-    .caption {
-      text-align: center;
-      background-color: grey;
-      color: white;
-      font-weight: normal;
-      padding: 2px;
-      text-decoration: double;
-    }
-    .editor>a {
-      text-align: center;
-      padding: 5px;
-      color: blue;
-      font-weight: bold;
-      font-size: 20px;
-      margin: 5px;
-    }
+  .caption {
+    text-align: center;
+    background-color: grey;
+    color: white;
+    font-weight: normal;
+    text-decoration: double;
+  }
+
+  .editorq>a {
+    text-align: center;
+    padding: 5px;
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px;
+  }
+
+  .run {
+    text-align: center;
+    background-color: #343a40;
+    border-color: #343a40;
+    color: #fff;
+    font-weight: normal;
+    width: fit-content;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    padding: .25rem 2.5rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    margin-bottom: 2px;
+    font-weight: 400;
+    user-select: none;
+    text-transform: none;
+  }
 </style>
 
+
 <figure class="code">
-  <div class="editor" >
-    <a href='http://localhost:4200/?lang=heapsort&content=%0a%22%22%22%0aThis%20method%20is%20used%20for%20heapify%20the%20array.%20%0aevery%20time%20when%20we%20remove%20a%20element%20from%20array.%0a%22%22%22%0adef%20heapify%28arr%2c%20n%2c%20i%29%3a%0a%20%20%20%20largest%20%3d%20i%0a%20%20%20%20r%20%3d%202%2ai%20%2b%201%0a%20%20%20%20l%20%3d%202%2ai%20%2b%202%0a%0a%20%20%20%20if%20l%20%3c%20n%20and%20arr%5bi%5d%20%3c%20arr%5bl%5d%3a%0a%20%20%20%20%20%20%20%20largest%20%3d%20l%0a%0a%20%20%20%20if%20r%20%3c%20n%20and%20arr%5blargest%5d%20%3c%20arr%5br%5d%3a%0a%20%20%20%20%20%20%20%20largest%20%3d%20r%0a%0a%20%20%20%20if%20largest%20%21%3d%20i%3a%0a%20%20%20%20%20%20%20%20arr%5bi%5d%2c%20arr%5blargest%5d%20%3d%20arr%5blargest%5d%2c%20arr%5bi%5d%0a%20%20%20%20%20%20%20%20heapify%28arr%2c%20n%2c%20largest%29%0a%0a%22%22%22%0aActual%20impelementation%20of%20heap%20short%20algorithm.%0a%22%22%22%0adef%20heapsort%28arr%29%3a%0a%20%20%20%20n%20%3d%20len%28arr%29%0a%20%20%20%20for%20i%20in%20range%28n%2c%20-1%2c%20-1%29%3a%0a%20%20%20%20%20%20%20%20heapify%28arr%2c%20n%20%2c%20i%29%0a%20%20%20%20print%28arr%29%0a%20%20%20%20for%20i%20in%20range%28n-1%2c%200%2c%20-1%29%3a%0a%20%20%20%20%20%20%20%20arr%5b0%5d%2c%20arr%5bi%5d%20%3d%20arr%5bi%5d%2c%20arr%5b0%5d%0a%20%20%20%20%20%20%20%20heapify%28arr%2c%20i%2c%200%29%0a%0a%23%20sample%20input%0a%0aif%20__name__%20%3d%3d%20%22__main__%22%3a%0a%20%20%20%20arr%20%3d%20%5b%2012%2c%2011%2c%2013%2c%205%2c%206%2c%207%5d%0a%20%20%20%20heapsort%28arr%29%0a%20%20%20%20print%28%22sorted%20array%3a%20%22%2c%20arr%29%0a' target="_blank">open in editor</a>
-  </div>
+  <figcaption>
+     <a href='https://hackersoon.com/?lang=python&content=%0a%22%22%22%0aThis%20method%20is%20used%20for%20heapify%20the%20array.%20%0aevery%20time%20when%20we%20remove%20a%20element%20from%20array.%0a%22%22%22%0adef%20heapify%28arr%2c%20n%2c%20i%29%3a%0a%20%20%20%20largest%20%3d%20i%0a%20%20%20%20r%20%3d%202%2ai%20%2b%201%0a%20%20%20%20l%20%3d%202%2ai%20%2b%202%0a%0a%20%20%20%20if%20l%20%3c%20n%20and%20arr%5bi%5d%20%3c%20arr%5bl%5d%3a%0a%20%20%20%20%20%20%20%20largest%20%3d%20l%0a%0a%20%20%20%20if%20r%20%3c%20n%20and%20arr%5blargest%5d%20%3c%20arr%5br%5d%3a%0a%20%20%20%20%20%20%20%20largest%20%3d%20r%0a%0a%20%20%20%20if%20largest%20%21%3d%20i%3a%0a%20%20%20%20%20%20%20%20arr%5bi%5d%2c%20arr%5blargest%5d%20%3d%20arr%5blargest%5d%2c%20arr%5bi%5d%0a%20%20%20%20%20%20%20%20heapify%28arr%2c%20n%2c%20largest%29%0a%0a%22%22%22%0aActual%20impelementation%20of%20heap%20short%20algorithm.%0a%22%22%22%0adef%20heapsort%28arr%29%3a%0a%20%20%20%20n%20%3d%20len%28arr%29%0a%20%20%20%20for%20i%20in%20range%28n%2c%20-1%2c%20-1%29%3a%0a%20%20%20%20%20%20%20%20heapify%28arr%2c%20n%20%2c%20i%29%0a%20%20%20%20print%28arr%29%0a%20%20%20%20for%20i%20in%20range%28n-1%2c%200%2c%20-1%29%3a%0a%20%20%20%20%20%20%20%20arr%5b0%5d%2c%20arr%5bi%5d%20%3d%20arr%5bi%5d%2c%20arr%5b0%5d%0a%20%20%20%20%20%20%20%20heapify%28arr%2c%20i%2c%200%29%0a%0a%23%20sample%20input%0a%0aif%20__name__%20%3d%3d%20%22__main__%22%3a%0a%20%20%20%20arr%20%3d%20%5b%2012%2c%2011%2c%2013%2c%205%2c%206%2c%207%5d%0a%20%20%20%20heapsort%28arr%29%0a%20%20%20%20print%28%22sorted%20array%3a%20%22%2c%20arr%29%0a' target="_blank">
+      <span  class="run">Run</span>
+      </a>
+  </figcaption>
   <figcaption class="caption">
-   <span> heapsort</span>
+    <span> heapsort</span>
   </figcaption>
   <div class="codewrapper">
     <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
@@ -1603,11 +1627,7 @@
 </div>
 </div>
   </div>
-  <div class="editor" >
-    <a href='http://localhost:4200/?lang=heapsort&content=%0a%22%22%22%0aThis%20method%20is%20used%20for%20heapify%20the%20array.%20%0aevery%20time%20when%20we%20remove%20a%20element%20from%20array.%0a%22%22%22%0adef%20heapify%28arr%2c%20n%2c%20i%29%3a%0a%20%20%20%20largest%20%3d%20i%0a%20%20%20%20r%20%3d%202%2ai%20%2b%201%0a%20%20%20%20l%20%3d%202%2ai%20%2b%202%0a%0a%20%20%20%20if%20l%20%3c%20n%20and%20arr%5bi%5d%20%3c%20arr%5bl%5d%3a%0a%20%20%20%20%20%20%20%20largest%20%3d%20l%0a%0a%20%20%20%20if%20r%20%3c%20n%20and%20arr%5blargest%5d%20%3c%20arr%5br%5d%3a%0a%20%20%20%20%20%20%20%20largest%20%3d%20r%0a%0a%20%20%20%20if%20largest%20%21%3d%20i%3a%0a%20%20%20%20%20%20%20%20arr%5bi%5d%2c%20arr%5blargest%5d%20%3d%20arr%5blargest%5d%2c%20arr%5bi%5d%0a%20%20%20%20%20%20%20%20heapify%28arr%2c%20n%2c%20largest%29%0a%0a%22%22%22%0aActual%20impelementation%20of%20heap%20short%20algorithm.%0a%22%22%22%0adef%20heapsort%28arr%29%3a%0a%20%20%20%20n%20%3d%20len%28arr%29%0a%20%20%20%20for%20i%20in%20range%28n%2c%20-1%2c%20-1%29%3a%0a%20%20%20%20%20%20%20%20heapify%28arr%2c%20n%20%2c%20i%29%0a%20%20%20%20print%28arr%29%0a%20%20%20%20for%20i%20in%20range%28n-1%2c%200%2c%20-1%29%3a%0a%20%20%20%20%20%20%20%20arr%5b0%5d%2c%20arr%5bi%5d%20%3d%20arr%5bi%5d%2c%20arr%5b0%5d%0a%20%20%20%20%20%20%20%20heapify%28arr%2c%20i%2c%200%29%0a%0a%23%20sample%20input%0a%0aif%20__name__%20%3d%3d%20%22__main__%22%3a%0a%20%20%20%20arr%20%3d%20%5b%2012%2c%2011%2c%2013%2c%205%2c%206%2c%207%5d%0a%20%20%20%20heapsort%28arr%29%0a%20%20%20%20print%28%22sorted%20array%3a%20%22%2c%20arr%29%0a' target="_blank">open in editor</a>
-  </div>
 </figure>
-
 
 
 <footer class=" footline" >
@@ -2506,19 +2526,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1576818752"></script>
-    <script src="/js/perfect-scrollbar.min.js?1576818752"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1576818752"></script>
-    <script src="/js/jquery.sticky.js?1576818752"></script>
-    <script src="/js/featherlight.min.js?1576818752"></script>
-    <script src="/js/highlight.pack.js?1576818752"></script>
+    <script src="/js/clipboard.min.js?1576872222"></script>
+    <script src="/js/perfect-scrollbar.min.js?1576872222"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1576872222"></script>
+    <script src="/js/jquery.sticky.js?1576872222"></script>
+    <script src="/js/featherlight.min.js?1576872222"></script>
+    <script src="/js/highlight.pack.js?1576872222"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1576818752"></script>
-    <script src="/js/learn.js?1576818752"></script>
-    <script src="/js/hugo-learn.js?1576818752"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1576872222"></script>
+    <script src="/js/learn.js?1576872222"></script>
+    <script src="/js/hugo-learn.js?1576872222"></script>
 
-    <link href="/mermaid/mermaid.css?1576818752" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1576818752"></script>
+    <link href="/mermaid/mermaid.css?1576872222" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1576872222"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

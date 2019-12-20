@@ -1,33 +1,54 @@
 <style type="text/css">
-    .caption {
-      text-align: center;
-      background-color: grey;
-      color: white;
-      font-weight: normal;
-      padding: 2px;
-      text-decoration: double;
-    }
-    .editor>a {
-      text-align: center;
-      padding: 5px;
-      color: blue;
-      font-weight: bold;
-      font-size: 20px;
-      margin: 5px;
-    }
+  .caption {
+    text-align: center;
+    background-color: grey;
+    color: white;
+    font-weight: normal;
+    text-decoration: double;
+  }
+
+  .editorq>a {
+    text-align: center;
+    padding: 5px;
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px;
+  }
+
+  .run {
+    text-align: center;
+    background-color: #343a40;
+    border-color: #343a40;
+    color: #fff;
+    font-weight: normal;
+    width: fit-content;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    padding: .25rem 2.5rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    margin-bottom: 2px;
+    font-weight: 400;
+    user-select: none;
+    text-transform: none;
+  }
 </style>
 
+
 <figure class="code">
-  <div class="editor" >
-    <a href='https://hackersoon.com/?lang={{ .Get "title" }}&content={{  .Inner }}' target="_blank">open in editor</a>
-  </div>
+  <figcaption>
+     <a href='https://hackersoon.com/?lang={{ .Get "lang" }}&content={{  .Inner }}' target="_blank">
+      <span  class="run">Run</span>
+      </a>
+  </figcaption>
   <figcaption class="caption">
-   <span> {{ .Get "title" }}</span>
+    <span> {{ .Get "title" }}</span>
   </figcaption>
   <div class="codewrapper">
     {{ highlight (trim .Inner "\n\r") (.Get "lang") "linenos=true" }}
-  </div>
-  <div class="editor" >
-    <a href='https://hackersoon.com/?lang={{ .Get "title" }}&content={{  .Inner }}' target="_blank">open in editor</a>
   </div>
 </figure>

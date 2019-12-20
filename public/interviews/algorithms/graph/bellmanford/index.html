@@ -11,20 +11,20 @@
     <title>BellmanFord :: Hackersoon - Documentation</title>
 
     
-    <link href="/css/nucleus.css?1576818752" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1576818752" rel="stylesheet">
-    <link href="/css/hybrid.css?1576818752" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1576818752" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1576818752" rel="stylesheet">
-    <link href="/css/auto-complete.css?1576818752" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1576818752" rel="stylesheet">
-    <link href="/css/theme.css?1576818752" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1576818752" rel="stylesheet">
+    <link href="/css/nucleus.css?1576872222" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1576872222" rel="stylesheet">
+    <link href="/css/hybrid.css?1576872222" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1576872222" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1576872222" rel="stylesheet">
+    <link href="/css/auto-complete.css?1576872222" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1576872222" rel="stylesheet">
+    <link href="/css/theme.css?1576872222" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1576872222" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1576818752" rel="stylesheet">
+      <link href="/css/theme-blue.css?1576872222" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1576818752"></script>
+    <script src="/js/jquery-3.3.1.min.js?1576872222"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1576818752"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1576818752"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1576872222"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1576872222"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.hackersoon.com";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1576818752"></script>
+<script type="text/javascript" src="/js/search.js?1576872222"></script>
 
     
   </div>
@@ -1496,30 +1496,54 @@
 
 
 <style type="text/css">
-    .caption {
-      text-align: center;
-      background-color: grey;
-      color: white;
-      font-weight: normal;
-      padding: 2px;
-      text-decoration: double;
-    }
-    .editor>a {
-      text-align: center;
-      padding: 5px;
-      color: blue;
-      font-weight: bold;
-      font-size: 20px;
-      margin: 5px;
-    }
+  .caption {
+    text-align: center;
+    background-color: grey;
+    color: white;
+    font-weight: normal;
+    text-decoration: double;
+  }
+
+  .editorq>a {
+    text-align: center;
+    padding: 5px;
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px;
+  }
+
+  .run {
+    text-align: center;
+    background-color: #343a40;
+    border-color: #343a40;
+    color: #fff;
+    font-weight: normal;
+    width: fit-content;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    padding: .25rem 2.5rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    margin-bottom: 2px;
+    font-weight: 400;
+    user-select: none;
+    text-transform: none;
+  }
 </style>
 
+
 <figure class="code">
-  <div class="editor" >
-    <a href='http://localhost:4200/?lang=Bellman%20Ford&content=%0aimport%20sys%0a%0a%0aclass%20Vertex%3a%0a%0a%20%20%20%20def%20__init__%28self%2c%20name%29%3a%0a%20%20%20%20%20%20%20%20self.name%20%3d%20name%0a%20%20%20%20%20%20%20%20self.adjacenciesList%20%3d%20%5b%5d%0a%20%20%20%20%20%20%20%20self.visited%20%3d%20False%0a%20%20%20%20%20%20%20%20self.predecessor%20%3d%20None%0a%20%20%20%20%20%20%20%20self.minDistance%20%3d%20sys.maxsize%0a%0a%0aclass%20Edge%3a%0a%0a%20%20%20%20def%20__init__%28self%2c%20weight%2c%20startVertex%2c%20targetVertex%29%3a%0a%20%20%20%20%20%20%20%20self.weight%20%3d%20weight%0a%20%20%20%20%20%20%20%20self.startVertex%20%3d%20startVertex%0a%20%20%20%20%20%20%20%20self.targetVertex%20%3d%20targetVertex%0a%0a%0aclass%20BellmanFord%3a%0a%20%20%20%20HAS_CYCLE%20%3d%20False%0a%0a%20%20%20%20def%20calcShortestPath%28self%2c%20vertexList%2c%20edgeList%2c%20startVertex%29%3a%0a%0a%20%20%20%20%20%20%20%20startVertex.minDistance%20%3d%200%0a%0a%20%20%20%20%20%20%20%20for%20_%20in%20range%280%2clen%28vertexList%29-1%29%3a%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20for%20edge%20in%20edgeList%3a%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20u%20%3d%20edge.startVertex%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20v%20%3d%20edge.targetVertex%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20newDistance%20%3d%20u.minDistance%20%2b%20edge.weight%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if%20newDistance%20%3c%20v.minDistance%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20v.minDistance%20%3d%20newDistance%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20v.predecessor%20%3d%20u%0a%0a%20%20%20%20%20%20%20%20for%20edge%20in%20edgeList%3a%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20if%20self.hasCycle%28edge%29%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Grape%20has%20nagetive%20cycle.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20BellmanFord.HAS_CYCLE%20%3d%20True%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20return%0a%0a%20%20%20%20def%20hasCycle%28self%2c%20edge%29%3a%0a%0a%20%20%20%20%20%20%20%20if%20%28edge.startVertex.minDistance%20%2b%20edge.weight%29%20%3c%20edge.targetVertex.minDistance%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20True%0a%20%20%20%20%20%20%20%20else%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20False%0a%0a%20%20%20%20def%20getShortestPathTo%28self%2c%20targetVertex%29%3a%0a%0a%20%20%20%20%20%20%20%20if%20not%20BellmanFord.HAS_CYCLE%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22shorest%20distance%3a%20%7b%7d%22.format%28targetVertex.minDistance%29%29%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20node%20%3d%20targetVertex%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20while%20node%20is%20not%20None%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20print%28node.name%29%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20node%20%3d%20node.predecessor%0a%0a%20%20%20%20%20%20%20%20else%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22negative%20cycle%20in%20graph%22%29%0a%0a%0anode1%20%3d%20Vertex%28%22A%22%29%3b%0anode2%20%3d%20Vertex%28%22B%22%29%3b%0anode3%20%3d%20Vertex%28%22C%22%29%3b%0anode4%20%3d%20Vertex%28%22D%22%29%3b%0anode5%20%3d%20Vertex%28%22E%22%29%3b%0anode6%20%3d%20Vertex%28%22F%22%29%3b%0anode7%20%3d%20Vertex%28%22G%22%29%3b%0anode8%20%3d%20Vertex%28%22H%22%29%3b%0a%0aedge1%20%3d%20Edge%285%2c%20node1%2c%20node2%29%3b%0aedge2%20%3d%20Edge%288%2c%20node1%2c%20node8%29%3b%0aedge3%20%3d%20Edge%289%2c%20node1%2c%20node5%29%3b%0aedge4%20%3d%20Edge%2815%2c%20node2%2c%20node4%29%3b%0aedge5%20%3d%20Edge%2812%2c%20node2%2c%20node3%29%3b%0aedge6%20%3d%20Edge%284%2c%20node2%2c%20node8%29%3b%0aedge7%20%3d%20Edge%287%2c%20node8%2c%20node3%29%3b%0aedge8%20%3d%20Edge%286%2c%20node8%2c%20node6%29%3b%0aedge9%20%3d%20Edge%285%2c%20node5%2c%20node8%29%3b%0aedge10%20%3d%20Edge%284%2c%20node5%2c%20node6%29%3b%0aedge11%20%3d%20Edge%2820%2c%20node5%2c%20node7%29%3b%0aedge12%20%3d%20Edge%281%2c%20node6%2c%20node3%29%3b%0aedge13%20%3d%20Edge%2813%2c%20node6%2c%20node7%29%3b%0aedge14%20%3d%20Edge%283%2c%20node3%2c%20node4%29%3b%0aedge15%20%3d%20Edge%2811%2c%20node3%2c%20node7%29%3b%0aedge16%20%3d%20Edge%289%2c%20node4%2c%20node7%29%3b%0a%0aedge17%20%3d%20Edge%281%2c%20node1%2c%20node2%29%3b%0aedge18%20%3d%20Edge%281%2c%20node2%2c%20node3%29%3b%0aedge19%20%3d%20Edge%28-3%2c%20node3%2c%20node1%29%3b%0a%0anode1.adjacenciesList.append%28edge1%29%3b%0anode1.adjacenciesList.append%28edge2%29%3b%0anode1.adjacenciesList.append%28edge3%29%3b%0anode2.adjacenciesList.append%28edge4%29%3b%0anode2.adjacenciesList.append%28edge5%29%3b%0anode2.adjacenciesList.append%28edge6%29%3b%0anode8.adjacenciesList.append%28edge7%29%3b%0anode8.adjacenciesList.append%28edge8%29%3b%0anode5.adjacenciesList.append%28edge9%29%3b%0anode5.adjacenciesList.append%28edge10%29%3b%0anode5.adjacenciesList.append%28edge11%29%3b%0anode6.adjacenciesList.append%28edge12%29%3b%0anode6.adjacenciesList.append%28edge13%29%3b%0anode3.adjacenciesList.append%28edge14%29%3b%0anode3.adjacenciesList.append%28edge15%29%3b%0anode4.adjacenciesList.append%28edge16%29%3b%0a%0avertexList%20%3d%20%28node1%2c%20node2%2c%20node3%2c%20node4%2c%20node5%2c%20node6%2c%20node7%2c%20node8%29%3b%0aedgeList%20%3d%20%28edge1%2cedge2%2cedge3%2cedge4%2cedge5%2cedge6%2cedge7%2cedge8%2cedge9%2cedge10%2cedge11%2cedge12%2cedge13%2cedge14%2cedge15%2cedge16%29%3b%0a%23edgeList%20%3d%20%28edge17%2c%20edge18%2c%20edge19%29%3b%0a%0aalgorithm%20%3d%20BellmanFord%28%29%3b%0aalgorithm.calcShortestPath%28vertexList%2c%20edgeList%2c%20node1%29%3b%0aalgorithm.getShortestPathTo%28node7%29%3b%0a%0a%0a' target="_blank">open in editor</a>
-  </div>
+  <figcaption>
+     <a href='https://hackersoon.com/?lang=python&content=%0aimport%20sys%0a%0a%0aclass%20Vertex%3a%0a%0a%20%20%20%20def%20__init__%28self%2c%20name%29%3a%0a%20%20%20%20%20%20%20%20self.name%20%3d%20name%0a%20%20%20%20%20%20%20%20self.adjacenciesList%20%3d%20%5b%5d%0a%20%20%20%20%20%20%20%20self.visited%20%3d%20False%0a%20%20%20%20%20%20%20%20self.predecessor%20%3d%20None%0a%20%20%20%20%20%20%20%20self.minDistance%20%3d%20sys.maxsize%0a%0a%0aclass%20Edge%3a%0a%0a%20%20%20%20def%20__init__%28self%2c%20weight%2c%20startVertex%2c%20targetVertex%29%3a%0a%20%20%20%20%20%20%20%20self.weight%20%3d%20weight%0a%20%20%20%20%20%20%20%20self.startVertex%20%3d%20startVertex%0a%20%20%20%20%20%20%20%20self.targetVertex%20%3d%20targetVertex%0a%0a%0aclass%20BellmanFord%3a%0a%20%20%20%20HAS_CYCLE%20%3d%20False%0a%0a%20%20%20%20def%20calcShortestPath%28self%2c%20vertexList%2c%20edgeList%2c%20startVertex%29%3a%0a%0a%20%20%20%20%20%20%20%20startVertex.minDistance%20%3d%200%0a%0a%20%20%20%20%20%20%20%20for%20_%20in%20range%280%2clen%28vertexList%29-1%29%3a%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20for%20edge%20in%20edgeList%3a%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20u%20%3d%20edge.startVertex%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20v%20%3d%20edge.targetVertex%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20newDistance%20%3d%20u.minDistance%20%2b%20edge.weight%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if%20newDistance%20%3c%20v.minDistance%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20v.minDistance%20%3d%20newDistance%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20v.predecessor%20%3d%20u%0a%0a%20%20%20%20%20%20%20%20for%20edge%20in%20edgeList%3a%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20if%20self.hasCycle%28edge%29%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Grape%20has%20nagetive%20cycle.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20BellmanFord.HAS_CYCLE%20%3d%20True%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20return%0a%0a%20%20%20%20def%20hasCycle%28self%2c%20edge%29%3a%0a%0a%20%20%20%20%20%20%20%20if%20%28edge.startVertex.minDistance%20%2b%20edge.weight%29%20%3c%20edge.targetVertex.minDistance%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20True%0a%20%20%20%20%20%20%20%20else%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20False%0a%0a%20%20%20%20def%20getShortestPathTo%28self%2c%20targetVertex%29%3a%0a%0a%20%20%20%20%20%20%20%20if%20not%20BellmanFord.HAS_CYCLE%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22shorest%20distance%3a%20%7b%7d%22.format%28targetVertex.minDistance%29%29%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20node%20%3d%20targetVertex%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20while%20node%20is%20not%20None%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20print%28node.name%29%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20node%20%3d%20node.predecessor%0a%0a%20%20%20%20%20%20%20%20else%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22negative%20cycle%20in%20graph%22%29%0a%0a%0anode1%20%3d%20Vertex%28%22A%22%29%3b%0anode2%20%3d%20Vertex%28%22B%22%29%3b%0anode3%20%3d%20Vertex%28%22C%22%29%3b%0anode4%20%3d%20Vertex%28%22D%22%29%3b%0anode5%20%3d%20Vertex%28%22E%22%29%3b%0anode6%20%3d%20Vertex%28%22F%22%29%3b%0anode7%20%3d%20Vertex%28%22G%22%29%3b%0anode8%20%3d%20Vertex%28%22H%22%29%3b%0a%0aedge1%20%3d%20Edge%285%2c%20node1%2c%20node2%29%3b%0aedge2%20%3d%20Edge%288%2c%20node1%2c%20node8%29%3b%0aedge3%20%3d%20Edge%289%2c%20node1%2c%20node5%29%3b%0aedge4%20%3d%20Edge%2815%2c%20node2%2c%20node4%29%3b%0aedge5%20%3d%20Edge%2812%2c%20node2%2c%20node3%29%3b%0aedge6%20%3d%20Edge%284%2c%20node2%2c%20node8%29%3b%0aedge7%20%3d%20Edge%287%2c%20node8%2c%20node3%29%3b%0aedge8%20%3d%20Edge%286%2c%20node8%2c%20node6%29%3b%0aedge9%20%3d%20Edge%285%2c%20node5%2c%20node8%29%3b%0aedge10%20%3d%20Edge%284%2c%20node5%2c%20node6%29%3b%0aedge11%20%3d%20Edge%2820%2c%20node5%2c%20node7%29%3b%0aedge12%20%3d%20Edge%281%2c%20node6%2c%20node3%29%3b%0aedge13%20%3d%20Edge%2813%2c%20node6%2c%20node7%29%3b%0aedge14%20%3d%20Edge%283%2c%20node3%2c%20node4%29%3b%0aedge15%20%3d%20Edge%2811%2c%20node3%2c%20node7%29%3b%0aedge16%20%3d%20Edge%289%2c%20node4%2c%20node7%29%3b%0a%0aedge17%20%3d%20Edge%281%2c%20node1%2c%20node2%29%3b%0aedge18%20%3d%20Edge%281%2c%20node2%2c%20node3%29%3b%0aedge19%20%3d%20Edge%28-3%2c%20node3%2c%20node1%29%3b%0a%0anode1.adjacenciesList.append%28edge1%29%3b%0anode1.adjacenciesList.append%28edge2%29%3b%0anode1.adjacenciesList.append%28edge3%29%3b%0anode2.adjacenciesList.append%28edge4%29%3b%0anode2.adjacenciesList.append%28edge5%29%3b%0anode2.adjacenciesList.append%28edge6%29%3b%0anode8.adjacenciesList.append%28edge7%29%3b%0anode8.adjacenciesList.append%28edge8%29%3b%0anode5.adjacenciesList.append%28edge9%29%3b%0anode5.adjacenciesList.append%28edge10%29%3b%0anode5.adjacenciesList.append%28edge11%29%3b%0anode6.adjacenciesList.append%28edge12%29%3b%0anode6.adjacenciesList.append%28edge13%29%3b%0anode3.adjacenciesList.append%28edge14%29%3b%0anode3.adjacenciesList.append%28edge15%29%3b%0anode4.adjacenciesList.append%28edge16%29%3b%0a%0avertexList%20%3d%20%28node1%2c%20node2%2c%20node3%2c%20node4%2c%20node5%2c%20node6%2c%20node7%2c%20node8%29%3b%0aedgeList%20%3d%20%28edge1%2cedge2%2cedge3%2cedge4%2cedge5%2cedge6%2cedge7%2cedge8%2cedge9%2cedge10%2cedge11%2cedge12%2cedge13%2cedge14%2cedge15%2cedge16%29%3b%0a%23edgeList%20%3d%20%28edge17%2c%20edge18%2c%20edge19%29%3b%0a%0aalgorithm%20%3d%20BellmanFord%28%29%3b%0aalgorithm.calcShortestPath%28vertexList%2c%20edgeList%2c%20node1%29%3b%0aalgorithm.getShortestPathTo%28node7%29%3b%0a%0a%0a' target="_blank">
+      <span  class="run">Run</span>
+      </a>
+  </figcaption>
   <figcaption class="caption">
-   <span> Bellman Ford</span>
+    <span> Bellman Ford</span>
   </figcaption>
   <div class="codewrapper">
     <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
@@ -1777,11 +1801,7 @@ algorithm<span style="color:#f92672">.</span>getShortestPathTo(node7);</code></p
 </div>
 </div>
   </div>
-  <div class="editor" >
-    <a href='http://localhost:4200/?lang=Bellman%20Ford&content=%0aimport%20sys%0a%0a%0aclass%20Vertex%3a%0a%0a%20%20%20%20def%20__init__%28self%2c%20name%29%3a%0a%20%20%20%20%20%20%20%20self.name%20%3d%20name%0a%20%20%20%20%20%20%20%20self.adjacenciesList%20%3d%20%5b%5d%0a%20%20%20%20%20%20%20%20self.visited%20%3d%20False%0a%20%20%20%20%20%20%20%20self.predecessor%20%3d%20None%0a%20%20%20%20%20%20%20%20self.minDistance%20%3d%20sys.maxsize%0a%0a%0aclass%20Edge%3a%0a%0a%20%20%20%20def%20__init__%28self%2c%20weight%2c%20startVertex%2c%20targetVertex%29%3a%0a%20%20%20%20%20%20%20%20self.weight%20%3d%20weight%0a%20%20%20%20%20%20%20%20self.startVertex%20%3d%20startVertex%0a%20%20%20%20%20%20%20%20self.targetVertex%20%3d%20targetVertex%0a%0a%0aclass%20BellmanFord%3a%0a%20%20%20%20HAS_CYCLE%20%3d%20False%0a%0a%20%20%20%20def%20calcShortestPath%28self%2c%20vertexList%2c%20edgeList%2c%20startVertex%29%3a%0a%0a%20%20%20%20%20%20%20%20startVertex.minDistance%20%3d%200%0a%0a%20%20%20%20%20%20%20%20for%20_%20in%20range%280%2clen%28vertexList%29-1%29%3a%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20for%20edge%20in%20edgeList%3a%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20u%20%3d%20edge.startVertex%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20v%20%3d%20edge.targetVertex%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20newDistance%20%3d%20u.minDistance%20%2b%20edge.weight%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if%20newDistance%20%3c%20v.minDistance%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20v.minDistance%20%3d%20newDistance%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20v.predecessor%20%3d%20u%0a%0a%20%20%20%20%20%20%20%20for%20edge%20in%20edgeList%3a%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20if%20self.hasCycle%28edge%29%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Grape%20has%20nagetive%20cycle.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20BellmanFord.HAS_CYCLE%20%3d%20True%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20return%0a%0a%20%20%20%20def%20hasCycle%28self%2c%20edge%29%3a%0a%0a%20%20%20%20%20%20%20%20if%20%28edge.startVertex.minDistance%20%2b%20edge.weight%29%20%3c%20edge.targetVertex.minDistance%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20True%0a%20%20%20%20%20%20%20%20else%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20False%0a%0a%20%20%20%20def%20getShortestPathTo%28self%2c%20targetVertex%29%3a%0a%0a%20%20%20%20%20%20%20%20if%20not%20BellmanFord.HAS_CYCLE%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22shorest%20distance%3a%20%7b%7d%22.format%28targetVertex.minDistance%29%29%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20node%20%3d%20targetVertex%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20while%20node%20is%20not%20None%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20print%28node.name%29%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20node%20%3d%20node.predecessor%0a%0a%20%20%20%20%20%20%20%20else%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22negative%20cycle%20in%20graph%22%29%0a%0a%0anode1%20%3d%20Vertex%28%22A%22%29%3b%0anode2%20%3d%20Vertex%28%22B%22%29%3b%0anode3%20%3d%20Vertex%28%22C%22%29%3b%0anode4%20%3d%20Vertex%28%22D%22%29%3b%0anode5%20%3d%20Vertex%28%22E%22%29%3b%0anode6%20%3d%20Vertex%28%22F%22%29%3b%0anode7%20%3d%20Vertex%28%22G%22%29%3b%0anode8%20%3d%20Vertex%28%22H%22%29%3b%0a%0aedge1%20%3d%20Edge%285%2c%20node1%2c%20node2%29%3b%0aedge2%20%3d%20Edge%288%2c%20node1%2c%20node8%29%3b%0aedge3%20%3d%20Edge%289%2c%20node1%2c%20node5%29%3b%0aedge4%20%3d%20Edge%2815%2c%20node2%2c%20node4%29%3b%0aedge5%20%3d%20Edge%2812%2c%20node2%2c%20node3%29%3b%0aedge6%20%3d%20Edge%284%2c%20node2%2c%20node8%29%3b%0aedge7%20%3d%20Edge%287%2c%20node8%2c%20node3%29%3b%0aedge8%20%3d%20Edge%286%2c%20node8%2c%20node6%29%3b%0aedge9%20%3d%20Edge%285%2c%20node5%2c%20node8%29%3b%0aedge10%20%3d%20Edge%284%2c%20node5%2c%20node6%29%3b%0aedge11%20%3d%20Edge%2820%2c%20node5%2c%20node7%29%3b%0aedge12%20%3d%20Edge%281%2c%20node6%2c%20node3%29%3b%0aedge13%20%3d%20Edge%2813%2c%20node6%2c%20node7%29%3b%0aedge14%20%3d%20Edge%283%2c%20node3%2c%20node4%29%3b%0aedge15%20%3d%20Edge%2811%2c%20node3%2c%20node7%29%3b%0aedge16%20%3d%20Edge%289%2c%20node4%2c%20node7%29%3b%0a%0aedge17%20%3d%20Edge%281%2c%20node1%2c%20node2%29%3b%0aedge18%20%3d%20Edge%281%2c%20node2%2c%20node3%29%3b%0aedge19%20%3d%20Edge%28-3%2c%20node3%2c%20node1%29%3b%0a%0anode1.adjacenciesList.append%28edge1%29%3b%0anode1.adjacenciesList.append%28edge2%29%3b%0anode1.adjacenciesList.append%28edge3%29%3b%0anode2.adjacenciesList.append%28edge4%29%3b%0anode2.adjacenciesList.append%28edge5%29%3b%0anode2.adjacenciesList.append%28edge6%29%3b%0anode8.adjacenciesList.append%28edge7%29%3b%0anode8.adjacenciesList.append%28edge8%29%3b%0anode5.adjacenciesList.append%28edge9%29%3b%0anode5.adjacenciesList.append%28edge10%29%3b%0anode5.adjacenciesList.append%28edge11%29%3b%0anode6.adjacenciesList.append%28edge12%29%3b%0anode6.adjacenciesList.append%28edge13%29%3b%0anode3.adjacenciesList.append%28edge14%29%3b%0anode3.adjacenciesList.append%28edge15%29%3b%0anode4.adjacenciesList.append%28edge16%29%3b%0a%0avertexList%20%3d%20%28node1%2c%20node2%2c%20node3%2c%20node4%2c%20node5%2c%20node6%2c%20node7%2c%20node8%29%3b%0aedgeList%20%3d%20%28edge1%2cedge2%2cedge3%2cedge4%2cedge5%2cedge6%2cedge7%2cedge8%2cedge9%2cedge10%2cedge11%2cedge12%2cedge13%2cedge14%2cedge15%2cedge16%29%3b%0a%23edgeList%20%3d%20%28edge17%2c%20edge18%2c%20edge19%29%3b%0a%0aalgorithm%20%3d%20BellmanFord%28%29%3b%0aalgorithm.calcShortestPath%28vertexList%2c%20edgeList%2c%20node1%29%3b%0aalgorithm.getShortestPathTo%28node7%29%3b%0a%0a%0a' target="_blank">open in editor</a>
-  </div>
 </figure>
-
 
 
 <footer class=" footline" >
@@ -2677,19 +2697,19 @@ algorithm<span style="color:#f92672">.</span>getShortestPathTo(node7);</code></p
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1576818752"></script>
-    <script src="/js/perfect-scrollbar.min.js?1576818752"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1576818752"></script>
-    <script src="/js/jquery.sticky.js?1576818752"></script>
-    <script src="/js/featherlight.min.js?1576818752"></script>
-    <script src="/js/highlight.pack.js?1576818752"></script>
+    <script src="/js/clipboard.min.js?1576872222"></script>
+    <script src="/js/perfect-scrollbar.min.js?1576872222"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1576872222"></script>
+    <script src="/js/jquery.sticky.js?1576872222"></script>
+    <script src="/js/featherlight.min.js?1576872222"></script>
+    <script src="/js/highlight.pack.js?1576872222"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1576818752"></script>
-    <script src="/js/learn.js?1576818752"></script>
-    <script src="/js/hugo-learn.js?1576818752"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1576872222"></script>
+    <script src="/js/learn.js?1576872222"></script>
+    <script src="/js/hugo-learn.js?1576872222"></script>
 
-    <link href="/mermaid/mermaid.css?1576818752" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1576818752"></script>
+    <link href="/mermaid/mermaid.css?1576872222" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1576872222"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

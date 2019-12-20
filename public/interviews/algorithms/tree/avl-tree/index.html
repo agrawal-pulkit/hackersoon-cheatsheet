@@ -11,20 +11,20 @@
     <title>AVL :: Hackersoon - Documentation</title>
 
     
-    <link href="/css/nucleus.css?1576818752" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1576818752" rel="stylesheet">
-    <link href="/css/hybrid.css?1576818752" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1576818752" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1576818752" rel="stylesheet">
-    <link href="/css/auto-complete.css?1576818752" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1576818752" rel="stylesheet">
-    <link href="/css/theme.css?1576818752" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1576818752" rel="stylesheet">
+    <link href="/css/nucleus.css?1576872222" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1576872222" rel="stylesheet">
+    <link href="/css/hybrid.css?1576872222" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1576872222" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1576872222" rel="stylesheet">
+    <link href="/css/auto-complete.css?1576872222" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1576872222" rel="stylesheet">
+    <link href="/css/theme.css?1576872222" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1576872222" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1576818752" rel="stylesheet">
+      <link href="/css/theme-blue.css?1576872222" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1576818752"></script>
+    <script src="/js/jquery-3.3.1.min.js?1576872222"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1576818752"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1576818752"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1576872222"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1576872222"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.hackersoon.com";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1576818752"></script>
+<script type="text/javascript" src="/js/search.js?1576872222"></script>
 
     
   </div>
@@ -1496,30 +1496,54 @@
 
 
 <style type="text/css">
-    .caption {
-      text-align: center;
-      background-color: grey;
-      color: white;
-      font-weight: normal;
-      padding: 2px;
-      text-decoration: double;
-    }
-    .editor>a {
-      text-align: center;
-      padding: 5px;
-      color: blue;
-      font-weight: bold;
-      font-size: 20px;
-      margin: 5px;
-    }
+  .caption {
+    text-align: center;
+    background-color: grey;
+    color: white;
+    font-weight: normal;
+    text-decoration: double;
+  }
+
+  .editorq>a {
+    text-align: center;
+    padding: 5px;
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px;
+  }
+
+  .run {
+    text-align: center;
+    background-color: #343a40;
+    border-color: #343a40;
+    color: #fff;
+    font-weight: normal;
+    width: fit-content;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    padding: .25rem 2.5rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    margin-bottom: 2px;
+    font-weight: 400;
+    user-select: none;
+    text-transform: none;
+  }
 </style>
 
+
 <figure class="code">
-  <div class="editor" >
-    <a href='http://localhost:4200/?lang=AVL%20Tree&content=%0aclass%20Node%3a%0a%0a%20%20%20%20def%20__init__%28self%2c%20data%29%3a%0a%20%20%20%20%20%20%20%20self.data%20%3d%20data%0a%20%20%20%20%20%20%20%20self.height%20%3d%200%0a%20%20%20%20%20%20%20%20self.leftChild%20%3d%20None%0a%20%20%20%20%20%20%20%20self.rightChild%20%3d%20None%0a%0a%0aclass%20AVL%3a%0a%0a%20%20%20%20def%20__init__%28self%29%3a%0a%20%20%20%20%20%20%20%20self.root%20%3d%20None%0a%0a%20%20%20%20def%20calcHeight%28self%2c%20node%29%3a%0a%20%20%20%20%20%20%20%20if%20not%20node%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20-1%0a%20%20%20%20%20%20%20%20return%20node.height%0a%0a%20%20%20%20def%20calcBalance%28self%2c%20node%29%3a%0a%20%20%20%20%20%20%20%20if%20not%20node%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%200%0a%20%20%20%20%20%20%20%20return%20self.calcHeight%28node.leftChild%29%20-self.calcHeight%28node.rightChild%29%0a%0a%20%20%20%20def%20insert%28self%2c%20data%29%3a%0a%20%20%20%20%20%20%20%20self.root%20%3d%20self.insertNode%28data%2c%20self.root%29%0a%0a%20%20%20%20def%20insertNode%28self%2c%20data%2c%20node%29%3a%0a%20%20%20%20%20%20%20%20if%20not%20node%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20Node%28data%29%0a%0a%20%20%20%20%20%20%20%20if%20data%3cnode.data%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20node.leftChild%20%3d%20self.insertNode%28data%2c%20node.leftChild%29%0a%20%20%20%20%20%20%20%20else%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20node.rightChild%20%3d%20self.insertNode%28data%2c%20node.rightChild%29%0a%0a%20%20%20%20%20%20%20%20node.height%20%3d%20max%28self.calcHeight%28node.leftChild%29%2c%20self.calcHeight%28node.rightChild%29%29%20%2b%201%0a%0a%20%20%20%20%20%20%20%20return%20self.settleViolations%28data%2c%20node%29%0a%0a%20%20%20%20def%20settleViolations%28self%2c%20data%2c%20node%29%3a%0a%0a%20%20%20%20%20%20%20%20balance%20%3d%20self.calcBalance%28node%29%0a%20%20%20%20%20%20%20%20print%28%22balance%3a%20%22%2c%20balance%29%0a%20%20%20%20%20%20%20%20if%20balance%20%3e%201%20and%20data%20%3c%20node.leftChild.data%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Left%20Left%20heavy%20situation.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self.rotateRight%28node%29%0a%0a%20%20%20%20%20%20%20%20if%20balance%20%3c%20-1%20and%20data%20%3e%20node.rightChild.data%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Right%20Right%20heavy%20situation.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self.rotateLeft%28node%29%0a%0a%20%20%20%20%20%20%20%20if%20balance%20%3e%201%20and%20data%20%3e%20node.leftChild.data%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Left%20Right%20Heavy%20situation.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20node.leftChild%20%3d%20self.rotateLeft%28node.leftChild%29%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self.rotateRight%28node%29%0a%0a%20%20%20%20%20%20%20%20if%20balance%20%3c%20-1%20and%20data%20%3c%20node.rightChild.data%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Right%20Left%20Heavy%20situation.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20node.rightChild%20%3d%20self.rotateRight%28node.rightChild%29%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self.rotateLeft%28node%29%0a%0a%20%20%20%20%20%20%20%20return%20node%0a%0a%20%20%20%20def%20removeNode%28self%2c%20data%2c%20node%29%3a%0a%20%20%20%20%20%20%20%20if%20not%20node%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20node%0a%0a%20%20%20%20%20%20%20%20if%20data%20%3c%20node.data%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20node.leftNode%20%3d%20self.removeNode%28data%2c%20node.leftNode%29%0a%20%20%20%20%20%20%20%20elif%20data%20%3e%20node.data%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20node.rightNode%20%3d%20self.removeNode%28data%2c%20node.rightNode%29%0a%20%20%20%20%20%20%20%20else%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20if%20not%20node.leftNode%20and%20not%20node.rightNode%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20print%28%22removing%20a%20leaf%20node.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20del%20node%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20return%20None%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20elif%20not%20node.leftNode%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20print%28%22removing%20a%20node%20with%20single%20right%20child.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20tempNode%20%3d%20node.rightNode%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20del%20node%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20return%20tempNode%0a%20%20%20%20%20%20%20%20%20%20%20%20elif%20not%20node.rightNode%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20print%28%22removing%20a%20node%20with%20single%20left%20child.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20tempNode%20%3d%20node.leftNode%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20del%20node%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20return%20tempNode%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22removing%20a%20node%20with%20two%20children.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20predeccorNode%20%3d%20self.getPredeccorNode%28node.leftNode%29%0a%20%20%20%20%20%20%20%20%20%20%20%20node.data%20%3d%20predeccorNode.data%0a%20%20%20%20%20%20%20%20%20%20%20%20node.leftNode%20%3d%20self.removeNode%28predeccorNode.data%2c%20node.leftNode%29%0a%0a%20%20%20%20%20%20%20%20if%20not%20node%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20node%0a%0a%20%20%20%20%20%20%20%20node.height%20%3d%20max%28self.calcHeight%28node.leftChild%29%2c%20self.calcHeight%28node.rightChild%29%29%20%2b%201%0a%0a%20%20%20%20%20%20%20%20balance%20%3d%20self.calcBalance%28node%29%0a%0a%20%20%20%20%20%20%20%20if%20balance%20%3e%201%20and%20self.calcBalance%28node.leftChild%29%3e%3d0%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Left%20Left%20heavy%20situation.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self.rotateRight%28node%29%0a%0a%20%20%20%20%20%20%20%20if%20balance%20%3c%20-1%20and%20self.calcBalance%28node.rightChild%29%3c%3d0%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Right%20Right%20heavy%20situation.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self.rotateLeft%28node%29%0a%0a%20%20%20%20%20%20%20%20if%20balance%20%3e%201%20and%20self.calcBalance%28node.leftChild%29%3c0%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Left%20Right%20Heavy%20situation.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20node.leftChild%20%3d%20self.rotateLeft%28node.leftChild%29%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self.rotateRight%28node%29%0a%0a%20%20%20%20%20%20%20%20if%20balance%20%3c%20-1%20and%20self.calcBalance%28node.rightChild%29%3e0%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Right%20Left%20Heavy%20situation.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20node.rightChild%20%3d%20self.rotateRight%28node.rightChild%29%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self.rotateLeft%28node%29%0a%0a%20%20%20%20%20%20%20%20return%20node%0a%0a%0a%20%20%20%20def%20getPredeccorNode%28self%2c%20node%29%3a%0a%20%20%20%20%20%20%20%20if%20node.rightNode%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self.getPredeccorNode%28node.rightNode%29%0a%0a%20%20%20%20%20%20%20%20return%20node%0a%0a%20%20%20%20def%20rotateRight%28self%2c%20node%29%3a%0a%0a%20%20%20%20%20%20%20%20tempLeftNode%20%3d%20node.leftChild%0a%20%20%20%20%20%20%20%20t%20%3d%20tempLeftNode.rightChild%0a%0a%20%20%20%20%20%20%20%20tempLeftNode.rightChild%20%3d%20node%0a%20%20%20%20%20%20%20%20node.leftChild%20%3d%20t%0a%0a%20%20%20%20%20%20%20%20node.height%20%3d%20max%28self.calcHeight%28node.leftChild%29%2c%20self.calcHeight%28node.rightChild%29%29%20%2b%201%0a%20%20%20%20%20%20%20%20tempLeftNode.height%20%3d%20max%28self.calcHeight%28tempLeftNode.leftChild%29%2c%20self.calcHeight%28tempLeftNode.rightChild%29%29%20%2b%201%0a%0a%20%20%20%20%20%20%20%20return%20tempLeftNode%0a%0a%20%20%20%20def%20rotateLeft%28self%2c%20node%29%3a%0a%0a%20%20%20%20%20%20%20%20tempRightNode%20%3d%20node.rightChild%0a%20%20%20%20%20%20%20%20t%20%3d%20tempRightNode.leftChild%0a%0a%20%20%20%20%20%20%20%20tempRightNode.leftChild%20%3d%20node%0a%20%20%20%20%20%20%20%20node.rightChild%20%3d%20t%0a%0a%20%20%20%20%20%20%20%20node.height%20%3d%20max%28self.calcHeight%28node.leftChild%29%2c%20self.calcHeight%28node.rightChild%29%29%20%2b%201%0a%20%20%20%20%20%20%20%20tempRightNode.height%20%3d%20max%28self.calcHeight%28tempRightNode.leftChild%29%2c%20self.calcHeight%28tempRightNode.rightChild%29%29%20%2b%201%0a%0a%20%20%20%20%20%20%20%20return%20tempRightNode%0a%0a%20%20%20%20def%20traverse%28self%29%3a%0a%20%20%20%20%20%20%20%20if%20self.root%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20self.traverseInOrder%28self.root%29%0a%0a%20%20%20%20def%20traverseInOrder%28self%2c%20node%29%3a%0a%20%20%20%20%20%20%20%20if%20node.leftChild%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20self.traverseInOrder%28node.leftChild%29%0a%0a%20%20%20%20%20%20%20%20print%28node.data%29%0a%0a%20%20%20%20%20%20%20%20if%20node.rightChild%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20self.traverseInOrder%28node.rightChild%29%0a%0a' target="_blank">open in editor</a>
-  </div>
+  <figcaption>
+     <a href='https://hackersoon.com/?lang=python&content=%0aclass%20Node%3a%0a%0a%20%20%20%20def%20__init__%28self%2c%20data%29%3a%0a%20%20%20%20%20%20%20%20self.data%20%3d%20data%0a%20%20%20%20%20%20%20%20self.height%20%3d%200%0a%20%20%20%20%20%20%20%20self.leftChild%20%3d%20None%0a%20%20%20%20%20%20%20%20self.rightChild%20%3d%20None%0a%0a%0aclass%20AVL%3a%0a%0a%20%20%20%20def%20__init__%28self%29%3a%0a%20%20%20%20%20%20%20%20self.root%20%3d%20None%0a%0a%20%20%20%20def%20calcHeight%28self%2c%20node%29%3a%0a%20%20%20%20%20%20%20%20if%20not%20node%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20-1%0a%20%20%20%20%20%20%20%20return%20node.height%0a%0a%20%20%20%20def%20calcBalance%28self%2c%20node%29%3a%0a%20%20%20%20%20%20%20%20if%20not%20node%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%200%0a%20%20%20%20%20%20%20%20return%20self.calcHeight%28node.leftChild%29%20-self.calcHeight%28node.rightChild%29%0a%0a%20%20%20%20def%20insert%28self%2c%20data%29%3a%0a%20%20%20%20%20%20%20%20self.root%20%3d%20self.insertNode%28data%2c%20self.root%29%0a%0a%20%20%20%20def%20insertNode%28self%2c%20data%2c%20node%29%3a%0a%20%20%20%20%20%20%20%20if%20not%20node%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20Node%28data%29%0a%0a%20%20%20%20%20%20%20%20if%20data%3cnode.data%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20node.leftChild%20%3d%20self.insertNode%28data%2c%20node.leftChild%29%0a%20%20%20%20%20%20%20%20else%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20node.rightChild%20%3d%20self.insertNode%28data%2c%20node.rightChild%29%0a%0a%20%20%20%20%20%20%20%20node.height%20%3d%20max%28self.calcHeight%28node.leftChild%29%2c%20self.calcHeight%28node.rightChild%29%29%20%2b%201%0a%0a%20%20%20%20%20%20%20%20return%20self.settleViolations%28data%2c%20node%29%0a%0a%20%20%20%20def%20settleViolations%28self%2c%20data%2c%20node%29%3a%0a%0a%20%20%20%20%20%20%20%20balance%20%3d%20self.calcBalance%28node%29%0a%20%20%20%20%20%20%20%20print%28%22balance%3a%20%22%2c%20balance%29%0a%20%20%20%20%20%20%20%20if%20balance%20%3e%201%20and%20data%20%3c%20node.leftChild.data%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Left%20Left%20heavy%20situation.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self.rotateRight%28node%29%0a%0a%20%20%20%20%20%20%20%20if%20balance%20%3c%20-1%20and%20data%20%3e%20node.rightChild.data%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Right%20Right%20heavy%20situation.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self.rotateLeft%28node%29%0a%0a%20%20%20%20%20%20%20%20if%20balance%20%3e%201%20and%20data%20%3e%20node.leftChild.data%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Left%20Right%20Heavy%20situation.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20node.leftChild%20%3d%20self.rotateLeft%28node.leftChild%29%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self.rotateRight%28node%29%0a%0a%20%20%20%20%20%20%20%20if%20balance%20%3c%20-1%20and%20data%20%3c%20node.rightChild.data%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Right%20Left%20Heavy%20situation.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20node.rightChild%20%3d%20self.rotateRight%28node.rightChild%29%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self.rotateLeft%28node%29%0a%0a%20%20%20%20%20%20%20%20return%20node%0a%0a%20%20%20%20def%20removeNode%28self%2c%20data%2c%20node%29%3a%0a%20%20%20%20%20%20%20%20if%20not%20node%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20node%0a%0a%20%20%20%20%20%20%20%20if%20data%20%3c%20node.data%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20node.leftNode%20%3d%20self.removeNode%28data%2c%20node.leftNode%29%0a%20%20%20%20%20%20%20%20elif%20data%20%3e%20node.data%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20node.rightNode%20%3d%20self.removeNode%28data%2c%20node.rightNode%29%0a%20%20%20%20%20%20%20%20else%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20if%20not%20node.leftNode%20and%20not%20node.rightNode%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20print%28%22removing%20a%20leaf%20node.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20del%20node%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20return%20None%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20elif%20not%20node.leftNode%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20print%28%22removing%20a%20node%20with%20single%20right%20child.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20tempNode%20%3d%20node.rightNode%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20del%20node%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20return%20tempNode%0a%20%20%20%20%20%20%20%20%20%20%20%20elif%20not%20node.rightNode%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20print%28%22removing%20a%20node%20with%20single%20left%20child.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20tempNode%20%3d%20node.leftNode%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20del%20node%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20return%20tempNode%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22removing%20a%20node%20with%20two%20children.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20predeccorNode%20%3d%20self.getPredeccorNode%28node.leftNode%29%0a%20%20%20%20%20%20%20%20%20%20%20%20node.data%20%3d%20predeccorNode.data%0a%20%20%20%20%20%20%20%20%20%20%20%20node.leftNode%20%3d%20self.removeNode%28predeccorNode.data%2c%20node.leftNode%29%0a%0a%20%20%20%20%20%20%20%20if%20not%20node%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20node%0a%0a%20%20%20%20%20%20%20%20node.height%20%3d%20max%28self.calcHeight%28node.leftChild%29%2c%20self.calcHeight%28node.rightChild%29%29%20%2b%201%0a%0a%20%20%20%20%20%20%20%20balance%20%3d%20self.calcBalance%28node%29%0a%0a%20%20%20%20%20%20%20%20if%20balance%20%3e%201%20and%20self.calcBalance%28node.leftChild%29%3e%3d0%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Left%20Left%20heavy%20situation.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self.rotateRight%28node%29%0a%0a%20%20%20%20%20%20%20%20if%20balance%20%3c%20-1%20and%20self.calcBalance%28node.rightChild%29%3c%3d0%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Right%20Right%20heavy%20situation.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self.rotateLeft%28node%29%0a%0a%20%20%20%20%20%20%20%20if%20balance%20%3e%201%20and%20self.calcBalance%28node.leftChild%29%3c0%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Left%20Right%20Heavy%20situation.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20node.leftChild%20%3d%20self.rotateLeft%28node.leftChild%29%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self.rotateRight%28node%29%0a%0a%20%20%20%20%20%20%20%20if%20balance%20%3c%20-1%20and%20self.calcBalance%28node.rightChild%29%3e0%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Right%20Left%20Heavy%20situation.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20node.rightChild%20%3d%20self.rotateRight%28node.rightChild%29%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self.rotateLeft%28node%29%0a%0a%20%20%20%20%20%20%20%20return%20node%0a%0a%0a%20%20%20%20def%20getPredeccorNode%28self%2c%20node%29%3a%0a%20%20%20%20%20%20%20%20if%20node.rightNode%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self.getPredeccorNode%28node.rightNode%29%0a%0a%20%20%20%20%20%20%20%20return%20node%0a%0a%20%20%20%20def%20rotateRight%28self%2c%20node%29%3a%0a%0a%20%20%20%20%20%20%20%20tempLeftNode%20%3d%20node.leftChild%0a%20%20%20%20%20%20%20%20t%20%3d%20tempLeftNode.rightChild%0a%0a%20%20%20%20%20%20%20%20tempLeftNode.rightChild%20%3d%20node%0a%20%20%20%20%20%20%20%20node.leftChild%20%3d%20t%0a%0a%20%20%20%20%20%20%20%20node.height%20%3d%20max%28self.calcHeight%28node.leftChild%29%2c%20self.calcHeight%28node.rightChild%29%29%20%2b%201%0a%20%20%20%20%20%20%20%20tempLeftNode.height%20%3d%20max%28self.calcHeight%28tempLeftNode.leftChild%29%2c%20self.calcHeight%28tempLeftNode.rightChild%29%29%20%2b%201%0a%0a%20%20%20%20%20%20%20%20return%20tempLeftNode%0a%0a%20%20%20%20def%20rotateLeft%28self%2c%20node%29%3a%0a%0a%20%20%20%20%20%20%20%20tempRightNode%20%3d%20node.rightChild%0a%20%20%20%20%20%20%20%20t%20%3d%20tempRightNode.leftChild%0a%0a%20%20%20%20%20%20%20%20tempRightNode.leftChild%20%3d%20node%0a%20%20%20%20%20%20%20%20node.rightChild%20%3d%20t%0a%0a%20%20%20%20%20%20%20%20node.height%20%3d%20max%28self.calcHeight%28node.leftChild%29%2c%20self.calcHeight%28node.rightChild%29%29%20%2b%201%0a%20%20%20%20%20%20%20%20tempRightNode.height%20%3d%20max%28self.calcHeight%28tempRightNode.leftChild%29%2c%20self.calcHeight%28tempRightNode.rightChild%29%29%20%2b%201%0a%0a%20%20%20%20%20%20%20%20return%20tempRightNode%0a%0a%20%20%20%20def%20traverse%28self%29%3a%0a%20%20%20%20%20%20%20%20if%20self.root%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20self.traverseInOrder%28self.root%29%0a%0a%20%20%20%20def%20traverseInOrder%28self%2c%20node%29%3a%0a%20%20%20%20%20%20%20%20if%20node.leftChild%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20self.traverseInOrder%28node.leftChild%29%0a%0a%20%20%20%20%20%20%20%20print%28node.data%29%0a%0a%20%20%20%20%20%20%20%20if%20node.rightChild%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20self.traverseInOrder%28node.rightChild%29%0a%0a' target="_blank">
+      <span  class="run">Run</span>
+      </a>
+  </figcaption>
   <figcaption class="caption">
-   <span> AVL Tree</span>
+    <span> AVL Tree</span>
   </figcaption>
   <div class="codewrapper">
     <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
@@ -1861,11 +1885,7 @@
 </div>
 </div>
   </div>
-  <div class="editor" >
-    <a href='http://localhost:4200/?lang=AVL%20Tree&content=%0aclass%20Node%3a%0a%0a%20%20%20%20def%20__init__%28self%2c%20data%29%3a%0a%20%20%20%20%20%20%20%20self.data%20%3d%20data%0a%20%20%20%20%20%20%20%20self.height%20%3d%200%0a%20%20%20%20%20%20%20%20self.leftChild%20%3d%20None%0a%20%20%20%20%20%20%20%20self.rightChild%20%3d%20None%0a%0a%0aclass%20AVL%3a%0a%0a%20%20%20%20def%20__init__%28self%29%3a%0a%20%20%20%20%20%20%20%20self.root%20%3d%20None%0a%0a%20%20%20%20def%20calcHeight%28self%2c%20node%29%3a%0a%20%20%20%20%20%20%20%20if%20not%20node%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20-1%0a%20%20%20%20%20%20%20%20return%20node.height%0a%0a%20%20%20%20def%20calcBalance%28self%2c%20node%29%3a%0a%20%20%20%20%20%20%20%20if%20not%20node%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%200%0a%20%20%20%20%20%20%20%20return%20self.calcHeight%28node.leftChild%29%20-self.calcHeight%28node.rightChild%29%0a%0a%20%20%20%20def%20insert%28self%2c%20data%29%3a%0a%20%20%20%20%20%20%20%20self.root%20%3d%20self.insertNode%28data%2c%20self.root%29%0a%0a%20%20%20%20def%20insertNode%28self%2c%20data%2c%20node%29%3a%0a%20%20%20%20%20%20%20%20if%20not%20node%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20Node%28data%29%0a%0a%20%20%20%20%20%20%20%20if%20data%3cnode.data%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20node.leftChild%20%3d%20self.insertNode%28data%2c%20node.leftChild%29%0a%20%20%20%20%20%20%20%20else%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20node.rightChild%20%3d%20self.insertNode%28data%2c%20node.rightChild%29%0a%0a%20%20%20%20%20%20%20%20node.height%20%3d%20max%28self.calcHeight%28node.leftChild%29%2c%20self.calcHeight%28node.rightChild%29%29%20%2b%201%0a%0a%20%20%20%20%20%20%20%20return%20self.settleViolations%28data%2c%20node%29%0a%0a%20%20%20%20def%20settleViolations%28self%2c%20data%2c%20node%29%3a%0a%0a%20%20%20%20%20%20%20%20balance%20%3d%20self.calcBalance%28node%29%0a%20%20%20%20%20%20%20%20print%28%22balance%3a%20%22%2c%20balance%29%0a%20%20%20%20%20%20%20%20if%20balance%20%3e%201%20and%20data%20%3c%20node.leftChild.data%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Left%20Left%20heavy%20situation.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self.rotateRight%28node%29%0a%0a%20%20%20%20%20%20%20%20if%20balance%20%3c%20-1%20and%20data%20%3e%20node.rightChild.data%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Right%20Right%20heavy%20situation.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self.rotateLeft%28node%29%0a%0a%20%20%20%20%20%20%20%20if%20balance%20%3e%201%20and%20data%20%3e%20node.leftChild.data%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Left%20Right%20Heavy%20situation.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20node.leftChild%20%3d%20self.rotateLeft%28node.leftChild%29%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self.rotateRight%28node%29%0a%0a%20%20%20%20%20%20%20%20if%20balance%20%3c%20-1%20and%20data%20%3c%20node.rightChild.data%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Right%20Left%20Heavy%20situation.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20node.rightChild%20%3d%20self.rotateRight%28node.rightChild%29%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self.rotateLeft%28node%29%0a%0a%20%20%20%20%20%20%20%20return%20node%0a%0a%20%20%20%20def%20removeNode%28self%2c%20data%2c%20node%29%3a%0a%20%20%20%20%20%20%20%20if%20not%20node%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20node%0a%0a%20%20%20%20%20%20%20%20if%20data%20%3c%20node.data%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20node.leftNode%20%3d%20self.removeNode%28data%2c%20node.leftNode%29%0a%20%20%20%20%20%20%20%20elif%20data%20%3e%20node.data%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20node.rightNode%20%3d%20self.removeNode%28data%2c%20node.rightNode%29%0a%20%20%20%20%20%20%20%20else%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20if%20not%20node.leftNode%20and%20not%20node.rightNode%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20print%28%22removing%20a%20leaf%20node.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20del%20node%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20return%20None%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20elif%20not%20node.leftNode%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20print%28%22removing%20a%20node%20with%20single%20right%20child.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20tempNode%20%3d%20node.rightNode%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20del%20node%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20return%20tempNode%0a%20%20%20%20%20%20%20%20%20%20%20%20elif%20not%20node.rightNode%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20print%28%22removing%20a%20node%20with%20single%20left%20child.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20tempNode%20%3d%20node.leftNode%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20del%20node%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20return%20tempNode%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22removing%20a%20node%20with%20two%20children.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20predeccorNode%20%3d%20self.getPredeccorNode%28node.leftNode%29%0a%20%20%20%20%20%20%20%20%20%20%20%20node.data%20%3d%20predeccorNode.data%0a%20%20%20%20%20%20%20%20%20%20%20%20node.leftNode%20%3d%20self.removeNode%28predeccorNode.data%2c%20node.leftNode%29%0a%0a%20%20%20%20%20%20%20%20if%20not%20node%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20node%0a%0a%20%20%20%20%20%20%20%20node.height%20%3d%20max%28self.calcHeight%28node.leftChild%29%2c%20self.calcHeight%28node.rightChild%29%29%20%2b%201%0a%0a%20%20%20%20%20%20%20%20balance%20%3d%20self.calcBalance%28node%29%0a%0a%20%20%20%20%20%20%20%20if%20balance%20%3e%201%20and%20self.calcBalance%28node.leftChild%29%3e%3d0%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Left%20Left%20heavy%20situation.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self.rotateRight%28node%29%0a%0a%20%20%20%20%20%20%20%20if%20balance%20%3c%20-1%20and%20self.calcBalance%28node.rightChild%29%3c%3d0%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Right%20Right%20heavy%20situation.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self.rotateLeft%28node%29%0a%0a%20%20%20%20%20%20%20%20if%20balance%20%3e%201%20and%20self.calcBalance%28node.leftChild%29%3c0%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Left%20Right%20Heavy%20situation.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20node.leftChild%20%3d%20self.rotateLeft%28node.leftChild%29%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self.rotateRight%28node%29%0a%0a%20%20%20%20%20%20%20%20if%20balance%20%3c%20-1%20and%20self.calcBalance%28node.rightChild%29%3e0%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Right%20Left%20Heavy%20situation.%22%29%0a%20%20%20%20%20%20%20%20%20%20%20%20node.rightChild%20%3d%20self.rotateRight%28node.rightChild%29%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self.rotateLeft%28node%29%0a%0a%20%20%20%20%20%20%20%20return%20node%0a%0a%0a%20%20%20%20def%20getPredeccorNode%28self%2c%20node%29%3a%0a%20%20%20%20%20%20%20%20if%20node.rightNode%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self.getPredeccorNode%28node.rightNode%29%0a%0a%20%20%20%20%20%20%20%20return%20node%0a%0a%20%20%20%20def%20rotateRight%28self%2c%20node%29%3a%0a%0a%20%20%20%20%20%20%20%20tempLeftNode%20%3d%20node.leftChild%0a%20%20%20%20%20%20%20%20t%20%3d%20tempLeftNode.rightChild%0a%0a%20%20%20%20%20%20%20%20tempLeftNode.rightChild%20%3d%20node%0a%20%20%20%20%20%20%20%20node.leftChild%20%3d%20t%0a%0a%20%20%20%20%20%20%20%20node.height%20%3d%20max%28self.calcHeight%28node.leftChild%29%2c%20self.calcHeight%28node.rightChild%29%29%20%2b%201%0a%20%20%20%20%20%20%20%20tempLeftNode.height%20%3d%20max%28self.calcHeight%28tempLeftNode.leftChild%29%2c%20self.calcHeight%28tempLeftNode.rightChild%29%29%20%2b%201%0a%0a%20%20%20%20%20%20%20%20return%20tempLeftNode%0a%0a%20%20%20%20def%20rotateLeft%28self%2c%20node%29%3a%0a%0a%20%20%20%20%20%20%20%20tempRightNode%20%3d%20node.rightChild%0a%20%20%20%20%20%20%20%20t%20%3d%20tempRightNode.leftChild%0a%0a%20%20%20%20%20%20%20%20tempRightNode.leftChild%20%3d%20node%0a%20%20%20%20%20%20%20%20node.rightChild%20%3d%20t%0a%0a%20%20%20%20%20%20%20%20node.height%20%3d%20max%28self.calcHeight%28node.leftChild%29%2c%20self.calcHeight%28node.rightChild%29%29%20%2b%201%0a%20%20%20%20%20%20%20%20tempRightNode.height%20%3d%20max%28self.calcHeight%28tempRightNode.leftChild%29%2c%20self.calcHeight%28tempRightNode.rightChild%29%29%20%2b%201%0a%0a%20%20%20%20%20%20%20%20return%20tempRightNode%0a%0a%20%20%20%20def%20traverse%28self%29%3a%0a%20%20%20%20%20%20%20%20if%20self.root%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20self.traverseInOrder%28self.root%29%0a%0a%20%20%20%20def%20traverseInOrder%28self%2c%20node%29%3a%0a%20%20%20%20%20%20%20%20if%20node.leftChild%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20self.traverseInOrder%28node.leftChild%29%0a%0a%20%20%20%20%20%20%20%20print%28node.data%29%0a%0a%20%20%20%20%20%20%20%20if%20node.rightChild%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20self.traverseInOrder%28node.rightChild%29%0a%0a' target="_blank">open in editor</a>
-  </div>
 </figure>
-
 
 
 <footer class=" footline" >
@@ -2764,19 +2784,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1576818752"></script>
-    <script src="/js/perfect-scrollbar.min.js?1576818752"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1576818752"></script>
-    <script src="/js/jquery.sticky.js?1576818752"></script>
-    <script src="/js/featherlight.min.js?1576818752"></script>
-    <script src="/js/highlight.pack.js?1576818752"></script>
+    <script src="/js/clipboard.min.js?1576872222"></script>
+    <script src="/js/perfect-scrollbar.min.js?1576872222"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1576872222"></script>
+    <script src="/js/jquery.sticky.js?1576872222"></script>
+    <script src="/js/featherlight.min.js?1576872222"></script>
+    <script src="/js/highlight.pack.js?1576872222"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1576818752"></script>
-    <script src="/js/learn.js?1576818752"></script>
-    <script src="/js/hugo-learn.js?1576818752"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1576872222"></script>
+    <script src="/js/learn.js?1576872222"></script>
+    <script src="/js/hugo-learn.js?1576872222"></script>
 
-    <link href="/mermaid/mermaid.css?1576818752" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1576818752"></script>
+    <link href="/mermaid/mermaid.css?1576872222" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1576872222"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

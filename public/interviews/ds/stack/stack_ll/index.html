@@ -11,20 +11,20 @@
     <title>Stack LL :: Hackersoon - Documentation</title>
 
     
-    <link href="/css/nucleus.css?1576818752" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1576818752" rel="stylesheet">
-    <link href="/css/hybrid.css?1576818752" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1576818752" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1576818752" rel="stylesheet">
-    <link href="/css/auto-complete.css?1576818752" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1576818752" rel="stylesheet">
-    <link href="/css/theme.css?1576818752" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1576818752" rel="stylesheet">
+    <link href="/css/nucleus.css?1576872222" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1576872222" rel="stylesheet">
+    <link href="/css/hybrid.css?1576872222" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1576872222" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1576872222" rel="stylesheet">
+    <link href="/css/auto-complete.css?1576872222" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1576872222" rel="stylesheet">
+    <link href="/css/theme.css?1576872222" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1576872222" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1576818752" rel="stylesheet">
+      <link href="/css/theme-blue.css?1576872222" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1576818752"></script>
+    <script src="/js/jquery-3.3.1.min.js?1576872222"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1576818752"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1576818752"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1576872222"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1576872222"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.hackersoon.com";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1576818752"></script>
+<script type="text/javascript" src="/js/search.js?1576872222"></script>
 
     
   </div>
@@ -1496,30 +1496,54 @@
 
 
 <style type="text/css">
-    .caption {
-      text-align: center;
-      background-color: grey;
-      color: white;
-      font-weight: normal;
-      padding: 2px;
-      text-decoration: double;
-    }
-    .editor>a {
-      text-align: center;
-      padding: 5px;
-      color: blue;
-      font-weight: bold;
-      font-size: 20px;
-      margin: 5px;
-    }
+  .caption {
+    text-align: center;
+    background-color: grey;
+    color: white;
+    font-weight: normal;
+    text-decoration: double;
+  }
+
+  .editorq>a {
+    text-align: center;
+    padding: 5px;
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px;
+  }
+
+  .run {
+    text-align: center;
+    background-color: #343a40;
+    border-color: #343a40;
+    color: #fff;
+    font-weight: normal;
+    width: fit-content;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    padding: .25rem 2.5rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    margin-bottom: 2px;
+    font-weight: 400;
+    user-select: none;
+    text-transform: none;
+  }
 </style>
 
+
 <figure class="code">
-  <div class="editor" >
-    <a href='http://localhost:4200/?lang=Stack%20LL&content=%0aclass%20Empty%28Exception%29%3a%0a%20%20%20%20pass%0a%0aclass%20LinkedStack%3a%0a%0a%20%20%20%20class%20_Node%3a%0a%20%20%20%20%20%20%20%20__slots__%20%3d%20%27_element%27%2c%20%27_next%27%0a%0a%20%20%20%20%20%20%20%20def%20__init__%28self%2c%20element%2c%20next%29%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20self._element%20%3d%20element%0a%20%20%20%20%20%20%20%20%20%20%20%20self._next%20%3d%20next%0a%0a%0a%20%20%20%20def%20__init__%28self%29%3a%0a%20%20%20%20%20%20%20%20self._head%20%3d%20None%0a%20%20%20%20%20%20%20%20self._size%20%3d%200%0a%0a%20%20%20%20def%20__len__%28self%29%3a%0a%20%20%20%20%20%20%20%20return%20self._size%0a%0a%20%20%20%20def%20isempty%28self%29%3a%0a%20%20%20%20%20%20%20%20return%20self._size%20%3d%3d%200%0a%0a%20%20%20%20def%20push%28self%2c%20value%29%3a%0a%20%20%20%20%20%20%20%20self._head%20%3d%20self._Node%28value%2c%20self._head%29%0a%20%20%20%20%20%20%20%20self._size%20%2b%3d%201%0a%0a%20%20%20%20def%20pop%28self%29%3a%0a%20%20%20%20%20%20%20%20if%20self._size%20%3d%3d%200%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20raise%20Empty%28%22stack%20is%20empty.%22%29%0a%20%20%20%20%20%20%20%20ans%20%3d%20self._head._element%0a%20%20%20%20%20%20%20%20self._head%20%3d%20self._head._next%0a%20%20%20%20%20%20%20%20self._size%20-%3d%201%0a%20%20%20%20%20%20%20%20return%20ans%0a%0a%20%20%20%20def%20top%28self%29%3a%0a%20%20%20%20%20%20%20%20if%20self._size%20%3d%3d%200%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20raise%20Empty%28%22stack%20is%20empty.%22%29%0a%20%20%20%20%20%20%20%20return%20self._head._element%0a' target="_blank">open in editor</a>
-  </div>
+  <figcaption>
+     <a href='https://hackersoon.com/?lang=python&content=%0aclass%20Empty%28Exception%29%3a%0a%20%20%20%20pass%0a%0aclass%20LinkedStack%3a%0a%0a%20%20%20%20class%20_Node%3a%0a%20%20%20%20%20%20%20%20__slots__%20%3d%20%27_element%27%2c%20%27_next%27%0a%0a%20%20%20%20%20%20%20%20def%20__init__%28self%2c%20element%2c%20next%29%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20self._element%20%3d%20element%0a%20%20%20%20%20%20%20%20%20%20%20%20self._next%20%3d%20next%0a%0a%0a%20%20%20%20def%20__init__%28self%29%3a%0a%20%20%20%20%20%20%20%20self._head%20%3d%20None%0a%20%20%20%20%20%20%20%20self._size%20%3d%200%0a%0a%20%20%20%20def%20__len__%28self%29%3a%0a%20%20%20%20%20%20%20%20return%20self._size%0a%0a%20%20%20%20def%20isempty%28self%29%3a%0a%20%20%20%20%20%20%20%20return%20self._size%20%3d%3d%200%0a%0a%20%20%20%20def%20push%28self%2c%20value%29%3a%0a%20%20%20%20%20%20%20%20self._head%20%3d%20self._Node%28value%2c%20self._head%29%0a%20%20%20%20%20%20%20%20self._size%20%2b%3d%201%0a%0a%20%20%20%20def%20pop%28self%29%3a%0a%20%20%20%20%20%20%20%20if%20self._size%20%3d%3d%200%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20raise%20Empty%28%22stack%20is%20empty.%22%29%0a%20%20%20%20%20%20%20%20ans%20%3d%20self._head._element%0a%20%20%20%20%20%20%20%20self._head%20%3d%20self._head._next%0a%20%20%20%20%20%20%20%20self._size%20-%3d%201%0a%20%20%20%20%20%20%20%20return%20ans%0a%0a%20%20%20%20def%20top%28self%29%3a%0a%20%20%20%20%20%20%20%20if%20self._size%20%3d%3d%200%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20raise%20Empty%28%22stack%20is%20empty.%22%29%0a%20%20%20%20%20%20%20%20return%20self._head._element%0a' target="_blank">
+      <span  class="run">Run</span>
+      </a>
+  </figcaption>
   <figcaption class="caption">
-   <span> Stack LL</span>
+    <span> Stack LL</span>
   </figcaption>
   <div class="codewrapper">
     <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
@@ -1607,11 +1631,7 @@
 </div>
 </div>
   </div>
-  <div class="editor" >
-    <a href='http://localhost:4200/?lang=Stack%20LL&content=%0aclass%20Empty%28Exception%29%3a%0a%20%20%20%20pass%0a%0aclass%20LinkedStack%3a%0a%0a%20%20%20%20class%20_Node%3a%0a%20%20%20%20%20%20%20%20__slots__%20%3d%20%27_element%27%2c%20%27_next%27%0a%0a%20%20%20%20%20%20%20%20def%20__init__%28self%2c%20element%2c%20next%29%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20self._element%20%3d%20element%0a%20%20%20%20%20%20%20%20%20%20%20%20self._next%20%3d%20next%0a%0a%0a%20%20%20%20def%20__init__%28self%29%3a%0a%20%20%20%20%20%20%20%20self._head%20%3d%20None%0a%20%20%20%20%20%20%20%20self._size%20%3d%200%0a%0a%20%20%20%20def%20__len__%28self%29%3a%0a%20%20%20%20%20%20%20%20return%20self._size%0a%0a%20%20%20%20def%20isempty%28self%29%3a%0a%20%20%20%20%20%20%20%20return%20self._size%20%3d%3d%200%0a%0a%20%20%20%20def%20push%28self%2c%20value%29%3a%0a%20%20%20%20%20%20%20%20self._head%20%3d%20self._Node%28value%2c%20self._head%29%0a%20%20%20%20%20%20%20%20self._size%20%2b%3d%201%0a%0a%20%20%20%20def%20pop%28self%29%3a%0a%20%20%20%20%20%20%20%20if%20self._size%20%3d%3d%200%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20raise%20Empty%28%22stack%20is%20empty.%22%29%0a%20%20%20%20%20%20%20%20ans%20%3d%20self._head._element%0a%20%20%20%20%20%20%20%20self._head%20%3d%20self._head._next%0a%20%20%20%20%20%20%20%20self._size%20-%3d%201%0a%20%20%20%20%20%20%20%20return%20ans%0a%0a%20%20%20%20def%20top%28self%29%3a%0a%20%20%20%20%20%20%20%20if%20self._size%20%3d%3d%200%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20raise%20Empty%28%22stack%20is%20empty.%22%29%0a%20%20%20%20%20%20%20%20return%20self._head._element%0a' target="_blank">open in editor</a>
-  </div>
 </figure>
-
 
 
 <footer class=" footline" >
@@ -2516,19 +2536,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1576818752"></script>
-    <script src="/js/perfect-scrollbar.min.js?1576818752"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1576818752"></script>
-    <script src="/js/jquery.sticky.js?1576818752"></script>
-    <script src="/js/featherlight.min.js?1576818752"></script>
-    <script src="/js/highlight.pack.js?1576818752"></script>
+    <script src="/js/clipboard.min.js?1576872222"></script>
+    <script src="/js/perfect-scrollbar.min.js?1576872222"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1576872222"></script>
+    <script src="/js/jquery.sticky.js?1576872222"></script>
+    <script src="/js/featherlight.min.js?1576872222"></script>
+    <script src="/js/highlight.pack.js?1576872222"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1576818752"></script>
-    <script src="/js/learn.js?1576818752"></script>
-    <script src="/js/hugo-learn.js?1576818752"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1576872222"></script>
+    <script src="/js/learn.js?1576872222"></script>
+    <script src="/js/hugo-learn.js?1576872222"></script>
 
-    <link href="/mermaid/mermaid.css?1576818752" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1576818752"></script>
+    <link href="/mermaid/mermaid.css?1576872222" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1576872222"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
