@@ -17,7 +17,7 @@
       <pubDate>Wed, 11 Dec 2019 11:14:00 +0530</pubDate>
       
       <guid>https://docs.hackersoon.com/interviews/algorithms/sorting/heapsort/</guid>
-      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; }   heapsort  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37  &amp;#34;&amp;#34;&amp;#34;This method is used for heapify the array. every time when we remove a element from array.</description>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; text-decoration: double; } .editora { text-align: center; padding: 5px; color: blue; font-weight: bold; font-size: 20px; margin: 5px; }  open in editor   heapsort  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37  &amp;#34;&amp;#34;&amp;#34;This method is used for heapify the array.</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Wed, 11 Dec 2019 11:14:00 +0530</pubDate>
       
       <guid>https://docs.hackersoon.com/interviews/algorithms/sorting/mergesort/</guid>
-      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; }   mergesort  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61  &amp;#34;&amp;#34;&amp;#34;merge logic:This function merge two shorted arrays into one sorted array.</description>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; text-decoration: double; } .editora { text-align: center; padding: 5px; color: blue; font-weight: bold; font-size: 20px; margin: 5px; }  open in editor   mergesort  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61  &amp;#34;&amp;#34;&amp;#34;merge logic:This function merge two shorted arrays into one sorted array.</description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@
       <pubDate>Wed, 11 Dec 2019 11:14:00 +0530</pubDate>
       
       <guid>https://docs.hackersoon.com/interviews/algorithms/sorting/quicksort/</guid>
-      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; }   quicksort  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34  &amp;#34;&amp;#34;&amp;#34;partition logic in quicksort.&amp;#34;&amp;#34;&amp;#34; def partition(arr, low, high): i = low -1 pivot = arr[high] for j in range(low, high): if arr[j] &amp;lt; pivot: i += 1 arr[i], arr[j] = arr[j], arr[i] arr[i+1], arr[high] = arr[high], arr[i+1] return i+1 &amp;#34;&amp;#34;&amp;#34;Actual impelementation of quick short algorithm.</description>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; text-decoration: double; } .editora { text-align: center; padding: 5px; color: blue; font-weight: bold; font-size: 20px; margin: 5px; }  open in editor   quicksort  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34  &amp;#34;&amp;#34;&amp;#34;partition logic in quicksort.</description>
     </item>
     
   </channel>

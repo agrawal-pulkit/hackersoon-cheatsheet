@@ -11,20 +11,20 @@
     <title>Trapping Rain Problem :: Hackersoon - Documentation</title>
 
     
-    <link href="/css/nucleus.css?1576731919" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1576731919" rel="stylesheet">
-    <link href="/css/hybrid.css?1576731919" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1576731919" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1576731919" rel="stylesheet">
-    <link href="/css/auto-complete.css?1576731919" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1576731919" rel="stylesheet">
-    <link href="/css/theme.css?1576731919" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1576731919" rel="stylesheet">
+    <link href="/css/nucleus.css?1576818752" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1576818752" rel="stylesheet">
+    <link href="/css/hybrid.css?1576818752" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1576818752" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1576818752" rel="stylesheet">
+    <link href="/css/auto-complete.css?1576818752" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1576818752" rel="stylesheet">
+    <link href="/css/theme.css?1576818752" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1576818752" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1576731919" rel="stylesheet">
+      <link href="/css/theme-blue.css?1576818752" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1576731919"></script>
+    <script src="/js/jquery-3.3.1.min.js?1576818752"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1576731919"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1576731919"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1576818752"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1576818752"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.hackersoon.com";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1576731919"></script>
+<script type="text/javascript" src="/js/search.js?1576818752"></script>
 
     
   </div>
@@ -1496,10 +1496,22 @@
       color: white;
       font-weight: normal;
       padding: 2px;
+      text-decoration: double;
+    }
+    .editor>a {
+      text-align: center;
+      padding: 5px;
+      color: blue;
+      font-weight: bold;
+      font-size: 20px;
+      margin: 5px;
     }
 </style>
 
 <figure class="code">
+  <div class="editor" >
+    <a href='http://localhost:4200/?lang=Trapping%20Rain%20Problem&content=%0a%0a%23%20Python%20program%20to%20find%20maximum%20amount%20of%20water%20that%20can%0a%23%20be%20trapped%20within%20given%20set%20of%20bars.%0a%0adef%20findWater%28arr%2c%20n%29%3a%0a%20%20%20%20left%20%3d%20%5b0%5d%2an%0a%20%20%20%20water%20%3d%200%0a%20%20%20%20right%20%3d%20%5b0%5d%2an%0a%09%23%20Fill%20left%20array%0a%09left%5b0%5d%20%3d%20arr%5b0%5d%0a%09for%20i%20in%20range%28%201%2c%20n%29%3a%0a%09%09left%5bi%5d%20%3d%20max%28left%5bi-1%5d%2c%20arr%5bi%5d%29%0a%20%20%20%20print%28%22Left%3a%20%7b%7d%22.format%28left%29%29%0a%09%23%20Fill%20right%20array%0a%09right%5bn-1%5d%20%3d%20arr%5bn-1%5d%0a%09for%20i%20in%20range%28n-2%2c%20-1%2c%20-1%29%3a%0a%09%09right%5bi%5d%20%3d%20max%28right%5bi%2b1%5d%2c%20arr%5bi%5d%29%3b%0a%20%20%20%20print%28%22right%3a%20%7b%7d%22.format%28right%29%29%0a%09%23%20Calculate%20the%20accumulated%20water%20element%20by%20element%0a%09%23%20consider%20the%20amount%20of%20water%20on%20i%27th%20bar%2c%20the%0a%09%23%20amount%20of%20water%20accumulated%20on%20this%20particular%0a%09%23%20bar%20will%20be%20equal%20to%20min%28left%5bi%5d%2c%20right%5bi%5d%29%20-%20arr%5bi%5d%20.%0a%09for%20i%20in%20range%280%2c%20n%29%3a%0a%09%09water%20%2b%3d%20min%28left%5bi%5d%2cright%5bi%5d%29%20-%20arr%5bi%5d%0a%0a%09return%20water%0a%0a%0a%23%20Driver%20program%0a%0aarr%20%3d%20%5b0%2c%201%2c%200%2c%202%2c%201%2c%200%2c%201%2c%203%2c%202%2c%201%2c%202%2c%201%5d%0an%20%3d%20len%28arr%29%0aprint%28%22Maximum%20water%20that%20can%20be%20accumulated%20is%22%2cfindWater%28arr%2c%20n%29%29%0a' target="_blank">open in editor</a>
+  </div>
   <figcaption class="caption">
    <span> Trapping Rain Problem</span>
   </figcaption>
@@ -1574,6 +1586,9 @@ n <span style="color:#f92672">=</span> len(arr)
 <span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Maximum water that can be accumulated is</span><span style="color:#e6db74">&#34;</span>,findWater(arr, n))</code></pre></td></tr></table>
 </div>
 </div>
+  </div>
+  <div class="editor" >
+    <a href='http://localhost:4200/?lang=Trapping%20Rain%20Problem&content=%0a%0a%23%20Python%20program%20to%20find%20maximum%20amount%20of%20water%20that%20can%0a%23%20be%20trapped%20within%20given%20set%20of%20bars.%0a%0adef%20findWater%28arr%2c%20n%29%3a%0a%20%20%20%20left%20%3d%20%5b0%5d%2an%0a%20%20%20%20water%20%3d%200%0a%20%20%20%20right%20%3d%20%5b0%5d%2an%0a%09%23%20Fill%20left%20array%0a%09left%5b0%5d%20%3d%20arr%5b0%5d%0a%09for%20i%20in%20range%28%201%2c%20n%29%3a%0a%09%09left%5bi%5d%20%3d%20max%28left%5bi-1%5d%2c%20arr%5bi%5d%29%0a%20%20%20%20print%28%22Left%3a%20%7b%7d%22.format%28left%29%29%0a%09%23%20Fill%20right%20array%0a%09right%5bn-1%5d%20%3d%20arr%5bn-1%5d%0a%09for%20i%20in%20range%28n-2%2c%20-1%2c%20-1%29%3a%0a%09%09right%5bi%5d%20%3d%20max%28right%5bi%2b1%5d%2c%20arr%5bi%5d%29%3b%0a%20%20%20%20print%28%22right%3a%20%7b%7d%22.format%28right%29%29%0a%09%23%20Calculate%20the%20accumulated%20water%20element%20by%20element%0a%09%23%20consider%20the%20amount%20of%20water%20on%20i%27th%20bar%2c%20the%0a%09%23%20amount%20of%20water%20accumulated%20on%20this%20particular%0a%09%23%20bar%20will%20be%20equal%20to%20min%28left%5bi%5d%2c%20right%5bi%5d%29%20-%20arr%5bi%5d%20.%0a%09for%20i%20in%20range%280%2c%20n%29%3a%0a%09%09water%20%2b%3d%20min%28left%5bi%5d%2cright%5bi%5d%29%20-%20arr%5bi%5d%0a%0a%09return%20water%0a%0a%0a%23%20Driver%20program%0a%0aarr%20%3d%20%5b0%2c%201%2c%200%2c%202%2c%201%2c%200%2c%201%2c%203%2c%202%2c%201%2c%202%2c%201%5d%0an%20%3d%20len%28arr%29%0aprint%28%22Maximum%20water%20that%20can%20be%20accumulated%20is%22%2cfindWater%28arr%2c%20n%29%29%0a' target="_blank">open in editor</a>
   </div>
 </figure>
 
@@ -2477,19 +2492,19 @@ n <span style="color:#f92672">=</span> len(arr)
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1576731919"></script>
-    <script src="/js/perfect-scrollbar.min.js?1576731919"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1576731919"></script>
-    <script src="/js/jquery.sticky.js?1576731919"></script>
-    <script src="/js/featherlight.min.js?1576731919"></script>
-    <script src="/js/highlight.pack.js?1576731919"></script>
+    <script src="/js/clipboard.min.js?1576818752"></script>
+    <script src="/js/perfect-scrollbar.min.js?1576818752"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1576818752"></script>
+    <script src="/js/jquery.sticky.js?1576818752"></script>
+    <script src="/js/featherlight.min.js?1576818752"></script>
+    <script src="/js/highlight.pack.js?1576818752"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1576731919"></script>
-    <script src="/js/learn.js?1576731919"></script>
-    <script src="/js/hugo-learn.js?1576731919"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1576818752"></script>
+    <script src="/js/learn.js?1576818752"></script>
+    <script src="/js/hugo-learn.js?1576818752"></script>
 
-    <link href="/mermaid/mermaid.css?1576731919" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1576731919"></script>
+    <link href="/mermaid/mermaid.css?1576818752" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1576818752"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

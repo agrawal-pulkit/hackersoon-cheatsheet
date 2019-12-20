@@ -11,20 +11,20 @@
     <title>Positional List :: Hackersoon - Documentation</title>
 
     
-    <link href="/css/nucleus.css?1576731919" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1576731919" rel="stylesheet">
-    <link href="/css/hybrid.css?1576731919" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1576731919" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1576731919" rel="stylesheet">
-    <link href="/css/auto-complete.css?1576731919" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1576731919" rel="stylesheet">
-    <link href="/css/theme.css?1576731919" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1576731919" rel="stylesheet">
+    <link href="/css/nucleus.css?1576818752" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1576818752" rel="stylesheet">
+    <link href="/css/hybrid.css?1576818752" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1576818752" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1576818752" rel="stylesheet">
+    <link href="/css/auto-complete.css?1576818752" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1576818752" rel="stylesheet">
+    <link href="/css/theme.css?1576818752" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1576818752" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1576731919" rel="stylesheet">
+      <link href="/css/theme-blue.css?1576818752" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1576731919"></script>
+    <script src="/js/jquery-3.3.1.min.js?1576818752"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1576731919"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1576731919"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1576818752"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1576818752"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.hackersoon.com";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1576731919"></script>
+<script type="text/javascript" src="/js/search.js?1576818752"></script>
 
     
   </div>
@@ -1502,10 +1502,22 @@
       color: white;
       font-weight: normal;
       padding: 2px;
+      text-decoration: double;
+    }
+    .editor>a {
+      text-align: center;
+      padding: 5px;
+      color: blue;
+      font-weight: bold;
+      font-size: 20px;
+      margin: 5px;
     }
 </style>
 
 <figure class="code">
+  <div class="editor" >
+    <a href='http://localhost:4200/?lang=Positional%20List&content=%0aclass%20Empty%28Exception%29%3a%0a%20%20%20%20pass%0a%0aclass%20_DoublyLinkedBase%3a%0a%0a%20%20%20%20class%20_Node%3a%0a%0a%20%20%20%20%20%20%20%20__slots__%20%3d%20%27_element%27%2c%20%27_prev%27%2c%20%27_next%27%0a%0a%20%20%20%20%20%20%20%20def%20__init__%28self%2c%20element%2c%20prev%2c%20next%29%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20self._element%20%3d%20element%0a%20%20%20%20%20%20%20%20%20%20%20%20self._prev%20%3d%20prev%0a%20%20%20%20%20%20%20%20%20%20%20%20self._next%20%3d%20next%0a%0a%20%20%20%20def%20__init__%28self%29%3a%0a%20%20%20%20%20%20%20%20self._header%20%3d%20self._Node%28None%2c%20None%2c%20None%29%0a%20%20%20%20%20%20%20%20self._tailer%20%3d%20self._Node%28None%2c%20None%2c%20None%29%0a%20%20%20%20%20%20%20%20self._header._next%20%3d%20self._tailer%0a%20%20%20%20%20%20%20%20self._tailer._next%20%3d%20self._header%0a%20%20%20%20%20%20%20%20self._size%20%3d%200%0a%0a%20%20%20%20def%20__len__%28self%29%3a%0a%20%20%20%20%20%20%20%20self._size%0a%0a%20%20%20%20def%20isEmpty%28self%29%3a%0a%20%20%20%20%20%20%20%20return%20self._size%20%3d%3d%200%0a%0a%20%20%20%20def%20_insert_between%28self%2c%20value%2c%20predecessor%2c%20successor%29%3a%0a%20%20%20%20%20%20%20%20node%20%3d%20self._Node%28value%2c%20predecessor%2c%20successor%29%0a%20%20%20%20%20%20%20%20predecessor._next%20%3d%20node%0a%20%20%20%20%20%20%20%20successor._prev%20%3d%20node%0a%20%20%20%20%20%20%20%20self._size%20%2b%3d%201%0a%20%20%20%20%20%20%20%20return%20node%0a%0a%20%20%20%20def%20_delete_between%28self%2c%20node%29%3a%0a%20%20%20%20%20%20%20%20ans%20%3d%20node._element%0a%20%20%20%20%20%20%20%20node._next._prev%20%3d%20node._prev%0a%20%20%20%20%20%20%20%20node._prev._next%20%3d%20node._next%0a%20%20%20%20%20%20%20%20self._size%20-%3d%201%0a%20%20%20%20%20%20%20%20node._element%20%3d%20node._prev%20%3d%20node._next%20%3d%20None%0a%20%20%20%20%20%20%20%20return%20ans%0a%0a%0aclass%20PositionalList%28_DoublyLinkedBase%29%3a%0a%0a%20%20%20%20class%20Position%3a%0a%0a%20%20%20%20%20%20%20%20def%20__init__%28self%2c%20container%2c%20node%29%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20self._container%20%3d%20container%0a%20%20%20%20%20%20%20%20%20%20%20%20self._node%20%3d%20node%0a%0a%20%20%20%20%20%20%20%20def%20element%28self%29%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self._node._element%0a%0a%20%20%20%20%20%20%20%20def%20__eq__%28self%2c%20other%29%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20type%28other%29%20is%20type%28self%29%20and%20other._node%20is%20self._node%0a%0a%20%20%20%20%20%20%20%20def%20__ne__%28self%2c%20other%29%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20not%20%28self%20%3d%3d%20other%29%0a%0a%0a%20%20%20%20def%20_validate%28self%2c%20p%29%3a%0a%20%20%20%20%20%20%20%20if%20not%20isinstance%28p%2c%20self.Position%29%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20raise%20TypeError%28%22p%20must%20be%20proper%20Postion%20type.%22%29%0a%20%20%20%20%20%20%20%20if%20p._container%20is%20not%20self%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20raise%20ValueError%28%22P%20does%20not%20belongs%20to%20this%20container.%22%29%0a%20%20%20%20%20%20%20%20if%20p._node._next%20is%20None%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20raise%20ValueError%28%22p%20is%20no%20longer%20valid.%22%29%0a%20%20%20%20%20%20%20%20return%20p._node%0a%0a%20%20%20%20def%20_make_position%28self%2c%20node%29%3a%0a%20%20%20%20%20%20%20%20if%20node%20is%20self._header%20or%20node%20is%20self._tailer%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20None%0a%20%20%20%20%20%20%20%20else%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self.Position%28self%2c%20node%29%0a%0a%20%20%20%20def%20first%28self%29%3a%0a%20%20%20%20%20%20%20%20return%20self._make_position%28self._header._next%29%0a%0a%20%20%20%20def%20last%28self%29%3a%0a%20%20%20%20%20%20%20%20return%20self._make_position%28self._tailer._prev%29%0a%0a%20%20%20%20def%20before%28self%2c%20p%29%3a%0a%20%20%20%20%20%20%20%20node%20%3d%20self._validate%28p%29%0a%20%20%20%20%20%20%20%20return%20self._make_position%28node._prev%29%0a%0a%20%20%20%20def%20after%28self%2c%20p%29%3a%0a%20%20%20%20%20%20%20%20node%20%3d%20self._validate%28p%29%0a%20%20%20%20%20%20%20%20return%20self._make_position%28node._next%29%0a%0a%20%20%20%20def%20__iter__%28self%29%3a%0a%20%20%20%20%20%20%20%20cursor%20%3d%20self.first%28%29%0a%20%20%20%20%20%20%20%20while%20cursor%20is%20not%20None%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20yield%20cursor.element%28%29%0a%20%20%20%20%20%20%20%20%20%20%20%20cursor%20%3d%20self.after%28cursor%29%0a%0a%20%20%20%20def%20_insert_between%28self%2c%20value%2c%20predecessor%2c%20successor%29%3a%0a%20%20%20%20%20%20%20%20node%20%3d%20super%28%29._insert_between%28value%2c%20predecessor%2c%20successor%29%0a%20%20%20%20%20%20%20%20return%20self._make_position%28node%29%0a%0a%20%20%20%20def%20add_first%28self%2c%20value%29%3a%0a%20%20%20%20%20%20%20%20return%20self._insert_between%28value%2c%20self._header%2c%20self._header._next%29%0a%0a%20%20%20%20def%20add_last%28self%2c%20value%29%3a%0a%20%20%20%20%20%20%20%20return%20self._insert_between%28value%2c%20self._tailer._prev%2c%20self._tailer%29%0a%0a%20%20%20%20def%20add_befor%28self%2c%20value%2c%20p%29%3a%0a%20%20%20%20%20%20%20%20original%20%3d%20self._validate%28p%29%0a%20%20%20%20%20%20%20%20return%20self._insert_between%28value%2c%20original._prev%2c%20original%29%0a%0a%20%20%20%20def%20add_after%28self%2c%20value%2c%20p%29%3a%0a%20%20%20%20%20%20%20%20original%20%3d%20self._validate%28p%29%0a%20%20%20%20%20%20%20%20return%20self._insert_between%28value%2c%20original%2c%20original._next%29%0a%0a%20%20%20%20def%20_delete_between%28self%2c%20p%29%3a%0a%20%20%20%20%20%20%20%20original%20%3d%20self._validate%28p%29%0a%20%20%20%20%20%20%20%20return%20self._delete_between%28original%29%0a%0a%20%20%20%20def%20replace%28self%2c%20p%20%2c%20value%29%3a%0a%20%20%20%20%20%20%20%20original%20%3d%20self._validate%28p%29%0a%20%20%20%20%20%20%20%20ans%20%3d%20original._element%0a%20%20%20%20%20%20%20%20original._element%20%3d%20value%0a%20%20%20%20%20%20%20%20return%20ans%0a' target="_blank">open in editor</a>
+  </div>
   <figcaption class="caption">
    <span> Positional List</span>
   </figcaption>
@@ -1762,6 +1774,9 @@
         <span style="color:#66d9ef">return</span> ans</code></pre></td></tr></table>
 </div>
 </div>
+  </div>
+  <div class="editor" >
+    <a href='http://localhost:4200/?lang=Positional%20List&content=%0aclass%20Empty%28Exception%29%3a%0a%20%20%20%20pass%0a%0aclass%20_DoublyLinkedBase%3a%0a%0a%20%20%20%20class%20_Node%3a%0a%0a%20%20%20%20%20%20%20%20__slots__%20%3d%20%27_element%27%2c%20%27_prev%27%2c%20%27_next%27%0a%0a%20%20%20%20%20%20%20%20def%20__init__%28self%2c%20element%2c%20prev%2c%20next%29%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20self._element%20%3d%20element%0a%20%20%20%20%20%20%20%20%20%20%20%20self._prev%20%3d%20prev%0a%20%20%20%20%20%20%20%20%20%20%20%20self._next%20%3d%20next%0a%0a%20%20%20%20def%20__init__%28self%29%3a%0a%20%20%20%20%20%20%20%20self._header%20%3d%20self._Node%28None%2c%20None%2c%20None%29%0a%20%20%20%20%20%20%20%20self._tailer%20%3d%20self._Node%28None%2c%20None%2c%20None%29%0a%20%20%20%20%20%20%20%20self._header._next%20%3d%20self._tailer%0a%20%20%20%20%20%20%20%20self._tailer._next%20%3d%20self._header%0a%20%20%20%20%20%20%20%20self._size%20%3d%200%0a%0a%20%20%20%20def%20__len__%28self%29%3a%0a%20%20%20%20%20%20%20%20self._size%0a%0a%20%20%20%20def%20isEmpty%28self%29%3a%0a%20%20%20%20%20%20%20%20return%20self._size%20%3d%3d%200%0a%0a%20%20%20%20def%20_insert_between%28self%2c%20value%2c%20predecessor%2c%20successor%29%3a%0a%20%20%20%20%20%20%20%20node%20%3d%20self._Node%28value%2c%20predecessor%2c%20successor%29%0a%20%20%20%20%20%20%20%20predecessor._next%20%3d%20node%0a%20%20%20%20%20%20%20%20successor._prev%20%3d%20node%0a%20%20%20%20%20%20%20%20self._size%20%2b%3d%201%0a%20%20%20%20%20%20%20%20return%20node%0a%0a%20%20%20%20def%20_delete_between%28self%2c%20node%29%3a%0a%20%20%20%20%20%20%20%20ans%20%3d%20node._element%0a%20%20%20%20%20%20%20%20node._next._prev%20%3d%20node._prev%0a%20%20%20%20%20%20%20%20node._prev._next%20%3d%20node._next%0a%20%20%20%20%20%20%20%20self._size%20-%3d%201%0a%20%20%20%20%20%20%20%20node._element%20%3d%20node._prev%20%3d%20node._next%20%3d%20None%0a%20%20%20%20%20%20%20%20return%20ans%0a%0a%0aclass%20PositionalList%28_DoublyLinkedBase%29%3a%0a%0a%20%20%20%20class%20Position%3a%0a%0a%20%20%20%20%20%20%20%20def%20__init__%28self%2c%20container%2c%20node%29%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20self._container%20%3d%20container%0a%20%20%20%20%20%20%20%20%20%20%20%20self._node%20%3d%20node%0a%0a%20%20%20%20%20%20%20%20def%20element%28self%29%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self._node._element%0a%0a%20%20%20%20%20%20%20%20def%20__eq__%28self%2c%20other%29%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20type%28other%29%20is%20type%28self%29%20and%20other._node%20is%20self._node%0a%0a%20%20%20%20%20%20%20%20def%20__ne__%28self%2c%20other%29%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20not%20%28self%20%3d%3d%20other%29%0a%0a%0a%20%20%20%20def%20_validate%28self%2c%20p%29%3a%0a%20%20%20%20%20%20%20%20if%20not%20isinstance%28p%2c%20self.Position%29%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20raise%20TypeError%28%22p%20must%20be%20proper%20Postion%20type.%22%29%0a%20%20%20%20%20%20%20%20if%20p._container%20is%20not%20self%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20raise%20ValueError%28%22P%20does%20not%20belongs%20to%20this%20container.%22%29%0a%20%20%20%20%20%20%20%20if%20p._node._next%20is%20None%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20raise%20ValueError%28%22p%20is%20no%20longer%20valid.%22%29%0a%20%20%20%20%20%20%20%20return%20p._node%0a%0a%20%20%20%20def%20_make_position%28self%2c%20node%29%3a%0a%20%20%20%20%20%20%20%20if%20node%20is%20self._header%20or%20node%20is%20self._tailer%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20None%0a%20%20%20%20%20%20%20%20else%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%20self.Position%28self%2c%20node%29%0a%0a%20%20%20%20def%20first%28self%29%3a%0a%20%20%20%20%20%20%20%20return%20self._make_position%28self._header._next%29%0a%0a%20%20%20%20def%20last%28self%29%3a%0a%20%20%20%20%20%20%20%20return%20self._make_position%28self._tailer._prev%29%0a%0a%20%20%20%20def%20before%28self%2c%20p%29%3a%0a%20%20%20%20%20%20%20%20node%20%3d%20self._validate%28p%29%0a%20%20%20%20%20%20%20%20return%20self._make_position%28node._prev%29%0a%0a%20%20%20%20def%20after%28self%2c%20p%29%3a%0a%20%20%20%20%20%20%20%20node%20%3d%20self._validate%28p%29%0a%20%20%20%20%20%20%20%20return%20self._make_position%28node._next%29%0a%0a%20%20%20%20def%20__iter__%28self%29%3a%0a%20%20%20%20%20%20%20%20cursor%20%3d%20self.first%28%29%0a%20%20%20%20%20%20%20%20while%20cursor%20is%20not%20None%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20yield%20cursor.element%28%29%0a%20%20%20%20%20%20%20%20%20%20%20%20cursor%20%3d%20self.after%28cursor%29%0a%0a%20%20%20%20def%20_insert_between%28self%2c%20value%2c%20predecessor%2c%20successor%29%3a%0a%20%20%20%20%20%20%20%20node%20%3d%20super%28%29._insert_between%28value%2c%20predecessor%2c%20successor%29%0a%20%20%20%20%20%20%20%20return%20self._make_position%28node%29%0a%0a%20%20%20%20def%20add_first%28self%2c%20value%29%3a%0a%20%20%20%20%20%20%20%20return%20self._insert_between%28value%2c%20self._header%2c%20self._header._next%29%0a%0a%20%20%20%20def%20add_last%28self%2c%20value%29%3a%0a%20%20%20%20%20%20%20%20return%20self._insert_between%28value%2c%20self._tailer._prev%2c%20self._tailer%29%0a%0a%20%20%20%20def%20add_befor%28self%2c%20value%2c%20p%29%3a%0a%20%20%20%20%20%20%20%20original%20%3d%20self._validate%28p%29%0a%20%20%20%20%20%20%20%20return%20self._insert_between%28value%2c%20original._prev%2c%20original%29%0a%0a%20%20%20%20def%20add_after%28self%2c%20value%2c%20p%29%3a%0a%20%20%20%20%20%20%20%20original%20%3d%20self._validate%28p%29%0a%20%20%20%20%20%20%20%20return%20self._insert_between%28value%2c%20original%2c%20original._next%29%0a%0a%20%20%20%20def%20_delete_between%28self%2c%20p%29%3a%0a%20%20%20%20%20%20%20%20original%20%3d%20self._validate%28p%29%0a%20%20%20%20%20%20%20%20return%20self._delete_between%28original%29%0a%0a%20%20%20%20def%20replace%28self%2c%20p%20%2c%20value%29%3a%0a%20%20%20%20%20%20%20%20original%20%3d%20self._validate%28p%29%0a%20%20%20%20%20%20%20%20ans%20%3d%20original._element%0a%20%20%20%20%20%20%20%20original._element%20%3d%20value%0a%20%20%20%20%20%20%20%20return%20ans%0a' target="_blank">open in editor</a>
   </div>
 </figure>
 
@@ -2663,19 +2678,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1576731919"></script>
-    <script src="/js/perfect-scrollbar.min.js?1576731919"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1576731919"></script>
-    <script src="/js/jquery.sticky.js?1576731919"></script>
-    <script src="/js/featherlight.min.js?1576731919"></script>
-    <script src="/js/highlight.pack.js?1576731919"></script>
+    <script src="/js/clipboard.min.js?1576818752"></script>
+    <script src="/js/perfect-scrollbar.min.js?1576818752"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1576818752"></script>
+    <script src="/js/jquery.sticky.js?1576818752"></script>
+    <script src="/js/featherlight.min.js?1576818752"></script>
+    <script src="/js/highlight.pack.js?1576818752"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1576731919"></script>
-    <script src="/js/learn.js?1576731919"></script>
-    <script src="/js/hugo-learn.js?1576731919"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1576818752"></script>
+    <script src="/js/learn.js?1576818752"></script>
+    <script src="/js/hugo-learn.js?1576818752"></script>
 
-    <link href="/mermaid/mermaid.css?1576731919" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1576731919"></script>
+    <link href="/mermaid/mermaid.css?1576818752" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1576818752"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

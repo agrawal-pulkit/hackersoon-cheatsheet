@@ -11,20 +11,20 @@
     <title>BFS :: Hackersoon - Documentation</title>
 
     
-    <link href="/css/nucleus.css?1576731919" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1576731919" rel="stylesheet">
-    <link href="/css/hybrid.css?1576731919" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1576731919" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1576731919" rel="stylesheet">
-    <link href="/css/auto-complete.css?1576731919" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1576731919" rel="stylesheet">
-    <link href="/css/theme.css?1576731919" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1576731919" rel="stylesheet">
+    <link href="/css/nucleus.css?1576818752" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1576818752" rel="stylesheet">
+    <link href="/css/hybrid.css?1576818752" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1576818752" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1576818752" rel="stylesheet">
+    <link href="/css/auto-complete.css?1576818752" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1576818752" rel="stylesheet">
+    <link href="/css/theme.css?1576818752" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1576818752" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1576731919" rel="stylesheet">
+      <link href="/css/theme-blue.css?1576818752" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1576731919"></script>
+    <script src="/js/jquery-3.3.1.min.js?1576818752"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1576731919"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1576731919"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1576818752"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1576818752"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.hackersoon.com";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1576731919"></script>
+<script type="text/javascript" src="/js/search.js?1576818752"></script>
 
     
   </div>
@@ -1502,10 +1502,22 @@
       color: white;
       font-weight: normal;
       padding: 2px;
+      text-decoration: double;
+    }
+    .editor>a {
+      text-align: center;
+      padding: 5px;
+      color: blue;
+      font-weight: bold;
+      font-size: 20px;
+      margin: 5px;
     }
 </style>
 
 <figure class="code">
+  <div class="editor" >
+    <a href='http://localhost:4200/?lang=Breadth%20First%20Search&content=%0aclass%20Node%3a%0a%0a%20%20%20%20def%20__init__%28self%2c%20name%29%3a%0a%20%20%20%20%20%20%20%20self.name%20%3d%20name%0a%20%20%20%20%20%20%20%20self.adjacencyList%20%3d%20%5b%5d%0a%20%20%20%20%20%20%20%20self.visited%20%3d%20False%0a%20%20%20%20%20%20%20%20self.predecessor%20%3d%20None%0a%0aclass%20BFS%3a%0a%0a%20%20%20%20def%20bfs%28self%2c%20startNode%29%3a%0a%0a%20%20%20%20%20%20%20%20queue%20%3d%20%5b%5d%0a%20%20%20%20%20%20%20%20startNode.visited%20%3d%20True%0a%20%20%20%20%20%20%20%20queue.append%28startNode%29%0a%0a%20%20%20%20%20%20%20%20while%20queue%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20actualNode%20%3d%20queue.pop%280%29%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28actualNode.name%29%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20for%20n%20in%20actualNode.adjacencyList%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if%20not%20n.visited%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20n.visited%20%3d%20True%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20queue.append%28n%29%0a%0a%0anode1%20%3d%20Node%28%27A%27%29%0anode2%20%3d%20Node%28%27B%27%29%0anode3%20%3d%20Node%28%27C%27%29%0anode4%20%3d%20Node%28%27D%27%29%0anode5%20%3d%20Node%28%27E%27%29%0a%0a%0anode1.adjacencyList.append%28node2%29%0anode1.adjacencyList.append%28node3%29%0anode2.adjacencyList.append%28node4%29%0anode3.adjacencyList.append%28node5%29%0a%0abfs%20%3d%20BFS%28%29%0abfs.bfs%28node1%29%0a' target="_blank">open in editor</a>
+  </div>
   <figcaption class="caption">
    <span> Breadth First Search</span>
   </figcaption>
@@ -1596,6 +1608,9 @@ bfs <span style="color:#f92672">=</span> BFS()
 bfs<span style="color:#f92672">.</span>bfs(node1)</code></pre></td></tr></table>
 </div>
 </div>
+  </div>
+  <div class="editor" >
+    <a href='http://localhost:4200/?lang=Breadth%20First%20Search&content=%0aclass%20Node%3a%0a%0a%20%20%20%20def%20__init__%28self%2c%20name%29%3a%0a%20%20%20%20%20%20%20%20self.name%20%3d%20name%0a%20%20%20%20%20%20%20%20self.adjacencyList%20%3d%20%5b%5d%0a%20%20%20%20%20%20%20%20self.visited%20%3d%20False%0a%20%20%20%20%20%20%20%20self.predecessor%20%3d%20None%0a%0aclass%20BFS%3a%0a%0a%20%20%20%20def%20bfs%28self%2c%20startNode%29%3a%0a%0a%20%20%20%20%20%20%20%20queue%20%3d%20%5b%5d%0a%20%20%20%20%20%20%20%20startNode.visited%20%3d%20True%0a%20%20%20%20%20%20%20%20queue.append%28startNode%29%0a%0a%20%20%20%20%20%20%20%20while%20queue%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20actualNode%20%3d%20queue.pop%280%29%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28actualNode.name%29%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20for%20n%20in%20actualNode.adjacencyList%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if%20not%20n.visited%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20n.visited%20%3d%20True%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20queue.append%28n%29%0a%0a%0anode1%20%3d%20Node%28%27A%27%29%0anode2%20%3d%20Node%28%27B%27%29%0anode3%20%3d%20Node%28%27C%27%29%0anode4%20%3d%20Node%28%27D%27%29%0anode5%20%3d%20Node%28%27E%27%29%0a%0a%0anode1.adjacencyList.append%28node2%29%0anode1.adjacencyList.append%28node3%29%0anode2.adjacencyList.append%28node4%29%0anode3.adjacencyList.append%28node5%29%0a%0abfs%20%3d%20BFS%28%29%0abfs.bfs%28node1%29%0a' target="_blank">open in editor</a>
   </div>
 </figure>
 
@@ -2500,19 +2515,19 @@ bfs<span style="color:#f92672">.</span>bfs(node1)</code></pre></td></tr></table>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1576731919"></script>
-    <script src="/js/perfect-scrollbar.min.js?1576731919"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1576731919"></script>
-    <script src="/js/jquery.sticky.js?1576731919"></script>
-    <script src="/js/featherlight.min.js?1576731919"></script>
-    <script src="/js/highlight.pack.js?1576731919"></script>
+    <script src="/js/clipboard.min.js?1576818752"></script>
+    <script src="/js/perfect-scrollbar.min.js?1576818752"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1576818752"></script>
+    <script src="/js/jquery.sticky.js?1576818752"></script>
+    <script src="/js/featherlight.min.js?1576818752"></script>
+    <script src="/js/highlight.pack.js?1576818752"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1576731919"></script>
-    <script src="/js/learn.js?1576731919"></script>
-    <script src="/js/hugo-learn.js?1576731919"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1576818752"></script>
+    <script src="/js/learn.js?1576818752"></script>
+    <script src="/js/hugo-learn.js?1576818752"></script>
 
-    <link href="/mermaid/mermaid.css?1576731919" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1576731919"></script>
+    <link href="/mermaid/mermaid.css?1576818752" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1576818752"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

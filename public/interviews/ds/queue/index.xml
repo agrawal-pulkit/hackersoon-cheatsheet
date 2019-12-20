@@ -17,7 +17,7 @@
       <pubDate>Wed, 11 Dec 2019 11:14:00 +0530</pubDate>
       
       <guid>https://docs.hackersoon.com/interviews/ds/queue/queue_circular/</guid>
-      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; }   Circular Queue  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50  class Empty(Exception): pass class CircularQueue: class _Node: def __init__(self, element, next): self.</description>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; text-decoration: double; } .editora { text-align: center; padding: 5px; color: blue; font-weight: bold; font-size: 20px; margin: 5px; }  open in editor   Circular Queue  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50  class Empty(Exception): pass class CircularQueue: class _Node: def __init__(self, element, next): self.</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Wed, 11 Dec 2019 11:14:00 +0530</pubDate>
       
       <guid>https://docs.hackersoon.com/interviews/ds/queue/queue_dll/</guid>
-      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; }   Queue dll  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74  class Empty(Exception): pass class _DoublyLinkedBase: class _Node: __slots__ = &amp;#39;_element&amp;#39;, &amp;#39;_prev&amp;#39;, &amp;#39;_next&amp;#39; def __init__(self, element, prev, next): self.</description>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; text-decoration: double; } .editora { text-align: center; padding: 5px; color: blue; font-weight: bold; font-size: 20px; margin: 5px; }  open in editor   Queue dll  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74  class Empty(Exception): pass class _DoublyLinkedBase: class _Node: __slots__ = &amp;#39;_element&amp;#39;, &amp;#39;_prev&amp;#39;, &amp;#39;_next&amp;#39; def __init__(self, element, prev, next): self.</description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@
       <pubDate>Wed, 11 Dec 2019 11:14:00 +0530</pubDate>
       
       <guid>https://docs.hackersoon.com/interviews/ds/queue/queue_list/</guid>
-      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; }   Queue List  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47  class Empty(Exception): pass class ArrayQueue: DEFAULT_CAPACITY = 10 def __init__(self): self.</description>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; text-decoration: double; } .editora { text-align: center; padding: 5px; color: blue; font-weight: bold; font-size: 20px; margin: 5px; }  open in editor   Queue List  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47  class Empty(Exception): pass class ArrayQueue: DEFAULT_CAPACITY = 10 def __init__(self): self.</description>
     </item>
     
     <item>
@@ -44,7 +44,7 @@
       <pubDate>Wed, 11 Dec 2019 11:14:00 +0530</pubDate>
       
       <guid>https://docs.hackersoon.com/interviews/ds/queue/queue_ll/</guid>
-      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; }   Queue LL  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46  class Empty(Exception): pass class LinkedQueue: class _Node: __slots__ = &amp;#39;_element&amp;#39;, &amp;#39;_next&amp;#39; def __init__(self, element, next): self.</description>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; padding: 2px; text-decoration: double; } .editora { text-align: center; padding: 5px; color: blue; font-weight: bold; font-size: 20px; margin: 5px; }  open in editor   Queue LL  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46  class Empty(Exception): pass class LinkedQueue: class _Node: __slots__ = &amp;#39;_element&amp;#39;, &amp;#39;_next&amp;#39; def __init__(self, element, next): self.</description>
     </item>
     
   </channel>

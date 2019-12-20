@@ -5,14 +5,29 @@
       color: white;
       font-weight: normal;
       padding: 2px;
+      text-decoration: double;
+    }
+    .editor>a {
+      text-align: center;
+      padding: 5px;
+      color: blue;
+      font-weight: bold;
+      font-size: 20px;
+      margin: 5px;
     }
 </style>
 
 <figure class="code">
+  <div class="editor" >
+    <a href='https://hackersoon.com/?lang={{ .Get "title" }}&content={{  .Inner }}' target="_blank">open in editor</a>
+  </div>
   <figcaption class="caption">
    <span> {{ .Get "title" }}</span>
   </figcaption>
   <div class="codewrapper">
     {{ highlight (trim .Inner "\n\r") (.Get "lang") "linenos=true" }}
+  </div>
+  <div class="editor" >
+    <a href='https://hackersoon.com/?lang={{ .Get "title" }}&content={{  .Inner }}' target="_blank">open in editor</a>
   </div>
 </figure>

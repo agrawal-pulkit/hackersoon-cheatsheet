@@ -60,11 +60,12 @@ def mergesort(arr, l, r):
         mergesort(arr, m+1, r)
         merge(arr, l, m, r)
 
-# sample input
+#sample input
 
 arr = [12, 11, 13, 5, 6, 7]
 n = len(arr)
 print("Given array is: ", arr)
 mergesort(arr, 0, n - 1)
 print("\n\nSorted array is: ", arr)
+
 {{< /codecaption >}}
