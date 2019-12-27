@@ -7,7 +7,7 @@ weight: 70
 
 {{% children depth="3" sort="weight" %}}
 
-#### nc
+#### [nc](https://nakkaya.com/2009/04/15/using-netcat-for-file-transfers/)
 
     # Listener: 
     nc -l 1234 > out.file
