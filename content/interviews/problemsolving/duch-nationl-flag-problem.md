@@ -32,3 +32,5 @@ pivot = 1
 print("input: ", arr, pivot)
 result = rearragement(arr, pivot)
 print("output: ", result)
+
+{{< /codecaption >}}
