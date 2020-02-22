@@ -1,11 +1,11 @@
 ---
-title: "Duch National Flag Problem"
+title: "Advancing through an array"
 date: 2019-12-11T11:14:00+05:30
  
 weight: 999
 ---
 
-{{< codecaption lang="python" title="Duch National Flag Problem" >}}
+{{< codecaption lang="python" title="Advancing through an array" >}}
 """
 Advancing through an array.
 """

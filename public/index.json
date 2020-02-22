@@ -74,7 +74,7 @@
 	"title": "Problem Solving",
 	"tags": [],
 	"description": "",
-	"content": "Problem Solving  Duch National Flag Problem     Duch National Flag Problem     Sliding Window     Trapping Rain Problem     "
+	"content": "Problem Solving  Advancing through an array     Duch National Flag Problem     Sliding Window     Trapping Rain Problem     "
 },
 {
 	"uri": "https://docs.hackersoon.com/interviews/systemdesign/",
@@ -217,6 +217,13 @@
 	"content": "  Pymongo_client     "
 },
 {
+	"uri": "https://docs.hackersoon.com/interviews/problemsolving/advancing-through-an-array/",
+	"title": "Advancing through an array",
+	"tags": [],
+	"description": "",
+	"content": ".caption { text-align: center; background-color: grey; color: white; font-weight: normal; text-decoration: double; } .editorqa { text-align: center; padding: 5px; color: blue; font-weight: bold; font-size: 20px; margin: 5px; } .run { text-align: center; background-color: #343a40; border-color: #343a40; color: #fff; font-weight: normal; width: fit-content; text-decoration: none; cursor: pointer; display: block; padding: .25rem 2.5rem; line-height: 1.5; border-radius: .2rem; box-sizing: border-box; font-size: 1rem; margin-bottom: 2px; font-weight: 400; user-select: none; text-transform: none; }   Run    Advancing through an array  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  \u0026#34;\u0026#34;\u0026#34;Advancing through an array.\u0026#34;\u0026#34;\u0026#34; def iterateArray(arr): furthest_reach_so_far, last_index = 0, len(arr) - 1 i = 0 while i \u0026lt;= furthest_reach_so_far and furthest_reach_so_far \u0026lt;= last_index: furthest_reach_so_far = max(furthest_reach_so_far, arr[i] + i) print(furthest_reach_so_far) i += 1 return furthest_reach_so_far \u0026gt;= last_index arr = [3,3,1,0,2,0,1] print(iterateArray(arr))     "
+},
+{
 	"uri": "https://docs.hackersoon.com/interviews/algorithms/tree/avl-tree/",
 	"title": "AVL",
 	"tags": [],
@@ -278,13 +285,6 @@
 	"tags": [],
 	"description": "",
 	"content": "  Docker installation in MAC: brew install docker  "
-},
-{
-	"uri": "https://docs.hackersoon.com/interviews/problemsolving/advancing-through-an-array/",
-	"title": "Duch National Flag Problem",
-	"tags": [],
-	"description": "",
-	"content": ".caption { text-align: center; background-color: grey; color: white; font-weight: normal; text-decoration: double; } .editorqa { text-align: center; padding: 5px; color: blue; font-weight: bold; font-size: 20px; margin: 5px; } .run { text-align: center; background-color: #343a40; border-color: #343a40; color: #fff; font-weight: normal; width: fit-content; text-decoration: none; cursor: pointer; display: block; padding: .25rem 2.5rem; line-height: 1.5; border-radius: .2rem; box-sizing: border-box; font-size: 1rem; margin-bottom: 2px; font-weight: 400; user-select: none; text-transform: none; }   Run    Duch National Flag Problem  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  \u0026#34;\u0026#34;\u0026#34;Advancing through an array.\u0026#34;\u0026#34;\u0026#34; def iterateArray(arr): furthest_reach_so_far, last_index = 0, len(arr) - 1 i = 0 while i \u0026lt;= furthest_reach_so_far and furthest_reach_so_far \u0026lt;= last_index: furthest_reach_so_far = max(furthest_reach_so_far, arr[i] + i) print(furthest_reach_so_far) i += 1 return furthest_reach_so_far \u0026gt;= last_index arr = [3,3,1,0,2,0,1] print(iterateArray(arr))     "
 },
 {
 	"uri": "https://docs.hackersoon.com/interviews/problemsolving/duch-nationl-flag-problem/",
