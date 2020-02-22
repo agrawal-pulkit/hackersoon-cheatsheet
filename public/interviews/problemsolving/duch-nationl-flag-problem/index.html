@@ -11,20 +11,20 @@
     <title>Duch National Flag Problem :: Hackersoon - Documentation</title>
 
     
-    <link href="/css/nucleus.css?1582381519" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1582381519" rel="stylesheet">
-    <link href="/css/hybrid.css?1582381519" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1582381519" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1582381519" rel="stylesheet">
-    <link href="/css/auto-complete.css?1582381519" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1582381519" rel="stylesheet">
-    <link href="/css/theme.css?1582381519" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1582381519" rel="stylesheet">
+    <link href="/css/nucleus.css?1582382150" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1582382150" rel="stylesheet">
+    <link href="/css/hybrid.css?1582382150" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1582382150" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1582382150" rel="stylesheet">
+    <link href="/css/auto-complete.css?1582382150" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1582382150" rel="stylesheet">
+    <link href="/css/theme.css?1582382150" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1582382150" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1582381519" rel="stylesheet">
+      <link href="/css/theme-blue.css?1582382150" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1582381519"></script>
+    <script src="/js/jquery-3.3.1.min.js?1582382150"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1582381519"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1582381519"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1582382150"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1582382150"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.hackersoon.com";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1582381519"></script>
+<script type="text/javascript" src="/js/search.js?1582382150"></script>
 
     
   </div>
@@ -1627,7 +1627,7 @@
 
 <figure class="code">
   <figcaption>
-     <a href='https://hackersoon.com/?lang=python&content=%0a%0a%22%22%22%0aRearragement%20of%20numbers%20based%20on%20pivot%20number.%0a%22%22%22%0a%0adef%20rearragement%28arr%2c%20pivot%29%3a%0a%20%20%20%20s%2c%20e%2c%20l%20%3d%200%2c%200%2c%20len%28arr%29%0a%0a%20%20%20%20while%20e%20%3c%20l%3a%0a%20%20%20%20%20%20%20%20if%20arr%5be%5d%20%3c%20pivot%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20arr%5be%5d%2c%20arr%5bs%5d%20%3d%20arr%5bs%5d%2c%20arr%5be%5d%0a%20%20%20%20%20%20%20%20%20%20%20%20s%20%2b%3d%201%0a%20%20%20%20%20%20%20%20%20%20%20%20e%20%2b%3d%201%0a%20%20%20%20%20%20%20%20elif%20arr%5be%5d%20%3d%3d%20pivot%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20e%20%2b%3d%201%0a%20%20%20%20%20%20%20%20else%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20l%20-%3d%201%0a%20%20%20%20%20%20%20%20%20%20%20%20arr%5bl%5d%2c%20arr%5be%5d%20%3d%20arr%5be%5d%2c%20arr%5bl%5d%0a%20%20%20%20return%20arr%0a%20%20%20%20%0a%0aarr%20%3d%20%5b2%2c%204%2c%200%2c%201%2c%202%2c%200%2c%202%2c%201%2c%20-1%5d%0apivot%20%3d%201%0aprint%28%22input%3a%20%22%2c%20arr%2c%20pivot%29%0aresult%20%3d%20rearragement%28arr%2c%20pivot%29%0aprint%28%22output%3a%20%22%2c%20result%29%0a%0a' target="_blank">
+     <a href='https://hackersoon.com/?lang=python&content=%0a%0a%22%22%22%0aRearragement%20of%20numbers%20based%20on%20pivot%20number.%0asuppose%20A%20%3d%20%280%2c1.%2c2%2c0%2c2%2c1%2cL%29%2c%20and%20the%20pivot%20index%20is%203.%20%0aThen%20A%5b3%5d%20%3d%200%2c%20so%20%3c0%2c0%2c7%2c2%2c2%2cL%2c1%29%20is%20a%20valid%20partitioning.%20%0aFor%20the%20same%20array%2c%20if%20the%20pivot%20index%20is%202%2c%20%0athen%20Al2l%20%3d%202%2c%20the%20arrays%20%3c0%2c7%2c0%2c1%2c1%2c2%2c2%3e%20%0aas%20well%20as%20%280%2c0%2c%207%2c1%2c%2c%271%2c%2c2%2c2%3e%20are%20valid%20partitionings.%0a%0a%22%22%22%0a%0adef%20rearragement%28arr%2c%20pivot%29%3a%0a%20%20%20%20s%2c%20e%2c%20l%20%3d%200%2c%200%2c%20len%28arr%29%0a%0a%20%20%20%20while%20e%20%3c%20l%3a%0a%20%20%20%20%20%20%20%20if%20arr%5be%5d%20%3c%20pivot%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20arr%5be%5d%2c%20arr%5bs%5d%20%3d%20arr%5bs%5d%2c%20arr%5be%5d%0a%20%20%20%20%20%20%20%20%20%20%20%20s%20%2b%3d%201%0a%20%20%20%20%20%20%20%20%20%20%20%20e%20%2b%3d%201%0a%20%20%20%20%20%20%20%20elif%20arr%5be%5d%20%3d%3d%20pivot%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20e%20%2b%3d%201%0a%20%20%20%20%20%20%20%20else%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20l%20-%3d%201%0a%20%20%20%20%20%20%20%20%20%20%20%20arr%5bl%5d%2c%20arr%5be%5d%20%3d%20arr%5be%5d%2c%20arr%5bl%5d%0a%20%20%20%20return%20arr%0a%20%20%20%20%0a%0aarr%20%3d%20%5b2%2c%204%2c%200%2c%201%2c%202%2c%200%2c%202%2c%201%2c%20-1%5d%0apivot%20%3d%201%0aprint%28%22input%3a%20%22%2c%20arr%2c%20pivot%29%0aresult%20%3d%20rearragement%28arr%2c%20pivot%29%0aprint%28%22output%3a%20%22%2c%20result%29%0a%0a' target="_blank">
       <span  class="run">Run</span>
       </a>
   </figcaption>
@@ -1662,10 +1662,22 @@
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
 </span><span style="color:#e6db74"></span><span style="color:#e6db74">Rearragement of numbers based on pivot number.</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">suppose A = (0,1.,2,0,2,1,L), and the pivot index is 3. </span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">Then A[3] = 0, so &lt;0,0,7,2,2,L,1) is a valid partitioning. </span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">For the same array, if the pivot index is 2, </span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">then Al2l = 2, the arrays &lt;0,7,0,1,1,2,2&gt; </span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">as well as (0,0, 7,1,,</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">1,,2,2&gt; are valid partitionings.</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">
 </span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span>
 
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">rearragement</span>(arr, pivot):
@@ -2673,19 +2685,19 @@ result <span style="color:#f92672">=</span> rearragement(arr, pivot)
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1582381519"></script>
-    <script src="/js/perfect-scrollbar.min.js?1582381519"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1582381519"></script>
-    <script src="/js/jquery.sticky.js?1582381519"></script>
-    <script src="/js/featherlight.min.js?1582381519"></script>
-    <script src="/js/highlight.pack.js?1582381519"></script>
+    <script src="/js/clipboard.min.js?1582382150"></script>
+    <script src="/js/perfect-scrollbar.min.js?1582382150"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1582382150"></script>
+    <script src="/js/jquery.sticky.js?1582382150"></script>
+    <script src="/js/featherlight.min.js?1582382150"></script>
+    <script src="/js/highlight.pack.js?1582382150"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1582381519"></script>
-    <script src="/js/learn.js?1582381519"></script>
-    <script src="/js/hugo-learn.js?1582381519"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1582382150"></script>
+    <script src="/js/learn.js?1582382150"></script>
+    <script src="/js/hugo-learn.js?1582382150"></script>
 
-    <link href="/mermaid/mermaid.css?1582381519" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1582381519"></script>
+    <link href="/mermaid/mermaid.css?1582382150" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1582382150"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

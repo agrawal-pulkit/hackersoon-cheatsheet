@@ -11,20 +11,20 @@
     <title>Computing Alteration of an Array :: Hackersoon - Documentation</title>
 
     
-    <link href="/css/nucleus.css?1582381519" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1582381519" rel="stylesheet">
-    <link href="/css/hybrid.css?1582381519" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1582381519" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1582381519" rel="stylesheet">
-    <link href="/css/auto-complete.css?1582381519" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1582381519" rel="stylesheet">
-    <link href="/css/theme.css?1582381519" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1582381519" rel="stylesheet">
+    <link href="/css/nucleus.css?1582382150" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1582382150" rel="stylesheet">
+    <link href="/css/hybrid.css?1582382150" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1582382150" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1582382150" rel="stylesheet">
+    <link href="/css/auto-complete.css?1582382150" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1582382150" rel="stylesheet">
+    <link href="/css/theme.css?1582382150" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1582382150" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1582381519" rel="stylesheet">
+      <link href="/css/theme-blue.css?1582382150" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1582381519"></script>
+    <script src="/js/jquery-3.3.1.min.js?1582382150"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1582381519"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1582381519"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1582382150"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1582382150"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.hackersoon.com";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1582381519"></script>
+<script type="text/javascript" src="/js/search.js?1582382150"></script>
 
     
   </div>
@@ -1627,7 +1627,7 @@
 
 <figure class="code">
   <figcaption>
-     <a href='https://hackersoon.com/?lang=python&content=%0a%0adef%20rearrange%28arr%29%3a%0a%20%20%20%20for%20i%20in%20range%28len%28arr%29%29%3a%0a%20%20%20%20%20%20%20%20arr%5bi%3ai%2b2%5d%20%3d%20sorted%28arr%5bi%3ai%2b2%5d%2c%20reverse%3di%252%29%0a%20%20%20%20return%20%20arr%0a%0aarr%20%3d%20%5b2%2c%203%2c%204%2c%205%2c%206%2c%202%2c%203%2c%204%5d%0aresult%20%3d%20rearrange%28arr%29%0aprint%28%22result%3a%20%22%2c%20result%29%0a%0a' target="_blank">
+     <a href='https://hackersoon.com/?lang=python&content=%0a%0a%22%22%22%0aWrite%20a%20program%20that%20takes%20an%20array%20A%20of%20n%20numbers%2c%20and%20rearranges%20A%27s%20elements%20to%20get%20a%20new%20array%20BhavingthepropertythatB%5b0%5d%20%3c%20B%5b1%5d%20%3eBl2%29%20%3c%20B%5b3%5d%20%3e8141%3c%20B%5b5%5d%20%3e....%0a%0ayou%20may%20notice%20that%20the%20desired%20ordering%20is%20very%20local%2c%20and%20realize%20that%20it%20is%20not%20necessary%20to%20find%20the%20median.%20Iterating%20through%20the%20array%20and%20swapping%20A%5bi%5d%20and%20AU%20%2b%201l%20when%20i%20is%20even%20and%0aAlil%20%3e%20Ali%20%2b%201l%20or%20I%20is%20odd%20and%20A%5b4%20%3c%20Ali%20%2b%201%5d%20achieves%20the%20desired%20configuration.%20In%20code%3a%0a%22%22%22%0adef%20rearrange%28arr%29%3a%0a%20%20%20%20for%20i%20in%20range%28len%28arr%29%29%3a%0a%20%20%20%20%20%20%20%20arr%5bi%3ai%2b2%5d%20%3d%20sorted%28arr%5bi%3ai%2b2%5d%2c%20reverse%3di%252%29%0a%20%20%20%20return%20%20arr%0a%0aarr%20%3d%20%5b2%2c%203%2c%204%2c%205%2c%206%2c%202%2c%203%2c%204%5d%0aresult%20%3d%20rearrange%28arr%29%0aprint%28%22result%3a%20%22%2c%20result%29%0a%0a' target="_blank">
       <span  class="run">Run</span>
       </a>
   </figcaption>
@@ -1637,17 +1637,29 @@
   <div class="codewrapper">
     <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">rearrange</span>(arr):
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">Write a program that takes an array A of n numbers, and rearranges A</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">s elements to get a new array BhavingthepropertythatB[0] &lt; B[1] &gt;Bl2) &lt; B[3] &gt;8141&lt; B[5] &gt;....</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">you may notice that the desired ordering is very local, and realize that it is not necessary to find the median. Iterating through the array and swapping A[i] and AU + 1l when i is even and</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">Alil &gt; Ali + 1l or I is odd and A[4 &lt; Ali + 1] achieves the desired configuration. In code:</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">rearrange</span>(arr):
     <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(arr)):
         arr[i:i<span style="color:#f92672">+</span><span style="color:#ae81ff">2</span>] <span style="color:#f92672">=</span> sorted(arr[i:i<span style="color:#f92672">+</span><span style="color:#ae81ff">2</span>], reverse<span style="color:#f92672">=</span>i<span style="color:#f92672">%</span><span style="color:#ae81ff">2</span>)
     <span style="color:#66d9ef">return</span>  arr
@@ -2639,19 +2651,19 @@ result <span style="color:#f92672">=</span> rearrange(arr)
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1582381519"></script>
-    <script src="/js/perfect-scrollbar.min.js?1582381519"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1582381519"></script>
-    <script src="/js/jquery.sticky.js?1582381519"></script>
-    <script src="/js/featherlight.min.js?1582381519"></script>
-    <script src="/js/highlight.pack.js?1582381519"></script>
+    <script src="/js/clipboard.min.js?1582382150"></script>
+    <script src="/js/perfect-scrollbar.min.js?1582382150"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1582382150"></script>
+    <script src="/js/jquery.sticky.js?1582382150"></script>
+    <script src="/js/featherlight.min.js?1582382150"></script>
+    <script src="/js/highlight.pack.js?1582382150"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1582381519"></script>
-    <script src="/js/learn.js?1582381519"></script>
-    <script src="/js/hugo-learn.js?1582381519"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1582382150"></script>
+    <script src="/js/learn.js?1582382150"></script>
+    <script src="/js/hugo-learn.js?1582382150"></script>
 
-    <link href="/mermaid/mermaid.css?1582381519" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1582381519"></script>
+    <link href="/mermaid/mermaid.css?1582382150" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1582382150"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

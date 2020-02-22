@@ -11,20 +11,20 @@
     <title>Advancing through an array :: Hackersoon - Documentation</title>
 
     
-    <link href="/css/nucleus.css?1582381519" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1582381519" rel="stylesheet">
-    <link href="/css/hybrid.css?1582381519" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1582381519" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1582381519" rel="stylesheet">
-    <link href="/css/auto-complete.css?1582381519" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1582381519" rel="stylesheet">
-    <link href="/css/theme.css?1582381519" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1582381519" rel="stylesheet">
+    <link href="/css/nucleus.css?1582382150" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1582382150" rel="stylesheet">
+    <link href="/css/hybrid.css?1582382150" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1582382150" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1582382150" rel="stylesheet">
+    <link href="/css/auto-complete.css?1582382150" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1582382150" rel="stylesheet">
+    <link href="/css/theme.css?1582382150" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1582382150" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1582381519" rel="stylesheet">
+      <link href="/css/theme-blue.css?1582382150" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1582381519"></script>
+    <script src="/js/jquery-3.3.1.min.js?1582382150"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1582381519"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1582381519"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1582382150"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1582382150"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.hackersoon.com";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1582381519"></script>
+<script type="text/javascript" src="/js/search.js?1582382150"></script>
 
     
   </div>
@@ -1627,7 +1627,7 @@
 
 <figure class="code">
   <figcaption>
-     <a href='https://hackersoon.com/?lang=python&content=%0a%22%22%22%0aAdvancing%20through%20an%20array.%0a%22%22%22%0a%0adef%20iterateArray%28arr%29%3a%0a%20%20%20%20furthest_reach_so_far%2c%20last_index%20%3d%200%2c%20len%28arr%29%20-%201%0a%20%20%20%20i%20%3d%200%0a%20%20%20%20while%20i%20%3c%3d%20furthest_reach_so_far%20and%20furthest_reach_so_far%20%3c%3d%20last_index%3a%0a%20%20%20%20%20%20%20%20furthest_reach_so_far%20%3d%20max%28furthest_reach_so_far%2c%20arr%5bi%5d%20%2b%20i%29%0a%20%20%20%20%20%20%20%20print%28furthest_reach_so_far%29%0a%20%20%20%20%20%20%20%20i%20%2b%3d%201%0a%20%20%20%20return%20furthest_reach_so_far%20%3e%3d%20last_index%20%0a%0aarr%20%3d%20%5b3%2c3%2c1%2c0%2c2%2c0%2c1%5d%0aprint%28iterateArray%28arr%29%29%0a%0a' target="_blank">
+     <a href='https://hackersoon.com/?lang=python&content=%0a%22%22%22%0aAdvancing%20through%20an%20array.%0aif%20A%20%3d%20%3c3%2c3%2c7%2c0%2c2%2c0%2c1%29%2cwe%20iteratively%20compute%20the%20furthest%20we%20can%20advance%20to%20as%200%2c3%2c4%2c4%2c4%2c6%2c6%2c7%2c%20which%20reaches%20the%20last%20index%2c%206.%20lf%20A%20%3d%20%283%2c2%2c0%2c0%2c2%2c0%2c7%3e%2c%20we%20iteratively%20update%20the%20furthest%20we%20can%20advance%20to%20as%200%2c3%2c3%2c3%2c3%2c%20after%20which%20we%20cannot%20advance%2c%20so%20it%20is%20not%20possible%20to%20reach%20the%20last%20index.%0a%22%22%22%0a%0adef%20iterateArray%28arr%29%3a%0a%20%20%20%20furthest_reach_so_far%2c%20last_index%20%3d%200%2c%20len%28arr%29%20-%201%0a%20%20%20%20i%20%3d%200%0a%20%20%20%20while%20i%20%3c%3d%20furthest_reach_so_far%20and%20furthest_reach_so_far%20%3c%3d%20last_index%3a%0a%20%20%20%20%20%20%20%20furthest_reach_so_far%20%3d%20max%28furthest_reach_so_far%2c%20arr%5bi%5d%20%2b%20i%29%0a%20%20%20%20%20%20%20%20print%28furthest_reach_so_far%29%0a%20%20%20%20%20%20%20%20i%20%2b%3d%201%0a%20%20%20%20return%20furthest_reach_so_far%20%3e%3d%20last_index%20%0a%0aarr%20%3d%20%5b3%2c3%2c1%2c0%2c2%2c0%2c1%5d%0aprint%28iterateArray%28arr%29%29%0a%0a' target="_blank">
       <span  class="run">Run</span>
       </a>
   </figcaption>
@@ -1652,10 +1652,12 @@
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
 </span><span style="color:#e6db74"></span><span style="color:#e6db74">Advancing through an array.</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">if A = &lt;3,3,7,0,2,0,1),we iteratively compute the furthest we can advance to as 0,3,4,4,4,6,6,7, which reaches the last index, 6. lf A = (3,2,0,0,2,0,7&gt;, we iteratively update the furthest we can advance to as 0,3,3,3,3, after which we cannot advance, so it is not possible to reach the last index.</span><span style="color:#e6db74">
 </span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span>
 
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">iterateArray</span>(arr):
@@ -2650,19 +2652,19 @@ arr <span style="color:#f92672">=</span> [<span style="color:#ae81ff">3</span>,<
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1582381519"></script>
-    <script src="/js/perfect-scrollbar.min.js?1582381519"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1582381519"></script>
-    <script src="/js/jquery.sticky.js?1582381519"></script>
-    <script src="/js/featherlight.min.js?1582381519"></script>
-    <script src="/js/highlight.pack.js?1582381519"></script>
+    <script src="/js/clipboard.min.js?1582382150"></script>
+    <script src="/js/perfect-scrollbar.min.js?1582382150"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1582382150"></script>
+    <script src="/js/jquery.sticky.js?1582382150"></script>
+    <script src="/js/featherlight.min.js?1582382150"></script>
+    <script src="/js/highlight.pack.js?1582382150"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1582381519"></script>
-    <script src="/js/learn.js?1582381519"></script>
-    <script src="/js/hugo-learn.js?1582381519"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1582382150"></script>
+    <script src="/js/learn.js?1582382150"></script>
+    <script src="/js/hugo-learn.js?1582382150"></script>
 
-    <link href="/mermaid/mermaid.css?1582381519" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1582381519"></script>
+    <link href="/mermaid/mermaid.css?1582382150" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1582382150"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

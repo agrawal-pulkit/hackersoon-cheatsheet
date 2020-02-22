@@ -10,6 +10,8 @@ weight: 999
 """
 Delete Duplicate from a sorted array.
 And return number of duplicate entries after deletion.
+This problem is concemed with deleting repeated elements from a sorted array. For example, for the array <2,3,5,5,7,1.1.,L1.,77,73>, then after deletion, the array is (2,3,5,7,77,73,0,0,0). After deleting repeated elements, there are 6 valid entries. There are no requirements as to the values stored beyond the last valid element.
+
 """
 def delete_duplicate(arr):
     if len(arr) == 0:

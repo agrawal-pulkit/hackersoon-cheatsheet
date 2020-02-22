@@ -8,6 +8,7 @@ weight: 999
 {{< codecaption lang="python" title="Advancing through an array" >}}
 """
 Advancing through an array.
+if A = <3,3,7,0,2,0,1),we iteratively compute the furthest we can advance to as 0,3,4,4,4,6,6,7, which reaches the last index, 6. lf A = (3,2,0,0,2,0,7>, we iteratively update the furthest we can advance to as 0,3,3,3,3, after which we cannot advance, so it is not possible to reach the last index.
 """
 
 def iterateArray(arr):

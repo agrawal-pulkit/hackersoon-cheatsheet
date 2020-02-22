@@ -11,20 +11,20 @@
     <title>Buy and Sell Stock once :: Hackersoon - Documentation</title>
 
     
-    <link href="/css/nucleus.css?1582381519" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1582381519" rel="stylesheet">
-    <link href="/css/hybrid.css?1582381519" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1582381519" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1582381519" rel="stylesheet">
-    <link href="/css/auto-complete.css?1582381519" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1582381519" rel="stylesheet">
-    <link href="/css/theme.css?1582381519" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1582381519" rel="stylesheet">
+    <link href="/css/nucleus.css?1582382150" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1582382150" rel="stylesheet">
+    <link href="/css/hybrid.css?1582382150" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1582382150" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1582382150" rel="stylesheet">
+    <link href="/css/auto-complete.css?1582382150" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1582382150" rel="stylesheet">
+    <link href="/css/theme.css?1582382150" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1582382150" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1582381519" rel="stylesheet">
+      <link href="/css/theme-blue.css?1582382150" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1582381519"></script>
+    <script src="/js/jquery-3.3.1.min.js?1582382150"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1582381519"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1582381519"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1582382150"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1582382150"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.hackersoon.com";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1582381519"></script>
+<script type="text/javascript" src="/js/search.js?1582382150"></script>
 
     
   </div>
@@ -1627,7 +1627,7 @@
 
 <figure class="code">
   <figcaption>
-     <a href='https://hackersoon.com/?lang=python&content=%0a%0a%22%22%22%0aThis%20solution%20is%20based%20on%20two%20assumption.%0a1.%20max%20profit%20%0a2.%20min%20price%20so%20far%20%0a%22%22%22%0adef%20buy_and_sell_stock_once%28arr%29%3a%0a%20%20%20%20max_profit%2c%20min_price_so_far%20%3d%200%2c%20float%28%27inf%27%29%0a%0a%20%20%20%20for%20price%20in%20arr%3a%0a%20%20%20%20%20%20%20%20max_profit_sell_today%20%3d%20price%20-%20min_price_so_far%0a%20%20%20%20%20%20%20%20max_profit%20%3d%20max%28max_profit%2c%20max_profit_sell_today%29%0a%20%20%20%20%20%20%20%20min_price_so_far%20%3d%20min%28min_price_so_far%2c%20price%29%0a%20%20%20%20%0a%20%20%20%20return%20max_profit%0a%0aarr%20%3d%20%5b310%2c%20315%2c%20275%2c%20295%2c%20260%2c%20270%2c%20290%2c%20230%2c%20255%2c%20250%5d%0aresult%20%3d%20buy_and_sell_stock_once%28arr%29%0aprint%28%22result%3a%20%22%2c%20result%29%0a%0a%0a%22%22%22%0aWe%20can%20also%20solve%20this%20problem%20using%20maximum%20sum%20sub-array%20method.%0awhich%20is%20an%20example%20of%20kadane%27s%20algorithm.%0aLargest%20Sum%20Contiguous%20Subarray.%0a%22%22%22%0adef%20kadanes_algo%28arr%29%3a%0a%0a%20%20%20%20max_so_far%2c%20max_ending_here%20%3d%200%2c%200%0a%0a%20%20%20%20for%20i%20in%20range%28len%28arr%29%29%3a%0a%20%20%20%20%20%20%20%20max_ending_here%20%2b%3d%20arr%5bi%5d%0a%0a%20%20%20%20%20%20%20%20if%20max_ending_here%20%3c%200%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20max_ending_here%20%3d%200%0a%20%20%20%20%20%20%20%20elif%20max_so_far%20%3c%20max_ending_here%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20max_so_far%20%3d%20max_ending_here%0a%0a%20%20%20%20return%20max_so_far%0a%0adef%20buy_and_sell_stock%28arr%29%3a%0a%20%20%20%20for%20i%20in%20range%28len%28arr%29-1%29%3a%0a%20%20%20%20%20%20%20%20arr%5bi%5d%20%3d%20arr%5bi%2b1%5d%20-%20arr%5bi%5d%0a%20%20%20%20max_profit%20%3d%20kadanes_algo%28arr%5b%3a-1%5d%29%0a%20%20%20%20return%20max_profit%0a%0aarr%20%3d%20%5b310%2c%20315%2c%20275%2c%20295%2c%20260%2c%20270%2c%20290%2c%20230%2c%20255%2c%20250%5d%0aresult%20%3d%20buy_and_sell_stock%28arr%29%0aprint%28%22using%20kadane%27s%20Algo%20result%3a%20%22%2c%20result%29%0a%0a' target="_blank">
+     <a href='https://hackersoon.com/?lang=python&content=%0a%0a%22%22%22%0a%0aThis%20problem%20is%20concerned%20with%20the%20problem%20of%20optimally%20buying%20and%20selling%20a%20stock%20once%2c%20as%20described%20on%20Page%202.%20As%20an%20example%2c%20consider%20the%20following%20sequence%20of%20stock%20prices%3a%0aThe%20maximum%20profit%20that%20can%20be%20made%20with%20one%20buy%20and%20one%20sell%20is%2030-buy%20at%20260%20and%20sell%20at%20290.%20Note%20that%20250%20is%20not%20the%20lowest%20price%2c%20nor%20290%20the%0a%3c31.0%2c31.5%2c275%2c295%2c260%2c270%2c290%2c230%2c255%2c250%3e.%0ahighest%20price.%0aThis%20solution%20is%20based%20on%20two%20assumption.%0a1.%20max%20profit%20%0a2.%20min%20price%20so%20far%20%0a%22%22%22%0adef%20buy_and_sell_stock_once%28arr%29%3a%0a%20%20%20%20max_profit%2c%20min_price_so_far%20%3d%200%2c%20float%28%27inf%27%29%0a%0a%20%20%20%20for%20price%20in%20arr%3a%0a%20%20%20%20%20%20%20%20max_profit_sell_today%20%3d%20price%20-%20min_price_so_far%0a%20%20%20%20%20%20%20%20max_profit%20%3d%20max%28max_profit%2c%20max_profit_sell_today%29%0a%20%20%20%20%20%20%20%20min_price_so_far%20%3d%20min%28min_price_so_far%2c%20price%29%0a%20%20%20%20%0a%20%20%20%20return%20max_profit%0a%0aarr%20%3d%20%5b310%2c%20315%2c%20275%2c%20295%2c%20260%2c%20270%2c%20290%2c%20230%2c%20255%2c%20250%5d%0aresult%20%3d%20buy_and_sell_stock_once%28arr%29%0aprint%28%22result%3a%20%22%2c%20result%29%0a%0a%0a%22%22%22%0aWe%20can%20also%20solve%20this%20problem%20using%20maximum%20sum%20sub-array%20method.%0awhich%20is%20an%20example%20of%20kadane%27s%20algorithm.%0aLargest%20Sum%20Contiguous%20Subarray.%0a%22%22%22%0adef%20kadanes_algo%28arr%29%3a%0a%0a%20%20%20%20max_so_far%2c%20max_ending_here%20%3d%200%2c%200%0a%0a%20%20%20%20for%20i%20in%20range%28len%28arr%29%29%3a%0a%20%20%20%20%20%20%20%20max_ending_here%20%2b%3d%20arr%5bi%5d%0a%0a%20%20%20%20%20%20%20%20if%20max_ending_here%20%3c%200%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20max_ending_here%20%3d%200%0a%20%20%20%20%20%20%20%20elif%20max_so_far%20%3c%20max_ending_here%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20max_so_far%20%3d%20max_ending_here%0a%0a%20%20%20%20return%20max_so_far%0a%0adef%20buy_and_sell_stock%28arr%29%3a%0a%20%20%20%20for%20i%20in%20range%28len%28arr%29-1%29%3a%0a%20%20%20%20%20%20%20%20arr%5bi%5d%20%3d%20arr%5bi%2b1%5d%20-%20arr%5bi%5d%0a%20%20%20%20max_profit%20%3d%20kadanes_algo%28arr%5b%3a-1%5d%29%0a%20%20%20%20return%20max_profit%0a%0aarr%20%3d%20%5b310%2c%20315%2c%20275%2c%20295%2c%20260%2c%20270%2c%20290%2c%20230%2c%20255%2c%20250%5d%0aresult%20%3d%20buy_and_sell_stock%28arr%29%0aprint%28%22using%20kadane%27s%20Algo%20result%3a%20%22%2c%20result%29%0a%0a' target="_blank">
       <span  class="run">Run</span>
       </a>
   </figcaption>
@@ -1685,9 +1685,19 @@
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">This problem is concerned with the problem of optimally buying and selling a stock once, as described on Page 2. As an example, consider the following sequence of stock prices:</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">The maximum profit that can be made with one buy and one sell is 30-buy at 260 and sell at 290. Note that 250 is not the lowest price, nor 290 the</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">&lt;31.0,31.5,275,295,260,270,290,230,255,250&gt;.</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">highest price.</span><span style="color:#e6db74">
 </span><span style="color:#e6db74"></span><span style="color:#e6db74">This solution is based on two assumption.</span><span style="color:#e6db74">
 </span><span style="color:#e6db74"></span><span style="color:#e6db74">1. max profit </span><span style="color:#e6db74">
 </span><span style="color:#e6db74"></span><span style="color:#e6db74">2. min price so far </span><span style="color:#e6db74">
@@ -2719,19 +2729,19 @@ result <span style="color:#f92672">=</span> buy_and_sell_stock(arr)
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1582381519"></script>
-    <script src="/js/perfect-scrollbar.min.js?1582381519"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1582381519"></script>
-    <script src="/js/jquery.sticky.js?1582381519"></script>
-    <script src="/js/featherlight.min.js?1582381519"></script>
-    <script src="/js/highlight.pack.js?1582381519"></script>
+    <script src="/js/clipboard.min.js?1582382150"></script>
+    <script src="/js/perfect-scrollbar.min.js?1582382150"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1582382150"></script>
+    <script src="/js/jquery.sticky.js?1582382150"></script>
+    <script src="/js/featherlight.min.js?1582382150"></script>
+    <script src="/js/highlight.pack.js?1582382150"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1582381519"></script>
-    <script src="/js/learn.js?1582381519"></script>
-    <script src="/js/hugo-learn.js?1582381519"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1582382150"></script>
+    <script src="/js/learn.js?1582382150"></script>
+    <script src="/js/hugo-learn.js?1582382150"></script>
 
-    <link href="/mermaid/mermaid.css?1582381519" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1582381519"></script>
+    <link href="/mermaid/mermaid.css?1582382150" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1582382150"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -8,6 +8,11 @@ weight: 999
 {{< codecaption lang="python" title="Buy and Sell Stock once" >}}
 
 """
+
+This problem is concerned with the problem of optimally buying and selling a stock once, as described on Page 2. As an example, consider the following sequence of stock prices:
+The maximum profit that can be made with one buy and one sell is 30-buy at 260 and sell at 290. Note that 250 is not the lowest price, nor 290 the
+<31.0,31.5,275,295,260,270,290,230,255,250>.
+highest price.
 This solution is based on two assumption.
 1. max profit 
 2. min price so far 
