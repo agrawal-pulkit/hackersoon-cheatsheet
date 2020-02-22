@@ -8,7 +8,7 @@
 <meta name="author" content="Pulkit Agrawal">
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Stack :: Hackersoon - Documentation</title>
+    <title>Computing Alteration of an Array :: Hackersoon - Documentation</title>
 
     
     <link href="/css/nucleus.css?1582381519" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/interviews/ds/stack/">
+  <body class="" data-url="/interviews/problemsolving/computing-alteration-of-array/">
     <nav id="sidebar" class="">
 
 
@@ -996,7 +996,7 @@
   
     
     <li data-nav-id="/interviews/ds/" title="Data Sturctures" class="dd-item 
-        parent
+        
         
         
         ">
@@ -1186,8 +1186,8 @@
   
     
     <li data-nav-id="/interviews/ds/stack/" title="Stack" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/interviews/ds/stack/">
@@ -1267,7 +1267,7 @@
   
     
     <li data-nav-id="/interviews/problemsolving/" title="Problem Solving" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1329,7 +1329,7 @@
  
   
     
-      <li data-nav-id="/interviews/problemsolving/computing-alteration-of-array/" title="Computing Alteration of an Array" class="dd-item ">
+      <li data-nav-id="/interviews/problemsolving/computing-alteration-of-array/" title="Computing Alteration of an Array" class="dd-item active">
         <a href="/interviews/problemsolving/computing-alteration-of-array/">
         Computing Alteration of an Array
         
@@ -1510,7 +1510,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/agrawal-pulkit/hackersoon-cheatsheet/edit/master/content/interviews/ds/stack/_index.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/agrawal-pulkit/hackersoon-cheatsheet/edit/master/content/interviews/problemsolving/computing-alteration-of-array.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -1524,6 +1524,8 @@
                           <i class="fas fa-bars"></i>
                         </a>
                     </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
                   
                   <span class="links">
                  
@@ -1543,7 +1545,7 @@
             
           
           
-            <a href='/'></a> > <a href='/interviews/'>Interview Prepartion</a> > <a href='/interviews/ds/'>Data Sturctures</a> > Stack
+            <a href='/'></a> > <a href='/interviews/'>Interview Prepartion</a> > <a href='/interviews/problemsolving/'>Problem Solving</a> > Computing Alteration of an Array
           
          
           
@@ -1556,6 +1558,13 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents"></nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
@@ -1563,122 +1572,100 @@
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              Computing Alteration of an Array
+            </h1>
           
 
         
 
 
 
+<style type="text/css">
+  .caption {
+    text-align: center;
+    background-color: grey;
+    color: white;
+    font-weight: normal;
+    text-decoration: double;
+  }
 
-	<h1 id="stack">Stack</h1>
+  .editorq>a {
+    text-align: center;
+    padding: 5px;
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px;
+  }
 
-
-
-
-
-
-
-<ul class="children children-li">
-	
-
-	
-		
-	
-
-	
-
-	
-		
-	
-		
-			
-				
-<li>
-<a href="/interviews/ds/stack/stack_list/" >Stack List</a>
-</li>
-				
-
-				
-			
-			
-
-				
-<ul>
-				
-
-				
-					
-				
-
-				
-
-				
-					
-	
-
-				
-
-				
-</ul>
-				
-			
-		
-	
-		
-			
-				
-<li>
-<a href="/interviews/ds/stack/stack_ll/" >Stack LL</a>
-</li>
-				
-
-				
-			
-			
-
-				
-<ul>
-				
-
-				
-					
-				
-
-				
-
-				
-					
-	
-
-				
-
-				
-</ul>
-				
-			
-		
-	
-
-	
-</ul>
+  .run {
+    text-align: center;
+    background-color: #343a40;
+    border-color: #343a40;
+    color: #fff;
+    font-weight: normal;
+    width: fit-content;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    padding: .25rem 2.5rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    margin-bottom: 2px;
+    font-weight: 400;
+    user-select: none;
+    text-transform: none;
+  }
+</style>
 
 
+<figure class="code">
+  <figcaption>
+     <a href='https://hackersoon.com/?lang=python&content=%0a%0adef%20rearrange%28arr%29%3a%0a%20%20%20%20for%20i%20in%20range%28len%28arr%29%29%3a%0a%20%20%20%20%20%20%20%20arr%5bi%3ai%2b2%5d%20%3d%20sorted%28arr%5bi%3ai%2b2%5d%2c%20reverse%3di%252%29%0a%20%20%20%20return%20%20arr%0a%0aarr%20%3d%20%5b2%2c%203%2c%204%2c%205%2c%206%2c%202%2c%203%2c%204%5d%0aresult%20%3d%20rearrange%28arr%29%0aprint%28%22result%3a%20%22%2c%20result%29%0a%0a' target="_blank">
+      <span  class="run">Run</span>
+      </a>
+  </figcaption>
+  <figcaption class="caption">
+    <span> Computing Alteration of an Array</span>
+  </figcaption>
+  <div class="codewrapper">
+    <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">rearrange</span>(arr):
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(arr)):
+        arr[i:i<span style="color:#f92672">+</span><span style="color:#ae81ff">2</span>] <span style="color:#f92672">=</span> sorted(arr[i:i<span style="color:#f92672">+</span><span style="color:#ae81ff">2</span>], reverse<span style="color:#f92672">=</span>i<span style="color:#f92672">%</span><span style="color:#ae81ff">2</span>)
+    <span style="color:#66d9ef">return</span>  arr
 
-
-
-
-
+arr <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]
+result <span style="color:#f92672">=</span> rearrange(arr)
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">result: </span><span style="color:#e6db74">&#34;</span>, result)</code></pre></td></tr></table>
+</div>
+</div>
+  </div>
+</figure>
 
 
 <footer class=" footline" >
 	
 </footer>
 
-        
-            </div> 
+
         
         </div> 
         
@@ -2302,7 +2289,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -2317,9 +2303,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -2433,6 +2416,57 @@
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -2477,29 +2511,11 @@
             
         
                     
-            
-        
-                    
-            
-        
-                    
                         
             
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -2517,37 +2533,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
                     
                 
                 
@@ -2639,10 +2626,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/interviews/ds/queue/queue_ll/" title="Queue LL"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/interviews/problemsolving/buy-and-sell-stock-once/" title="Buy and Sell Stock once"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/interviews/ds/stack/stack_list/" title="Stack List" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/interviews/problemsolving/deletion-duplicate-in-array/" title="Delete Duplicate from Array" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2672,3 +2659,4 @@
 
   </body>
 </html>
+

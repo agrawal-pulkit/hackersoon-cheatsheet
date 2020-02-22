@@ -1,11 +1,11 @@
 ---
-title: "Buy and Sell Price once"
+title: "Buy and Sell Stock once"
 date: 2019-12-11T11:14:00+05:30
  
 weight: 999
 ---
 
-{{< codecaption lang="python" title="Buy and Sell Price once" >}}
+{{< codecaption lang="python" title="Buy and Sell Stock once" >}}
 
 """
 This solution is based on two assumption.
