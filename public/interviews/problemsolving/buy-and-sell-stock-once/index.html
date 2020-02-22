@@ -8,7 +8,7 @@
 <meta name="author" content="Pulkit Agrawal">
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Binary Tree Views :: Hackersoon - Documentation</title>
+    <title>Buy and Sell Price once :: Hackersoon - Documentation</title>
 
     
     <link href="/css/nucleus.css?1582379034" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/interviews/algorithms/tree/binary-tree-view/">
+  <body class="" data-url="/interviews/problemsolving/buy-and-sell-stock-once/">
     <nav id="sidebar" class="">
 
 
@@ -668,7 +668,7 @@
   
     
     <li data-nav-id="/interviews/algorithms/" title="Algorithms" class="dd-item 
-        parent
+        
         
         
         ">
@@ -858,7 +858,7 @@
   
     
     <li data-nav-id="/interviews/algorithms/tree/" title="Tree" class="dd-item 
-        parent
+        
         
         
         ">
@@ -920,7 +920,7 @@
  
   
     
-      <li data-nav-id="/interviews/algorithms/tree/binary-tree-view/" title="Binary Tree Views" class="dd-item active">
+      <li data-nav-id="/interviews/algorithms/tree/binary-tree-view/" title="Binary Tree Views" class="dd-item ">
         <a href="/interviews/algorithms/tree/binary-tree-view/">
         Binary Tree Views
         
@@ -1267,7 +1267,7 @@
   
     
     <li data-nav-id="/interviews/problemsolving/" title="Problem Solving" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1310,7 +1310,7 @@
  
   
     
-      <li data-nav-id="/interviews/problemsolving/buy-and-sell-stock-once/" title="Buy and Sell Price once" class="dd-item ">
+      <li data-nav-id="/interviews/problemsolving/buy-and-sell-stock-once/" title="Buy and Sell Price once" class="dd-item active">
         <a href="/interviews/problemsolving/buy-and-sell-stock-once/">
         Buy and Sell Price once
         
@@ -1491,7 +1491,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/agrawal-pulkit/hackersoon-cheatsheet/edit/master/content/interviews/algorithms/tree/binary-tree-view.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/agrawal-pulkit/hackersoon-cheatsheet/edit/master/content/interviews/problemsolving/buy-and-sell-stock-once.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -1526,13 +1526,7 @@
             
           
           
-            
-            
-          
-          
-            <a href='/'></a> > <a href='/interviews/'>Interview Prepartion</a> > <a href='/interviews/algorithms/'>Algorithms</a> > <a href='/interviews/algorithms/tree/'>Tree</a> > Binary Tree Views
-          
-         
+            <a href='/'></a> > <a href='/interviews/'>Interview Prepartion</a> > <a href='/interviews/problemsolving/'>Problem Solving</a> > Buy and Sell Price once
           
          
           
@@ -1563,7 +1557,7 @@
           
             <h1>
               
-              Binary Tree Views
+              Buy and Sell Price once
             </h1>
           
 
@@ -1614,12 +1608,12 @@
 
 <figure class="code">
   <figcaption>
-     <a href='https://hackersoon.com/?lang=python&content=%0aclass%20Node%3a%0a%0a%20%20%20%20def%20__init__%28self%2c%20data%29%3a%0a%20%20%20%20%20%20%20%20self.data%20%3d%20data%0a%20%20%20%20%20%20%20%20self.leftChild%20%3d%20None%0a%20%20%20%20%20%20%20%20self.rightChild%20%3d%20None%0a%0a%0aclass%20BinaryTree%3a%0a%0a%20%20%20%20def%20__init__%28self%29%3a%0a%20%20%20%20%20%20%20%20self.root%20%3d%20None%0a%0a%20%20%20%20def%20printMirrorView%28self%2c%20node%29%3a%0a%0a%20%20%20%20%20%20%20%20q%20%3d%20%5b%5d%0a%20%20%20%20%20%20%20%20q.append%28node%29%0a%0a%20%20%20%20%20%20%20%20while%20q%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20node%20%3d%20q.pop%280%29%0a%0a%20%20%20%20%20%20%20%20%20%20%20%20node.leftChild%2c%20node.rightChild%20%3d%20node.rightChild%2c%20node.leftChild%0a%20%20%20%20%20%20%20%20%20%20%20%20if%20node.leftChild%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20q.append%28node.leftChild%29%0a%20%20%20%20%20%20%20%20%20%20%20%20if%20node.rightChild%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20q.append%28node.rightChild%29%0a%0a%0a%20%20%20%20def%20leftView%28self%2c%20node%29%3a%0a%20%20%20%20%20%20%20%20if%20not%20node%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%0a%0a%20%20%20%20%20%20%20%20while%20node%20is%20not%20None%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20print%28node.data%29%0a%20%20%20%20%20%20%20%20%20%20%20%20if%20node.leftChild%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20node%20%3d%20node.leftChild%0a%20%20%20%20%20%20%20%20%20%20%20%20else%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20node%20%3d%20node.rightChild%0a%0a%0a%20%20%20%20def%20traverseInOrder%28self%2c%20node%29%3a%0a%0a%20%20%20%20%20%20%20%20if%20not%20node%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20return%0a%0a%20%20%20%20%20%20%20%20self.traverseInOrder%28node.leftChild%29%0a%20%20%20%20%20%20%20%20print%28node.data%29%0a%20%20%20%20%20%20%20%20self.traverseInOrder%28node.rightChild%29%0a%0adef%20createTree%28%29%3a%0a%20%20%20%20bt%20%3d%20BinaryTree%28%29%0a%20%20%20%20bt.root%20%3d%20Node%281%29%0a%20%20%20%20bt.root.leftChild%20%3d%20Node%282%29%0a%20%20%20%20bt.root.rightChild%20%3d%20Node%283%29%0a%20%20%20%20bt.root.leftChild.leftChild%20%3d%20Node%284%29%0a%20%20%20%20bt.root.leftChild.rightChild%20%3d%20Node%285%29%0a%20%20%20%20bt.root.leftChild.leftChild.leftChild%20%3d%20Node%286%29%0a%20%20%20%20return%20bt%0a%0aif%20__name__%20%3d%3d%20%22__main__%22%3a%0a%0a%20%20%20%20%23%20bt%20%3d%20createTree%28%29%0a%20%20%20%20%23%20bt.traverseInOrder%28bt.root%29%0a%20%20%20%20%23%20bt.printMirrorView%28bt.root%29%0a%20%20%20%20%23%20bt.traverseInOrder%28bt.root%29%0a%0a%20%20%20%20bt1%20%3d%20createTree%28%29%0a%20%20%20%20%23bt1.traverseInOrder%28bt1.root%29%0a%20%20%20%20bt1.leftView%28bt1.root%29%0a%20%20%20%20%23bt1.traverseInOrder%28bt1.root%29%0a%0a' target="_blank">
+     <a href='https://hackersoon.com/?lang=python&content=%0a%0a%22%22%22%0aThis%20solution%20is%20based%20on%20two%20assumption.%0a1.%20max%20profit%20%0a2.%20min%20price%20so%20far%20%0a%22%22%22%0adef%20buy_and_sell_stock_once%28arr%29%3a%0a%20%20%20%20max_profit%2c%20min_price_so_far%20%3d%200%2c%20float%28%27inf%27%29%0a%0a%20%20%20%20for%20price%20in%20arr%3a%0a%20%20%20%20%20%20%20%20max_profit_sell_today%20%3d%20price%20-%20min_price_so_far%0a%20%20%20%20%20%20%20%20max_profit%20%3d%20max%28max_profit%2c%20max_profit_sell_today%29%0a%20%20%20%20%20%20%20%20min_price_so_far%20%3d%20min%28min_price_so_far%2c%20price%29%0a%20%20%20%20%0a%20%20%20%20return%20max_profit%0a%0aarr%20%3d%20%5b310%2c%20315%2c%20275%2c%20295%2c%20260%2c%20270%2c%20290%2c%20230%2c%20255%2c%20250%5d%0aresult%20%3d%20buy_and_sell_stock_once%28arr%29%0aprint%28%22result%3a%20%22%2c%20result%29%0a%0a%0a%22%22%22%0aWe%20can%20also%20solve%20this%20problem%20using%20maximum%20sum%20sub-array%20method.%0awhich%20is%20an%20example%20of%20kadane%27s%20algorithm.%0aLargest%20Sum%20Contiguous%20Subarray.%0a%22%22%22%0adef%20kadanes_algo%28arr%29%3a%0a%0a%20%20%20%20max_so_far%2c%20max_ending_here%20%3d%200%2c%200%0a%0a%20%20%20%20for%20i%20in%20range%28len%28arr%29%29%3a%0a%20%20%20%20%20%20%20%20max_ending_here%20%2b%3d%20arr%5bi%5d%0a%0a%20%20%20%20%20%20%20%20if%20max_ending_here%20%3c%200%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20max_ending_here%20%3d%200%0a%20%20%20%20%20%20%20%20elif%20max_so_far%20%3c%20max_ending_here%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20max_so_far%20%3d%20max_ending_here%0a%0a%20%20%20%20return%20max_so_far%0a%0adef%20buy_and_sell_stock%28arr%29%3a%0a%20%20%20%20for%20i%20in%20range%28len%28arr%29-1%29%3a%0a%20%20%20%20%20%20%20%20arr%5bi%5d%20%3d%20arr%5bi%2b1%5d%20-%20arr%5bi%5d%0a%20%20%20%20max_profit%20%3d%20kadanes_algo%28arr%5b%3a-1%5d%29%0a%20%20%20%20return%20max_profit%0a%0aarr%20%3d%20%5b310%2c%20315%2c%20275%2c%20295%2c%20260%2c%20270%2c%20290%2c%20230%2c%20255%2c%20250%5d%0aresult%20%3d%20buy_and_sell_stock%28arr%29%0aprint%28%22using%20kadane%27s%20Algo%20result%3a%20%22%2c%20result%29%0a%0a' target="_blank">
       <span  class="run">Run</span>
       </a>
   </figcaption>
   <figcaption class="caption">
-    <span> Binary Tree Views</span>
+    <span> Buy and Sell Price once</span>
   </figcaption>
   <div class="codewrapper">
     <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
@@ -1672,100 +1666,56 @@
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">54
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">55
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">56
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">57
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">58
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">59
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">60
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">61
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">62
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">63
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">64
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">65
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">66
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">67
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">68
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">69
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">70
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Node</span>:
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">This solution is based on two assumption.</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">1. max profit </span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">2. min price so far </span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">buy_and_sell_stock_once</span>(arr):
+    max_profit, min_price_so_far <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, float(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">inf</span><span style="color:#e6db74">&#39;</span>)
 
-    <span style="color:#66d9ef">def</span> __init__(self, data):
-        self<span style="color:#f92672">.</span>data <span style="color:#f92672">=</span> data
-        self<span style="color:#f92672">.</span>leftChild <span style="color:#f92672">=</span> None
-        self<span style="color:#f92672">.</span>rightChild <span style="color:#f92672">=</span> None
+    <span style="color:#66d9ef">for</span> price <span style="color:#f92672">in</span> arr:
+        max_profit_sell_today <span style="color:#f92672">=</span> price <span style="color:#f92672">-</span> min_price_so_far
+        max_profit <span style="color:#f92672">=</span> max(max_profit, max_profit_sell_today)
+        min_price_so_far <span style="color:#f92672">=</span> min(min_price_so_far, price)
+    
+    <span style="color:#66d9ef">return</span> max_profit
 
-
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BinaryTree</span>:
-
-    <span style="color:#66d9ef">def</span> __init__(self):
-        self<span style="color:#f92672">.</span>root <span style="color:#f92672">=</span> None
-
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">printMirrorView</span>(self, node):
-
-        q <span style="color:#f92672">=</span> []
-        q<span style="color:#f92672">.</span>append(node)
-
-        <span style="color:#66d9ef">while</span> q:
-            node <span style="color:#f92672">=</span> q<span style="color:#f92672">.</span>pop(<span style="color:#ae81ff">0</span>)
-
-            node<span style="color:#f92672">.</span>leftChild, node<span style="color:#f92672">.</span>rightChild <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>rightChild, node<span style="color:#f92672">.</span>leftChild
-            <span style="color:#66d9ef">if</span> node<span style="color:#f92672">.</span>leftChild:
-                q<span style="color:#f92672">.</span>append(node<span style="color:#f92672">.</span>leftChild)
-            <span style="color:#66d9ef">if</span> node<span style="color:#f92672">.</span>rightChild:
-                q<span style="color:#f92672">.</span>append(node<span style="color:#f92672">.</span>rightChild)
+arr <span style="color:#f92672">=</span> [<span style="color:#ae81ff">310</span>, <span style="color:#ae81ff">315</span>, <span style="color:#ae81ff">275</span>, <span style="color:#ae81ff">295</span>, <span style="color:#ae81ff">260</span>, <span style="color:#ae81ff">270</span>, <span style="color:#ae81ff">290</span>, <span style="color:#ae81ff">230</span>, <span style="color:#ae81ff">255</span>, <span style="color:#ae81ff">250</span>]
+result <span style="color:#f92672">=</span> buy_and_sell_stock_once(arr)
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">result: </span><span style="color:#e6db74">&#34;</span>, result)
 
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">leftView</span>(self, node):
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> node:
-            <span style="color:#66d9ef">return</span>
+<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">We can also solve this problem using maximum sum sub-array method.</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">which is an example of kadane</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">s algorithm.</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">Largest Sum Contiguous Subarray.</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">kadanes_algo</span>(arr):
 
-        <span style="color:#66d9ef">while</span> node <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> None:
-            <span style="color:#66d9ef">print</span>(node<span style="color:#f92672">.</span>data)
-            <span style="color:#66d9ef">if</span> node<span style="color:#f92672">.</span>leftChild:
-                node <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>leftChild
-            <span style="color:#66d9ef">else</span>:
-                node <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>rightChild
+    max_so_far, max_ending_here <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>
 
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(arr)):
+        max_ending_here <span style="color:#f92672">+</span><span style="color:#f92672">=</span> arr[i]
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">traverseInOrder</span>(self, node):
+        <span style="color:#66d9ef">if</span> max_ending_here <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>:
+            max_ending_here <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+        <span style="color:#66d9ef">elif</span> max_so_far <span style="color:#f92672">&lt;</span> max_ending_here:
+            max_so_far <span style="color:#f92672">=</span> max_ending_here
 
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> node:
-            <span style="color:#66d9ef">return</span>
+    <span style="color:#66d9ef">return</span> max_so_far
 
-        self<span style="color:#f92672">.</span>traverseInOrder(node<span style="color:#f92672">.</span>leftChild)
-        <span style="color:#66d9ef">print</span>(node<span style="color:#f92672">.</span>data)
-        self<span style="color:#f92672">.</span>traverseInOrder(node<span style="color:#f92672">.</span>rightChild)
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">buy_and_sell_stock</span>(arr):
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(arr)<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
+        arr[i] <span style="color:#f92672">=</span> arr[i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">-</span> arr[i]
+    max_profit <span style="color:#f92672">=</span> kadanes_algo(arr[:<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>])
+    <span style="color:#66d9ef">return</span> max_profit
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">createTree</span>():
-    bt <span style="color:#f92672">=</span> BinaryTree()
-    bt<span style="color:#f92672">.</span>root <span style="color:#f92672">=</span> Node(<span style="color:#ae81ff">1</span>)
-    bt<span style="color:#f92672">.</span>root<span style="color:#f92672">.</span>leftChild <span style="color:#f92672">=</span> Node(<span style="color:#ae81ff">2</span>)
-    bt<span style="color:#f92672">.</span>root<span style="color:#f92672">.</span>rightChild <span style="color:#f92672">=</span> Node(<span style="color:#ae81ff">3</span>)
-    bt<span style="color:#f92672">.</span>root<span style="color:#f92672">.</span>leftChild<span style="color:#f92672">.</span>leftChild <span style="color:#f92672">=</span> Node(<span style="color:#ae81ff">4</span>)
-    bt<span style="color:#f92672">.</span>root<span style="color:#f92672">.</span>leftChild<span style="color:#f92672">.</span>rightChild <span style="color:#f92672">=</span> Node(<span style="color:#ae81ff">5</span>)
-    bt<span style="color:#f92672">.</span>root<span style="color:#f92672">.</span>leftChild<span style="color:#f92672">.</span>leftChild<span style="color:#f92672">.</span>leftChild <span style="color:#f92672">=</span> Node(<span style="color:#ae81ff">6</span>)
-    <span style="color:#66d9ef">return</span> bt
-
-<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">__main__</span><span style="color:#e6db74">&#34;</span>:
-
-    <span style="color:#75715e"># bt = createTree()</span>
-    <span style="color:#75715e"># bt.traverseInOrder(bt.root)</span>
-    <span style="color:#75715e"># bt.printMirrorView(bt.root)</span>
-    <span style="color:#75715e"># bt.traverseInOrder(bt.root)</span>
-
-    bt1 <span style="color:#f92672">=</span> createTree()
-    <span style="color:#75715e">#bt1.traverseInOrder(bt1.root)</span>
-    bt1<span style="color:#f92672">.</span>leftView(bt1<span style="color:#f92672">.</span>root)
-    <span style="color:#75715e">#bt1.traverseInOrder(bt1.root)</span></code></pre></td></tr></table>
+arr <span style="color:#f92672">=</span> [<span style="color:#ae81ff">310</span>, <span style="color:#ae81ff">315</span>, <span style="color:#ae81ff">275</span>, <span style="color:#ae81ff">295</span>, <span style="color:#ae81ff">260</span>, <span style="color:#ae81ff">270</span>, <span style="color:#ae81ff">290</span>, <span style="color:#ae81ff">230</span>, <span style="color:#ae81ff">255</span>, <span style="color:#ae81ff">250</span>]
+result <span style="color:#f92672">=</span> buy_and_sell_stock(arr)
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">using kadane</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">s Algo result: </span><span style="color:#e6db74">&#34;</span>, result)</code></pre></td></tr></table>
 </div>
 </div>
   </div>
@@ -2171,6 +2121,8 @@
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -2181,57 +2133,6 @@
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
                     
                         
             
@@ -2278,22 +2179,6 @@
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -2302,7 +2187,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -2315,9 +2199,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -2351,6 +2232,37 @@
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -2368,8 +2280,37 @@
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
+            
+            
+                
                     
                 
                 
@@ -2587,6 +2528,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -2599,6 +2541,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2616,6 +2561,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -2631,6 +2577,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2722,10 +2671,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/interviews/algorithms/tree/bfs/" title="BFS"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/interviews/problemsolving/advancing-through-an-array/" title="Advancing through an array"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/interviews/algorithms/tree/binary-search-tree/" title="BST" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/interviews/problemsolving/deletion-duplicate-in-array/" title="Delete Duplicate from Array" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

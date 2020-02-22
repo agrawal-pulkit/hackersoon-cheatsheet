@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>Buy and Sell Price once</title>
+      <link>https://docs.hackersoon.com/interviews/problemsolving/buy-and-sell-stock-once/</link>
+      <pubDate>Wed, 11 Dec 2019 11:14:00 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/interviews/problemsolving/buy-and-sell-stock-once/</guid>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; text-decoration: double; } .editorqa { text-align: center; padding: 5px; color: blue; font-weight: bold; font-size: 20px; margin: 5px; } .run { text-align: center; background-color: #343a40; border-color: #343a40; color: #fff; font-weight: normal; width: fit-content; text-decoration: none; cursor: pointer; display: block; padding: .25rem 2.5rem; line-height: 1.5; border-radius: .2rem; box-sizing: border-box; font-size: 1rem; margin-bottom: 2px; font-weight: 400; user-select: none; text-transform: none; }   Run    Buy and Sell Price once  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48  &amp;#34;&amp;#34;&amp;#34;This solution is based on two assumption.</description>
+    </item>
+    
+    <item>
       <title>Delete Duplicate from Array</title>
       <link>https://docs.hackersoon.com/interviews/problemsolving/deletion-duplicate-in-array/</link>
       <pubDate>Wed, 11 Dec 2019 11:14:00 +0530</pubDate>
