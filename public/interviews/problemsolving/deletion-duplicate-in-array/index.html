@@ -8,7 +8,7 @@
 <meta name="author" content="Pulkit Agrawal">
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Queue LL :: Hackersoon - Documentation</title>
+    <title>Delete Duplicate from Array :: Hackersoon - Documentation</title>
 
     
     <link href="/css/nucleus.css?1582366397" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/interviews/ds/queue/queue_ll/">
+  <body class="" data-url="/interviews/problemsolving/deletion-duplicate-in-array/">
     <nav id="sidebar" class="">
 
 
@@ -996,7 +996,7 @@
   
     
     <li data-nav-id="/interviews/ds/" title="Data Sturctures" class="dd-item 
-        parent
+        
         
         
         ">
@@ -1076,7 +1076,7 @@
   
     
     <li data-nav-id="/interviews/ds/queue/" title="Queue" class="dd-item 
-        parent
+        
         
         
         ">
@@ -1157,7 +1157,7 @@
  
   
     
-      <li data-nav-id="/interviews/ds/queue/queue_ll/" title="Queue LL" class="dd-item active">
+      <li data-nav-id="/interviews/ds/queue/queue_ll/" title="Queue LL" class="dd-item ">
         <a href="/interviews/ds/queue/queue_ll/">
         Queue LL
         
@@ -1267,7 +1267,7 @@
   
     
     <li data-nav-id="/interviews/problemsolving/" title="Problem Solving" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1310,7 +1310,7 @@
  
   
     
-      <li data-nav-id="/interviews/problemsolving/deletion-duplicate-in-array/" title="Delete Duplicate from Array" class="dd-item ">
+      <li data-nav-id="/interviews/problemsolving/deletion-duplicate-in-array/" title="Delete Duplicate from Array" class="dd-item active">
         <a href="/interviews/problemsolving/deletion-duplicate-in-array/">
         Delete Duplicate from Array
         
@@ -1472,7 +1472,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/agrawal-pulkit/hackersoon-cheatsheet/edit/master/content/interviews/ds/queue/queue_ll.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/agrawal-pulkit/hackersoon-cheatsheet/edit/master/content/interviews/problemsolving/deletion-duplicate-in-array.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -1507,13 +1507,7 @@
             
           
           
-            
-            
-          
-          
-            <a href='/'></a> > <a href='/interviews/'>Interview Prepartion</a> > <a href='/interviews/ds/'>Data Sturctures</a> > <a href='/interviews/ds/queue/'>Queue</a> > Queue LL
-          
-         
+            <a href='/'></a> > <a href='/interviews/'>Interview Prepartion</a> > <a href='/interviews/problemsolving/'>Problem Solving</a> > Delete Duplicate from Array
           
          
           
@@ -1544,7 +1538,7 @@
           
             <h1>
               
-              Queue LL
+              Delete Duplicate from Array
             </h1>
           
 
@@ -1595,12 +1589,12 @@
 
 <figure class="code">
   <figcaption>
-     <a href='https://hackersoon.com/?lang=python&content=%0aclass%20Empty%28Exception%29%3a%0a%20%20%20%20pass%0a%0aclass%20LinkedQueue%3a%0a%0a%20%20%20%20class%20_Node%3a%0a%20%20%20%20%20%20%20%20__slots__%20%3d%20%27_element%27%2c%20%27_next%27%0a%0a%20%20%20%20%20%20%20%20def%20__init__%28self%2c%20element%2c%20next%29%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20self._element%20%3d%20element%0a%20%20%20%20%20%20%20%20%20%20%20%20self._next%20%3d%20next%0a%0a%20%20%20%20def%20__init__%28self%29%3a%0a%20%20%20%20%20%20%20%20self._head%20%3d%20None%0a%20%20%20%20%20%20%20%20self._tail%20%3d%20None%0a%20%20%20%20%20%20%20%20self._size%20%3d%200%0a%0a%20%20%20%20def%20__len__%28self%29%3a%0a%20%20%20%20%20%20%20%20return%20self._size%0a%0a%20%20%20%20def%20isempty%28self%29%3a%0a%20%20%20%20%20%20%20%20return%20self._size%20%3d%3d%200%0a%0a%20%20%20%20def%20first%28self%29%3a%0a%20%20%20%20%20%20%20%20if%20self.isempty%28%29%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20raise%20Empty%28%22queue%20is%20empty.%22%29%0a%20%20%20%20%20%20%20%20return%20self._head._element%0a%0a%20%20%20%20def%20enqueue%28self%2c%20value%29%3a%0a%20%20%20%20%20%20%20%20node%20%3d%20self._Node%28value%2c%20self._head%29%0a%20%20%20%20%20%20%20%20if%20self.isempty%28%29%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20self._head%20%3d%20node%0a%20%20%20%20%20%20%20%20else%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20self._tail._next%20%3d%20node%0a%20%20%20%20%20%20%20%20self._tail%20%3d%20node%0a%20%20%20%20%20%20%20%20self._size%20%2b%3d%201%0a%0a%20%20%20%20def%20dequeue%28self%29%3a%0a%20%20%20%20%20%20%20%20if%20self.isempty%28%29%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20raise%20Empty%28%22queue%20is%20empty.%22%29%0a%20%20%20%20%20%20%20%20ans%20%3d%20self._head._element%0a%20%20%20%20%20%20%20%20self._head%20%3d%20self._head._next%0a%20%20%20%20%20%20%20%20self._size%20-%3d%201%0a%20%20%20%20%20%20%20%20if%20self.isempty%28%29%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20self._tail%20%3d%20None%0a%20%20%20%20%20%20%20%20return%20ans%0a' target="_blank">
+     <a href='https://hackersoon.com/?lang=python&content=%0a%0a%22%22%22%0aDelete%20Duplicate%20from%20a%20sorted%20array.%0aAnd%20return%20number%20of%20duplicate%20entries%20after%20deletion.%0a%22%22%22%0adef%20delete_duplicate%28arr%29%3a%0a%20%20%20%20if%20len%28arr%29%20%3d%3d%200%3a%0a%20%20%20%20%20%20%20%20return%0a%20%20%20%20write_index%20%3d%201%0a%20%20%20%20for%20i%20in%20range%28len%28arr%29%29%3a%20%0a%20%20%20%20%20%20%20%20if%20arr%5bwrite_index-1%5d%20%21%3d%20arr%5bi%5d%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20arr%5bwrite_index%5d%20%3d%20arr%5bi%5d%0a%20%20%20%20%20%20%20%20%20%20%20%20write_index%20%2b%3d%201%0a%20%20%20%20return%20arr%5b%3awrite_index%5d%0a%0aarr%20%3d%20%5b2%2c3%2c5%2c5%2c7%2c11%2c11%2c11%2c13%5d%0aresult%20%3d%20delete_duplicate%28arr%29%0aprint%28%22result%3a%20%22%2c%20result%29%0a%0a' target="_blank">
       <span  class="run">Run</span>
       </a>
   </figcaption>
   <figcaption class="caption">
-    <span> Queue LL</span>
+    <span> Delete Duplicate from Array</span>
   </figcaption>
   <div class="codewrapper">
     <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
@@ -1622,83 +1616,25 @@
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Empty</span>(<span style="color:#a6e22e">Exception</span>):
-    <span style="color:#66d9ef">pass</span>
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">Delete Duplicate from a sorted array.</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">And return number of duplicate entries after deletion.</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">delete_duplicate</span>(arr):
+    <span style="color:#66d9ef">if</span> len(arr) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+        <span style="color:#66d9ef">return</span>
+    write_index <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(arr)): 
+        <span style="color:#66d9ef">if</span> arr[write_index<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">!=</span> arr[i]:
+            arr[write_index] <span style="color:#f92672">=</span> arr[i]
+            write_index <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+    <span style="color:#66d9ef">return</span> arr[:write_index]
 
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LinkedQueue</span>:
-
-    <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">_Node</span>:
-        __slots__ <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">_element</span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">_next</span><span style="color:#e6db74">&#39;</span>
-
-        <span style="color:#66d9ef">def</span> __init__(self, element, next):
-            self<span style="color:#f92672">.</span>_element <span style="color:#f92672">=</span> element
-            self<span style="color:#f92672">.</span>_next <span style="color:#f92672">=</span> next
-
-    <span style="color:#66d9ef">def</span> __init__(self):
-        self<span style="color:#f92672">.</span>_head <span style="color:#f92672">=</span> None
-        self<span style="color:#f92672">.</span>_tail <span style="color:#f92672">=</span> None
-        self<span style="color:#f92672">.</span>_size <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-
-    <span style="color:#66d9ef">def</span> __len__(self):
-        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_size
-
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">isempty</span>(self):
-        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_size <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>
-
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">first</span>(self):
-        <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>isempty():
-            <span style="color:#66d9ef">raise</span> Empty(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">queue is empty.</span><span style="color:#e6db74">&#34;</span>)
-        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_head<span style="color:#f92672">.</span>_element
-
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">enqueue</span>(self, value):
-        node <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_Node(value, self<span style="color:#f92672">.</span>_head)
-        <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>isempty():
-            self<span style="color:#f92672">.</span>_head <span style="color:#f92672">=</span> node
-        <span style="color:#66d9ef">else</span>:
-            self<span style="color:#f92672">.</span>_tail<span style="color:#f92672">.</span>_next <span style="color:#f92672">=</span> node
-        self<span style="color:#f92672">.</span>_tail <span style="color:#f92672">=</span> node
-        self<span style="color:#f92672">.</span>_size <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">dequeue</span>(self):
-        <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>isempty():
-            <span style="color:#66d9ef">raise</span> Empty(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">queue is empty.</span><span style="color:#e6db74">&#34;</span>)
-        ans <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_head<span style="color:#f92672">.</span>_element
-        self<span style="color:#f92672">.</span>_head <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_head<span style="color:#f92672">.</span>_next
-        self<span style="color:#f92672">.</span>_size <span style="color:#f92672">-</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-        <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>isempty():
-            self<span style="color:#f92672">.</span>_tail <span style="color:#f92672">=</span> None
-        <span style="color:#66d9ef">return</span> ans</code></pre></td></tr></table>
+arr <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">11</span>,<span style="color:#ae81ff">11</span>,<span style="color:#ae81ff">11</span>,<span style="color:#ae81ff">13</span>]
+result <span style="color:#f92672">=</span> delete_duplicate(arr)
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">result: </span><span style="color:#e6db74">&#34;</span>, result)</code></pre></td></tr></table>
 </div>
 </div>
   </div>
@@ -2333,7 +2269,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -2348,9 +2283,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -2372,145 +2304,6 @@
                     
                     
 
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
             
         
@@ -2567,6 +2360,145 @@
             
             
                 
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -2642,10 +2574,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/interviews/ds/queue/queue_list/" title="Queue List"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/interviews/problemsolving/advancing-through-an-array/" title="Advancing through an array"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/interviews/ds/stack/" title="Stack" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/interviews/problemsolving/duch-nationl-flag-problem/" title="Duch National Flag Problem" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

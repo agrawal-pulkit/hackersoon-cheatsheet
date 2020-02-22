@@ -74,7 +74,7 @@
 	"title": "Problem Solving",
 	"tags": [],
 	"description": "",
-	"content": "Problem Solving  Advancing through an array     Duch National Flag Problem     Sliding Window     Trapping Rain Problem     "
+	"content": "Problem Solving  Advancing through an array     Delete Duplicate from Array     Duch National Flag Problem     Sliding Window     Trapping Rain Problem     "
 },
 {
 	"uri": "https://docs.hackersoon.com/interviews/systemdesign/",
@@ -264,6 +264,13 @@
 	"tags": [],
 	"description": "",
 	"content": ".caption { text-align: center; background-color: grey; color: white; font-weight: normal; text-decoration: double; } .editorqa { text-align: center; padding: 5px; color: blue; font-weight: bold; font-size: 20px; margin: 5px; } .run { text-align: center; background-color: #343a40; border-color: #343a40; color: #fff; font-weight: normal; width: fit-content; text-decoration: none; cursor: pointer; display: block; padding: .25rem 2.5rem; line-height: 1.5; border-radius: .2rem; box-sizing: border-box; font-size: 1rem; margin-bottom: 2px; font-weight: 400; user-select: none; text-transform: none; }   Run    Circular Queue  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50  class Empty(Exception): pass class CircularQueue: class _Node: def __init__(self, element, next): self._element = element self._next = next def __init__(self): self._tail = None self._size = 0 def __len__(self): return self._size def isEmpty(self): return self._size == 0 def first(self): if self.isEmpty(): raise Empty(\u0026#34;queue is empty.\u0026#34;) return self._tail._next._element def enqueue(self, value): node = self._Node(value, None) if self.isEmpty(): node._next = node else: node._next = self._tail._next self._tail._next = node self._tail = node self._size += 1 def dequeue(self): if self.isEmpty(): raise Empty(\u0026#34;queue is empty.\u0026#34;) ans = self._tail._next if self._size == 1: self._tail = None else: self._tail = self.ans._next self._size -= 1 return ans._element def rotate(self): if self._size \u0026gt; 0: self._tail._next = self._tail     "
+},
+{
+	"uri": "https://docs.hackersoon.com/interviews/problemsolving/deletion-duplicate-in-array/",
+	"title": "Delete Duplicate from Array",
+	"tags": [],
+	"description": "",
+	"content": ".caption { text-align: center; background-color: grey; color: white; font-weight: normal; text-decoration: double; } .editorqa { text-align: center; padding: 5px; color: blue; font-weight: bold; font-size: 20px; margin: 5px; } .run { text-align: center; background-color: #343a40; border-color: #343a40; color: #fff; font-weight: normal; width: fit-content; text-decoration: none; cursor: pointer; display: block; padding: .25rem 2.5rem; line-height: 1.5; border-radius: .2rem; box-sizing: border-box; font-size: 1rem; margin-bottom: 2px; font-weight: 400; user-select: none; text-transform: none; }   Run    Delete Duplicate from Array  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  \u0026#34;\u0026#34;\u0026#34;Delete Duplicate from a sorted array.And return number of duplicate entries after deletion.\u0026#34;\u0026#34;\u0026#34; def delete_duplicate(arr): if len(arr) == 0: return write_index = 1 for i in range(len(arr)): if arr[write_index-1] != arr[i]: arr[write_index] = arr[i] write_index += 1 return arr[:write_index] arr = [2,3,5,5,7,11,11,11,13] result = delete_duplicate(arr) print(\u0026#34;result: \u0026#34;, result)     "
 },
 {
 	"uri": "https://docs.hackersoon.com/interviews/algorithms/tree/dfs/",
