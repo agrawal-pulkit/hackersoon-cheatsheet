@@ -74,7 +74,7 @@
 	"title": "Problem Solving",
 	"tags": [],
 	"description": "",
-	"content": "Problem Solving  Sliding Window     Trapping Rain Problem     "
+	"content": "Problem Solving  Duch National Flag Problem     Sliding Window     Trapping Rain Problem     "
 },
 {
 	"uri": "https://docs.hackersoon.com/interviews/systemdesign/",
@@ -137,7 +137,7 @@
 	"title": "Networking",
 	"tags": [],
 	"description": "",
-	"content": "  nc # Listener: nc -l 1234 \u0026gt; out.file # Producer: nc -w 3 \u0026lt;ip\u0026gt; 1234 \u0026lt; out.file  find which service is running and process info netstat -nltp #porcess ps -ef pas aux  change the boot disk size of instance without restart lsblk growpart /dev/sda 1 resize2fs /dev/sda1 df -h  check disk size df -h du -csh * "
+	"content": "  nc # Listener: nc -l 1234 \u0026gt; out.file # Producer: nc -w 3 \u0026lt;ip\u0026gt; 1234 \u0026lt; out.file  find which service is running and process info netstat -nltp #porcess ps -ef pas aux  change the boot disk size of instance without restart lsblk growpart /dev/sda 1 resize2fs /dev/sda1 df -h  check disk size df -h du -csh *  "
 },
 {
 	"uri": "https://docs.hackersoon.com/showcase/",
@@ -280,6 +280,13 @@
 	"content": "  Docker installation in MAC: brew install docker  "
 },
 {
+	"uri": "https://docs.hackersoon.com/interviews/problemsolving/duch-nationl-flag-problem/",
+	"title": "Duch National Flag Problem",
+	"tags": [],
+	"description": "",
+	"content": ".caption { text-align: center; background-color: grey; color: white; font-weight: normal; text-decoration: double; } .editorqa { text-align: center; padding: 5px; color: blue; font-weight: bold; font-size: 20px; margin: 5px; } .run { text-align: center; background-color: #343a40; border-color: #343a40; color: #fff; font-weight: normal; width: fit-content; text-decoration: none; cursor: pointer; display: block; padding: .25rem 2.5rem; line-height: 1.5; border-radius: .2rem; box-sizing: border-box; font-size: 1rem; margin-bottom: 2px; font-weight: 400; user-select: none; text-transform: none; }   Run    Duch National Flag Problem  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25  \u0026#34;\u0026#34;\u0026#34;Rearragement of numbers based on pivot number.\u0026#34;\u0026#34;\u0026#34; def rearragement(arr, pivot): s, e, l = 0, 0, len(arr) while e \u0026lt; l: if arr[e] \u0026lt; pivot: arr[e], arr[s] = arr[s], arr[e] s += 1 e += 1 elif arr[e] == pivot: e += 1 else: l -= 1 arr[l], arr[e] = arr[e], arr[l] return arr arr = [2, 4, 0, 1, 2, 0, 2, 1, -1] pivot = 1 print(\u0026#34;input: \u0026#34;, arr, pivot) result = rearragement(arr, pivot) print(\u0026#34;output: \u0026#34;, result)     "
+},
+{
 	"uri": "https://docs.hackersoon.com/installations/elasticsearch/",
 	"title": "ElasticSearch",
 	"tags": [],
@@ -389,7 +396,7 @@
 	"title": "Credits",
 	"tags": [],
 	"description": "",
-	"content": "Contributors Thanks to them for making Open Source Software a better place ! .ghContributors { display: flex; flex-flow: wrap; align-content: flex-start } .ghContributorsdiv { width: 100%; display: inline-flex; margin-bottom: 20px; } .ghContributorsdiv label { padding-left: 4px; } .ghContributorsdiv span { font-size: x-medium; padding-left: 10px; }   @agrawal-pulkit 12 commits  \nPackages and libraries  hugo learn theme shortcodes  "
+	"content": "Contributors Thanks to them for making Open Source Software a better place ! .ghContributors { display: flex; flex-flow: wrap; align-content: flex-start } .ghContributorsdiv { width: 100%; display: inline-flex; margin-bottom: 20px; } .ghContributorsdiv label { padding-left: 4px; } .ghContributorsdiv span { font-size: x-medium; padding-left: 10px; }   @agrawal-pulkit 15 commits  \nPackages and libraries  hugo learn theme shortcodes sample site  "
 },
 {
 	"uri": "https://docs.hackersoon.com/tags/",
