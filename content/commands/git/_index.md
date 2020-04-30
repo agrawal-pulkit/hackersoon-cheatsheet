@@ -42,7 +42,7 @@ Execute the following:
 git cherry-pick <commit-hash>
 ```
 
-#### 3. clone a subfolder from git repo
+#### 4. clone a subfolder from git repo
 
 ```
 git init <repo>
