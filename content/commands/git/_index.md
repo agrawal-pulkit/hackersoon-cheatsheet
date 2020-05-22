@@ -57,3 +57,12 @@ This tells git which directories you want to checkout. Then you can pull just th
 
 git pull origin master
 ```
+
+#### 5. Take pull from upstream fork repo
+```
+git remote add upstream <git@url>
+git fetch upstream
+git checkout master
+git rebase upstream/master
+git push -f origin master
+```
