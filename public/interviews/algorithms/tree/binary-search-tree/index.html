@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.61.0" />
+    <meta name="generator" content="Hugo 0.71.0" />
     <meta name="description" content="Purpose of this repository is create cheatsheet for own and also help everyone. ">
 <meta name="author" content="Pulkit Agrawal">
 
@@ -11,20 +11,20 @@
     <title>BST :: Hackersoon - Documentation</title>
 
     
-    <link href="/css/nucleus.css?1582382150" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1582382150" rel="stylesheet">
-    <link href="/css/hybrid.css?1582382150" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1582382150" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1582382150" rel="stylesheet">
-    <link href="/css/auto-complete.css?1582382150" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1582382150" rel="stylesheet">
-    <link href="/css/theme.css?1582382150" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1582382150" rel="stylesheet">
+    <link href="/css/nucleus.css?1590262375" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1590262375" rel="stylesheet">
+    <link href="/css/hybrid.css?1590262375" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1590262375" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1590262375" rel="stylesheet">
+    <link href="/css/auto-complete.css?1590262375" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1590262375" rel="stylesheet">
+    <link href="/css/theme.css?1590262375" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1590262375" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1582382150" rel="stylesheet">
+      <link href="/css/theme-blue.css?1590262375" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1582382150"></script>
+    <script src="/js/jquery-3.3.1.min.js?1590262375"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1582382150"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1582382150"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1590262375"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1590262375"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.hackersoon.com";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1582382150"></script>
+<script type="text/javascript" src="/js/search.js?1590262375"></script>
 
     
   </div>
@@ -327,6 +327,44 @@
           
           
         
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/programming/golang/http-server/" title="Http Server" class="dd-item ">
+        <a href="/programming/golang/http-server/">
+        Http Server
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/programming/golang/http-request/" title="Http Request" class="dd-item ">
+        <a href="/programming/golang/http-request/">
+        Http Request
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
           
             
             
@@ -1767,9 +1805,9 @@
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">122
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">Implementation of Binary Search Tree</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">Implementation of Binary Search Tree
+</span><span style="color:#e6db74">&#34;&#34;&#34;</span>
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Node</span>:
 
     <span style="color:#66d9ef">def</span> __init__(self, data):
@@ -1814,22 +1852,22 @@
             node<span style="color:#f92672">.</span>rightNode <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>removeNode(data, node<span style="color:#f92672">.</span>rightNode)
         <span style="color:#66d9ef">else</span>:
             <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> node<span style="color:#f92672">.</span>leftNode <span style="color:#f92672">and</span> <span style="color:#f92672">not</span> node<span style="color:#f92672">.</span>rightNode:
-                <span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">removing a leaf node.</span><span style="color:#e6db74">&#34;</span>)
+                <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;removing a leaf node.&#34;</span>)
                 <span style="color:#66d9ef">del</span> node
                 <span style="color:#66d9ef">return</span> None
 
             <span style="color:#66d9ef">elif</span> <span style="color:#f92672">not</span> node<span style="color:#f92672">.</span>leftNode:
-                <span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">removing a node with single right child.</span><span style="color:#e6db74">&#34;</span>)
+                <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;removing a node with single right child.&#34;</span>)
                 tempNode <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>rightNode
                 <span style="color:#66d9ef">del</span> node
                 <span style="color:#66d9ef">return</span> tempNode
             <span style="color:#66d9ef">elif</span> <span style="color:#f92672">not</span> node<span style="color:#f92672">.</span>rightNode:
-                <span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">removing a node with single left child.</span><span style="color:#e6db74">&#34;</span>)
+                <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;removing a node with single left child.&#34;</span>)
                 tempNode <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>leftNode
                 <span style="color:#66d9ef">del</span> node
                 <span style="color:#66d9ef">return</span> tempNode
 
-            <span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">removing a node with two children.</span><span style="color:#e6db74">&#34;</span>)
+            <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;removing a node with two children.&#34;</span>)
             predeccorNode <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>getPredeccorNode(node<span style="color:#f92672">.</span>leftNode)
             node<span style="color:#f92672">.</span>data <span style="color:#f92672">=</span> predeccorNode<span style="color:#f92672">.</span>data
             node<span style="color:#f92672">.</span>leftNode <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>removeNode(predeccorNode<span style="color:#f92672">.</span>data, node<span style="color:#f92672">.</span>leftNode)
@@ -1846,7 +1884,7 @@
         <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>root:
             <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>getMin(self<span style="color:#f92672">.</span>root)
         <span style="color:#66d9ef">else</span>:
-            <span style="color:#66d9ef">return</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">empty tree</span><span style="color:#e6db74">&#34;</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;empty tree&#34;</span>
 
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">getMin</span>(self, node):
         <span style="color:#66d9ef">if</span> node<span style="color:#f92672">.</span>leftNode:
@@ -1857,7 +1895,7 @@
         <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>root:
             <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>getMax(self<span style="color:#f92672">.</span>root)
         <span style="color:#66d9ef">else</span>:
-            <span style="color:#66d9ef">return</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">empty tree</span><span style="color:#e6db74">&#34;</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;empty tree&#34;</span>
 
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">getMax</span>(self, node):
         <span style="color:#66d9ef">if</span> node<span style="color:#f92672">.</span>rightNode:
@@ -2086,6 +2124,38 @@ bst<span style="color:#f92672">.</span>traverse()</code></pre></td></tr></table>
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -2874,19 +2944,19 @@ bst<span style="color:#f92672">.</span>traverse()</code></pre></td></tr></table>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1582382150"></script>
-    <script src="/js/perfect-scrollbar.min.js?1582382150"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1582382150"></script>
-    <script src="/js/jquery.sticky.js?1582382150"></script>
-    <script src="/js/featherlight.min.js?1582382150"></script>
-    <script src="/js/highlight.pack.js?1582382150"></script>
+    <script src="/js/clipboard.min.js?1590262375"></script>
+    <script src="/js/perfect-scrollbar.min.js?1590262375"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1590262375"></script>
+    <script src="/js/jquery.sticky.js?1590262375"></script>
+    <script src="/js/featherlight.min.js?1590262375"></script>
+    <script src="/js/highlight.pack.js?1590262375"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1582382150"></script>
-    <script src="/js/learn.js?1582382150"></script>
-    <script src="/js/hugo-learn.js?1582382150"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1590262375"></script>
+    <script src="/js/learn.js?1590262375"></script>
+    <script src="/js/hugo-learn.js?1590262375"></script>
 
-    <link href="/mermaid/mermaid.css?1582382150" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1582382150"></script>
+    <link href="/mermaid/mermaid.css?1590262375" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1590262375"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

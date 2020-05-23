@@ -12,12 +12,30 @@
     
     
     <item>
+      <title>Http Server</title>
+      <link>https://docs.hackersoon.com/programming/golang/http-server/</link>
+      <pubDate>Sun, 24 May 2020 00:49:01 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/programming/golang/http-server/</guid>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; text-decoration: double; } .editorqa { text-align: center; padding: 5px; color: blue; font-weight: bold; font-size: 20px; margin: 5px; } .run { text-align: center; background-color: #343a40; border-color: #343a40; color: #fff; font-weight: normal; width: fit-content; text-decoration: none; cursor: pointer; display: block; padding: .25rem 2.5rem; line-height: 1.5; border-radius: .2rem; box-sizing: border-box; font-size: 1rem; margin-bottom: 2px; font-weight: 400; user-select: none; text-transform: none; }   Run    http server  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  package main import ( &amp;#34;fmt&amp;#34; &amp;#34;log&amp;#34; &amp;#34;net/http&amp;#34; ) func main() { http.</description>
+    </item>
+    
+    <item>
+      <title>Http Request</title>
+      <link>https://docs.hackersoon.com/programming/golang/http-request/</link>
+      <pubDate>Sun, 24 May 2020 00:43:25 +0530</pubDate>
+      
+      <guid>https://docs.hackersoon.com/programming/golang/http-request/</guid>
+      <description>.caption { text-align: center; background-color: grey; color: white; font-weight: normal; text-decoration: double; } .editorqa { text-align: center; padding: 5px; color: blue; font-weight: bold; font-size: 20px; margin: 5px; } .run { text-align: center; background-color: #343a40; border-color: #343a40; color: #fff; font-weight: normal; width: fit-content; text-decoration: none; cursor: pointer; display: block; padding: .25rem 2.5rem; line-height: 1.5; border-radius: .2rem; box-sizing: border-box; font-size: 1rem; margin-bottom: 2px; font-weight: 400; user-select: none; text-transform: none; }   Run    http request  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31  package main import ( &amp;#34;fmt&amp;#34; &amp;#34;io/ioutil&amp;#34; &amp;#34;net/http&amp;#34; &amp;#34;os&amp;#34; &amp;#34;strings&amp;#34; ) func main() { fmt.</description>
+    </item>
+    
+    <item>
       <title>Goroutine</title>
       <link>https://docs.hackersoon.com/programming/golang/goroutine/</link>
       <pubDate>Sun, 15 Dec 2019 02:17:40 +0530</pubDate>
       
       <guid>https://docs.hackersoon.com/programming/golang/goroutine/</guid>
-      <description>This is useful for understand golang goroutines.</description>
+      <description>This is useful for understand golang goroutines. .caption { text-align: center; background-color: grey; color: white; font-weight: normal; text-decoration: double; } .editorqa { text-align: center; padding: 5px; color: blue; font-weight: bold; font-size: 20px; margin: 5px; } .run { text-align: center; background-color: #343a40; border-color: #343a40; color: #fff; font-weight: normal; width: fit-content; text-decoration: none; cursor: pointer; display: block; padding: .25rem 2.5rem; line-height: 1.5; border-radius: .2rem; box-sizing: border-box; font-size: 1rem; margin-bottom: 2px; font-weight: 400; user-select: none; text-transform: none; }   Run    goroutine &amp;amp; channel  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47  package main import ( &amp;#34;fmt&amp;#34; &amp;#34;io&amp;#34; &amp;#34;io/ioutil&amp;#34; &amp;#34;net/http&amp;#34; &amp;#34;os&amp;#34; &amp;#34;time&amp;#34; ) func main() { fmt.</description>
     </item>
     
   </channel>

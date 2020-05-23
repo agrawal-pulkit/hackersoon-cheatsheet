@@ -8,7 +8,7 @@
 <meta name="author" content="Pulkit Agrawal">
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Queue LL :: Hackersoon - Documentation</title>
+    <title>Http Server :: Hackersoon - Documentation</title>
 
     
     <link href="/css/nucleus.css?1590262375" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/interviews/ds/queue/queue_ll/">
+  <body class="" data-url="/programming/golang/http-server/">
     <nav id="sidebar" class="">
 
 
@@ -284,7 +284,7 @@
   
     
     <li data-nav-id="/programming/" title="Programming" class="dd-item 
-        
+        parent
         
         
         ">
@@ -311,7 +311,7 @@
   
     
     <li data-nav-id="/programming/golang/" title="Golang" class="dd-item 
-        
+        parent
         
         
         ">
@@ -335,7 +335,7 @@
  
   
     
-      <li data-nav-id="/programming/golang/http-server/" title="Http Server" class="dd-item ">
+      <li data-nav-id="/programming/golang/http-server/" title="Http Server" class="dd-item active">
         <a href="/programming/golang/http-server/">
         Http Server
         
@@ -679,7 +679,7 @@
   
     
     <li data-nav-id="/interviews/" title="Interview Prepartion" class="dd-item 
-        parent
+        
         
         
         ">
@@ -1034,7 +1034,7 @@
   
     
     <li data-nav-id="/interviews/ds/" title="Data Sturctures" class="dd-item 
-        parent
+        
         
         
         ">
@@ -1114,7 +1114,7 @@
   
     
     <li data-nav-id="/interviews/ds/queue/" title="Queue" class="dd-item 
-        parent
+        
         
         
         ">
@@ -1195,7 +1195,7 @@
  
   
     
-      <li data-nav-id="/interviews/ds/queue/queue_ll/" title="Queue LL" class="dd-item active">
+      <li data-nav-id="/interviews/ds/queue/queue_ll/" title="Queue LL" class="dd-item ">
         <a href="/interviews/ds/queue/queue_ll/">
         Queue LL
         
@@ -1548,7 +1548,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/agrawal-pulkit/hackersoon-cheatsheet/edit/master/content/interviews/ds/queue/queue_ll.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/agrawal-pulkit/hackersoon-cheatsheet/edit/master/content/programming/golang/http-server.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -1583,13 +1583,7 @@
             
           
           
-            
-            
-          
-          
-            <a href='/'></a> > <a href='/interviews/'>Interview Prepartion</a> > <a href='/interviews/ds/'>Data Sturctures</a> > <a href='/interviews/ds/queue/'>Queue</a> > Queue LL
-          
-         
+            <a href='/'></a> > <a href='/programming/'>Programming</a> > <a href='/programming/golang/'>Golang</a> > Http Server
           
          
           
@@ -1620,7 +1614,7 @@
           
             <h1>
               
-              Queue LL
+              Http Server
             </h1>
           
 
@@ -1671,12 +1665,12 @@
 
 <figure class="code">
   <figcaption>
-     <a href='https://hackersoon.com/?lang=python&content=%0aclass%20Empty%28Exception%29%3a%0a%20%20%20%20pass%0a%0aclass%20LinkedQueue%3a%0a%0a%20%20%20%20class%20_Node%3a%0a%20%20%20%20%20%20%20%20__slots__%20%3d%20%27_element%27%2c%20%27_next%27%0a%0a%20%20%20%20%20%20%20%20def%20__init__%28self%2c%20element%2c%20next%29%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20self._element%20%3d%20element%0a%20%20%20%20%20%20%20%20%20%20%20%20self._next%20%3d%20next%0a%0a%20%20%20%20def%20__init__%28self%29%3a%0a%20%20%20%20%20%20%20%20self._head%20%3d%20None%0a%20%20%20%20%20%20%20%20self._tail%20%3d%20None%0a%20%20%20%20%20%20%20%20self._size%20%3d%200%0a%0a%20%20%20%20def%20__len__%28self%29%3a%0a%20%20%20%20%20%20%20%20return%20self._size%0a%0a%20%20%20%20def%20isempty%28self%29%3a%0a%20%20%20%20%20%20%20%20return%20self._size%20%3d%3d%200%0a%0a%20%20%20%20def%20first%28self%29%3a%0a%20%20%20%20%20%20%20%20if%20self.isempty%28%29%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20raise%20Empty%28%22queue%20is%20empty.%22%29%0a%20%20%20%20%20%20%20%20return%20self._head._element%0a%0a%20%20%20%20def%20enqueue%28self%2c%20value%29%3a%0a%20%20%20%20%20%20%20%20node%20%3d%20self._Node%28value%2c%20self._head%29%0a%20%20%20%20%20%20%20%20if%20self.isempty%28%29%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20self._head%20%3d%20node%0a%20%20%20%20%20%20%20%20else%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20self._tail._next%20%3d%20node%0a%20%20%20%20%20%20%20%20self._tail%20%3d%20node%0a%20%20%20%20%20%20%20%20self._size%20%2b%3d%201%0a%0a%20%20%20%20def%20dequeue%28self%29%3a%0a%20%20%20%20%20%20%20%20if%20self.isempty%28%29%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20raise%20Empty%28%22queue%20is%20empty.%22%29%0a%20%20%20%20%20%20%20%20ans%20%3d%20self._head._element%0a%20%20%20%20%20%20%20%20self._head%20%3d%20self._head._next%0a%20%20%20%20%20%20%20%20self._size%20-%3d%201%0a%20%20%20%20%20%20%20%20if%20self.isempty%28%29%3a%0a%20%20%20%20%20%20%20%20%20%20%20%20self._tail%20%3d%20None%0a%20%20%20%20%20%20%20%20return%20ans%0a' target="_blank">
+     <a href='https://hackersoon.com/?lang=golang&content=%0apackage%20main%0a%0aimport%20%28%0a%09%22fmt%22%0a%09%22log%22%0a%09%22net%2fhttp%22%0a%29%0a%0afunc%20main%28%29%20%7b%0a%09http.HandleFunc%28%22%2f%22%2c%20handler%29%20%2f%2f%20each%20request%20calls%20handler%0a%0a%09log.Fatal%28http.ListenAndServe%28%22localhost%3a8000%22%2c%20nil%29%29%0a%7d%0a%0a%2f%2f%20handler%20echoes%20the%20Path%20component%20of%20the%20requested%20URL.%0afunc%20handler%28w%20http.ResponseWriter%2c%20r%20%2ahttp.Request%29%20%7b%0a%09fmt.Fprintf%28w%2c%20%22URL.Path%20%3d%20%25q%5cn%22%2c%20r.URL.Path%29%0a%7d%0a' target="_blank">
       <span  class="run">Run</span>
       </a>
   </figcaption>
   <figcaption class="caption">
-    <span> Queue LL</span>
+    <span> http server</span>
   </figcaption>
   <div class="codewrapper">
     <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
@@ -1699,82 +1693,26 @@
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Empty</span>(<span style="color:#a6e22e">Exception</span>):
-    <span style="color:#66d9ef">pass</span>
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
 
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LinkedQueue</span>:
+<span style="color:#f92672">import</span> (
+	<span style="color:#e6db74">&#34;fmt&#34;</span>
+	<span style="color:#e6db74">&#34;log&#34;</span>
+	<span style="color:#e6db74">&#34;net/http&#34;</span>
+)
 
-    <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">_Node</span>:
-        __slots__ <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;_element&#39;</span>, <span style="color:#e6db74">&#39;_next&#39;</span>
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+	<span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">HandleFunc</span>(<span style="color:#e6db74">&#34;/&#34;</span>, <span style="color:#a6e22e">handler</span>) <span style="color:#75715e">// each request calls handler
+</span><span style="color:#75715e"></span>
+	<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatal</span>(<span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">ListenAndServe</span>(<span style="color:#e6db74">&#34;localhost:8000&#34;</span>, <span style="color:#66d9ef">nil</span>))
+}
 
-        <span style="color:#66d9ef">def</span> __init__(self, element, next):
-            self<span style="color:#f92672">.</span>_element <span style="color:#f92672">=</span> element
-            self<span style="color:#f92672">.</span>_next <span style="color:#f92672">=</span> next
-
-    <span style="color:#66d9ef">def</span> __init__(self):
-        self<span style="color:#f92672">.</span>_head <span style="color:#f92672">=</span> None
-        self<span style="color:#f92672">.</span>_tail <span style="color:#f92672">=</span> None
-        self<span style="color:#f92672">.</span>_size <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-
-    <span style="color:#66d9ef">def</span> __len__(self):
-        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_size
-
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">isempty</span>(self):
-        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_size <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>
-
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">first</span>(self):
-        <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>isempty():
-            <span style="color:#66d9ef">raise</span> Empty(<span style="color:#e6db74">&#34;queue is empty.&#34;</span>)
-        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_head<span style="color:#f92672">.</span>_element
-
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">enqueue</span>(self, value):
-        node <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_Node(value, self<span style="color:#f92672">.</span>_head)
-        <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>isempty():
-            self<span style="color:#f92672">.</span>_head <span style="color:#f92672">=</span> node
-        <span style="color:#66d9ef">else</span>:
-            self<span style="color:#f92672">.</span>_tail<span style="color:#f92672">.</span>_next <span style="color:#f92672">=</span> node
-        self<span style="color:#f92672">.</span>_tail <span style="color:#f92672">=</span> node
-        self<span style="color:#f92672">.</span>_size <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">dequeue</span>(self):
-        <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>isempty():
-            <span style="color:#66d9ef">raise</span> Empty(<span style="color:#e6db74">&#34;queue is empty.&#34;</span>)
-        ans <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_head<span style="color:#f92672">.</span>_element
-        self<span style="color:#f92672">.</span>_head <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_head<span style="color:#f92672">.</span>_next
-        self<span style="color:#f92672">.</span>_size <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
-        <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>isempty():
-            self<span style="color:#f92672">.</span>_tail <span style="color:#f92672">=</span> None
-        <span style="color:#66d9ef">return</span> ans</code></pre></td></tr></table>
+<span style="color:#75715e">// handler echoes the Path component of the requested URL.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">handler</span>(<span style="color:#a6e22e">w</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">ResponseWriter</span>, <span style="color:#a6e22e">r</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Request</span>) {
+	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Fprintf</span>(<span style="color:#a6e22e">w</span>, <span style="color:#e6db74">&#34;URL.Path = %q\n&#34;</span>, <span style="color:#a6e22e">r</span>.<span style="color:#a6e22e">URL</span>.<span style="color:#a6e22e">Path</span>)
+}</code></pre></td></tr></table>
 </div>
 </div>
   </div>
@@ -1950,6 +1888,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1965,6 +1904,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1977,6 +1917,26 @@
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -2004,136 +1964,6 @@
                     
             
         
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
                     
             
         
@@ -2169,6 +1999,22 @@
                     
 
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
                         
             
             
@@ -2188,55 +2034,21 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
             
         
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
                     
                         
             
@@ -2283,6 +2095,21 @@
 
                     
                     
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
                     
 
                     
@@ -2301,6 +2128,55 @@
                     
             
         
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
                     
                         
             
@@ -2398,19 +2274,6 @@
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
             
         
                     
@@ -2427,87 +2290,10 @@
                     
 
                     
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
                         
             
             
                 
-                    
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -2557,6 +2343,71 @@
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -2577,8 +2428,85 @@
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
                         
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -2782,10 +2710,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/interviews/ds/queue/queue_list/" title="Queue List"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/programming/golang/" title="Golang"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/interviews/ds/stack/" title="Stack" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/programming/golang/http-request/" title="Http Request" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

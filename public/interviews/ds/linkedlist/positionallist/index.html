@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.61.0" />
+    <meta name="generator" content="Hugo 0.71.0" />
     <meta name="description" content="Purpose of this repository is create cheatsheet for own and also help everyone. ">
 <meta name="author" content="Pulkit Agrawal">
 
@@ -11,20 +11,20 @@
     <title>Positional List :: Hackersoon - Documentation</title>
 
     
-    <link href="/css/nucleus.css?1582382150" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1582382150" rel="stylesheet">
-    <link href="/css/hybrid.css?1582382150" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1582382150" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1582382150" rel="stylesheet">
-    <link href="/css/auto-complete.css?1582382150" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1582382150" rel="stylesheet">
-    <link href="/css/theme.css?1582382150" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1582382150" rel="stylesheet">
+    <link href="/css/nucleus.css?1590262375" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1590262375" rel="stylesheet">
+    <link href="/css/hybrid.css?1590262375" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1590262375" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1590262375" rel="stylesheet">
+    <link href="/css/auto-complete.css?1590262375" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1590262375" rel="stylesheet">
+    <link href="/css/theme.css?1590262375" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1590262375" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1582382150" rel="stylesheet">
+      <link href="/css/theme-blue.css?1590262375" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1582382150"></script>
+    <script src="/js/jquery-3.3.1.min.js?1590262375"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1582382150"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1582382150"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1590262375"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1590262375"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.hackersoon.com";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1582382150"></script>
+<script type="text/javascript" src="/js/search.js?1590262375"></script>
 
     
   </div>
@@ -327,6 +327,44 @@
           
           
         
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/programming/golang/http-server/" title="Http Server" class="dd-item ">
+        <a href="/programming/golang/http-server/">
+        Http Server
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/programming/golang/http-request/" title="Http Request" class="dd-item ">
+        <a href="/programming/golang/http-request/">
+        Http Request
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
           
             
             
@@ -1775,7 +1813,7 @@
 
     <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">_Node</span>:
 
-        __slots__ <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">_element</span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">_prev</span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">_next</span><span style="color:#e6db74">&#39;</span>
+        __slots__ <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;_element&#39;</span>, <span style="color:#e6db74">&#39;_prev&#39;</span>, <span style="color:#e6db74">&#39;_next&#39;</span>
 
         <span style="color:#66d9ef">def</span> __init__(self, element, prev, next):
             self<span style="color:#f92672">.</span>_element <span style="color:#f92672">=</span> element
@@ -1799,14 +1837,14 @@
         node <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_Node(value, predecessor, successor)
         predecessor<span style="color:#f92672">.</span>_next <span style="color:#f92672">=</span> node
         successor<span style="color:#f92672">.</span>_prev <span style="color:#f92672">=</span> node
-        self<span style="color:#f92672">.</span>_size <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+        self<span style="color:#f92672">.</span>_size <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
         <span style="color:#66d9ef">return</span> node
 
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_delete_between</span>(self, node):
         ans <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>_element
         node<span style="color:#f92672">.</span>_next<span style="color:#f92672">.</span>_prev <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>_prev
         node<span style="color:#f92672">.</span>_prev<span style="color:#f92672">.</span>_next <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>_next
-        self<span style="color:#f92672">.</span>_size <span style="color:#f92672">-</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+        self<span style="color:#f92672">.</span>_size <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
         node<span style="color:#f92672">.</span>_element <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>_prev <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>_next <span style="color:#f92672">=</span> None
         <span style="color:#66d9ef">return</span> ans
 
@@ -1831,11 +1869,11 @@
 
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_validate</span>(self, p):
         <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> isinstance(p, self<span style="color:#f92672">.</span>Position):
-            <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">TypeError</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">p must be proper Postion type.</span><span style="color:#e6db74">&#34;</span>)
+            <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">TypeError</span>(<span style="color:#e6db74">&#34;p must be proper Postion type.&#34;</span>)
         <span style="color:#66d9ef">if</span> p<span style="color:#f92672">.</span>_container <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> self:
-            <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">P does not belongs to this container.</span><span style="color:#e6db74">&#34;</span>)
+            <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74">&#34;P does not belongs to this container.&#34;</span>)
         <span style="color:#66d9ef">if</span> p<span style="color:#f92672">.</span>_node<span style="color:#f92672">.</span>_next <span style="color:#f92672">is</span> None:
-            <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">p is no longer valid.</span><span style="color:#e6db74">&#34;</span>)
+            <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74">&#34;p is no longer valid.&#34;</span>)
         <span style="color:#66d9ef">return</span> p<span style="color:#f92672">.</span>_node
 
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_make_position</span>(self, node):
@@ -2088,6 +2126,38 @@
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -2873,19 +2943,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1582382150"></script>
-    <script src="/js/perfect-scrollbar.min.js?1582382150"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1582382150"></script>
-    <script src="/js/jquery.sticky.js?1582382150"></script>
-    <script src="/js/featherlight.min.js?1582382150"></script>
-    <script src="/js/highlight.pack.js?1582382150"></script>
+    <script src="/js/clipboard.min.js?1590262375"></script>
+    <script src="/js/perfect-scrollbar.min.js?1590262375"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1590262375"></script>
+    <script src="/js/jquery.sticky.js?1590262375"></script>
+    <script src="/js/featherlight.min.js?1590262375"></script>
+    <script src="/js/highlight.pack.js?1590262375"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1582382150"></script>
-    <script src="/js/learn.js?1582382150"></script>
-    <script src="/js/hugo-learn.js?1582382150"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1590262375"></script>
+    <script src="/js/learn.js?1590262375"></script>
+    <script src="/js/hugo-learn.js?1590262375"></script>
 
-    <link href="/mermaid/mermaid.css?1582382150" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1582382150"></script>
+    <link href="/mermaid/mermaid.css?1590262375" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1590262375"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

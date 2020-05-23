@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.61.0" />
+    <meta name="generator" content="Hugo 0.71.0" />
     <meta name="description" content="Purpose of this repository is create cheatsheet for own and also help everyone. ">
 <meta name="author" content="Pulkit Agrawal">
 
@@ -11,20 +11,20 @@
     <title>Goroutine :: Hackersoon - Documentation</title>
 
     
-    <link href="/css/nucleus.css?1582382150" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1582382150" rel="stylesheet">
-    <link href="/css/hybrid.css?1582382150" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1582382150" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1582382150" rel="stylesheet">
-    <link href="/css/auto-complete.css?1582382150" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1582382150" rel="stylesheet">
-    <link href="/css/theme.css?1582382150" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1582382150" rel="stylesheet">
+    <link href="/css/nucleus.css?1590262375" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1590262375" rel="stylesheet">
+    <link href="/css/hybrid.css?1590262375" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1590262375" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1590262375" rel="stylesheet">
+    <link href="/css/auto-complete.css?1590262375" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1590262375" rel="stylesheet">
+    <link href="/css/theme.css?1590262375" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1590262375" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1582382150" rel="stylesheet">
+      <link href="/css/theme-blue.css?1590262375" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1582382150"></script>
+    <script src="/js/jquery-3.3.1.min.js?1590262375"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1582382150"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1582382150"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1590262375"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1590262375"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.hackersoon.com";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1582382150"></script>
+<script type="text/javascript" src="/js/search.js?1590262375"></script>
 
     
   </div>
@@ -327,6 +327,44 @@
           
           
         
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/programming/golang/http-server/" title="Http Server" class="dd-item ">
+        <a href="/programming/golang/http-server/">
+        Http Server
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/programming/golang/http-request/" title="Http Request" class="dd-item ">
+        <a href="/programming/golang/http-request/">
+        Http Request
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
           
             
             
@@ -1584,33 +1622,160 @@
 
 
 
+<p>This is useful for understand golang goroutines.
+<style type="text/css">
+  .caption {
+    text-align: center;
+    background-color: grey;
+    color: white;
+    font-weight: normal;
+    text-decoration: double;
+  }
+
+  .editorq>a {
+    text-align: center;
+    padding: 5px;
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px;
+  }
+
+  .run {
+    text-align: center;
+    background-color: #343a40;
+    border-color: #343a40;
+    color: #fff;
+    font-weight: normal;
+    width: fit-content;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    padding: .25rem 2.5rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    margin-bottom: 2px;
+    font-weight: 400;
+    user-select: none;
+    text-transform: none;
+  }
+</style>
 
 
+<figure class="code">
+  <figcaption>
+     <a href='https://hackersoon.com/?lang=golang&content=%0apackage%20main%0a%0aimport%20%28%0a%09%22fmt%22%0a%09%22io%22%0a%09%22io%2fioutil%22%0a%09%22net%2fhttp%22%0a%09%22os%22%0a%09%22time%22%0a%29%0a%0afunc%20main%28%29%20%7b%0a%09fmt.Println%28%22fetch%20all%20url%3a%20this%20example%20is%20used%20to%20demonstarte%20how%20concurrency%20works%20in%20golang%22%29%0a%0a%09start%20%3a%3d%20time.Now%28%29%0a%09ch%20%3a%3d%20make%28chan%20string%29%0a%0a%09for%20_%2c%20url%20%3a%3d%20range%20os.Args%5b1%3a%5d%20%7b%0a%09%09go%20fetch%28url%2c%20ch%29%20%2f%2f%20start%20a%20gorotuine%0a%09%7d%0a%0a%09for%20range%20os.Args%5b1%3a%5d%20%7b%0a%09%09fmt.Println%28%3c-ch%29%20%2f%2frecieve%20from%20channel%0a%09%7d%0a%0a%09fmt.Printf%28%22%25.2fs%20elapsed%5cn%22%2c%20time.Since%28start%29.Seconds%28%29%29%0a%7d%0a%0afunc%20fetch%28url%20string%2c%20ch%20chan%3c-%20string%29%20%7b%0a%09start%20%3a%3d%20time.Now%28%29%0a%09resp%2c%20err%20%3a%3d%20http.Get%28url%29%0a%09if%20err%20%21%3d%20nil%20%7b%0a%09%09ch%20%3c-%20fmt.Sprint%28err%29%0a%09%09return%0a%09%7d%0a%0a%09nbytes%2c%20err%20%3a%3d%20io.Copy%28ioutil.Discard%2c%20resp.Body%29%0a%09resp.Body.Close%28%29%20%2f%2f%20don%27t%20leak%20resources%0a%09if%20err%20%21%3d%20nil%20%7b%0a%09%09ch%20%3c-%20fmt.Sprintf%28%22while%20reading%20%25s%3a%20%25v%22%2c%20url%2c%20err%29%0a%09%09return%0a%09%7d%0a%0a%09secs%20%3a%3d%20time.Since%28start%29.Seconds%28%29%0a%09ch%20%3c-%20fmt.Sprintf%28%22%25.2fs%20%20%257d%20%20%25s%22%2c%20secs%2c%20nbytes%2c%20url%29%0a%0a%7d%0a' target="_blank">
+      <span  class="run">Run</span>
+      </a>
+  </figcaption>
+  <figcaption class="caption">
+    <span> goroutine &amp; channel</span>
+  </figcaption>
+  <div class="codewrapper">
+    <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
 
+<span style="color:#f92672">import</span> (
+	<span style="color:#e6db74">&#34;fmt&#34;</span>
+	<span style="color:#e6db74">&#34;io&#34;</span>
+	<span style="color:#e6db74">&#34;io/ioutil&#34;</span>
+	<span style="color:#e6db74">&#34;net/http&#34;</span>
+	<span style="color:#e6db74">&#34;os&#34;</span>
+	<span style="color:#e6db74">&#34;time&#34;</span>
+)
 
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;fetch all url: this example is used to demonstarte how concurrency works in golang&#34;</span>)
 
+	<span style="color:#a6e22e">start</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Now</span>()
+	<span style="color:#a6e22e">ch</span> <span style="color:#f92672">:=</span> make(<span style="color:#66d9ef">chan</span> <span style="color:#66d9ef">string</span>)
 
+	<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">_</span>, <span style="color:#a6e22e">url</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Args</span>[<span style="color:#ae81ff">1</span>:] {
+		<span style="color:#66d9ef">go</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#a6e22e">url</span>, <span style="color:#a6e22e">ch</span>) <span style="color:#75715e">// start a gorotuine
+</span><span style="color:#75715e"></span>	}
 
-<ul class="children children-li">
-	
+	<span style="color:#66d9ef">for</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Args</span>[<span style="color:#ae81ff">1</span>:] {
+		<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">ch</span>) <span style="color:#75715e">//recieve from channel
+</span><span style="color:#75715e"></span>	}
 
-	
-		
-	
+	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%.2fs elapsed\n&#34;</span>, <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Since</span>(<span style="color:#a6e22e">start</span>).<span style="color:#a6e22e">Seconds</span>())
+}
 
-	
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#a6e22e">url</span> <span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">ch</span> <span style="color:#66d9ef">chan</span><span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">string</span>) {
+	<span style="color:#a6e22e">start</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Now</span>()
+	<span style="color:#a6e22e">resp</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Get</span>(<span style="color:#a6e22e">url</span>)
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+		<span style="color:#a6e22e">ch</span> <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Sprint</span>(<span style="color:#a6e22e">err</span>)
+		<span style="color:#66d9ef">return</span>
+	}
 
-	
-		
-	
+	<span style="color:#a6e22e">nbytes</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">io</span>.<span style="color:#a6e22e">Copy</span>(<span style="color:#a6e22e">ioutil</span>.<span style="color:#a6e22e">Discard</span>, <span style="color:#a6e22e">resp</span>.<span style="color:#a6e22e">Body</span>)
+	<span style="color:#a6e22e">resp</span>.<span style="color:#a6e22e">Body</span>.<span style="color:#a6e22e">Close</span>() <span style="color:#75715e">// don&#39;t leak resources
+</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+		<span style="color:#a6e22e">ch</span> <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Sprintf</span>(<span style="color:#e6db74">&#34;while reading %s: %v&#34;</span>, <span style="color:#a6e22e">url</span>, <span style="color:#a6e22e">err</span>)
+		<span style="color:#66d9ef">return</span>
+	}
 
-	
-</ul>
+	<span style="color:#a6e22e">secs</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Since</span>(<span style="color:#a6e22e">start</span>).<span style="color:#a6e22e">Seconds</span>()
+	<span style="color:#a6e22e">ch</span> <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Sprintf</span>(<span style="color:#e6db74">&#34;%.2fs  %7d  %s&#34;</span>, <span style="color:#a6e22e">secs</span>, <span style="color:#a6e22e">nbytes</span>, <span style="color:#a6e22e">url</span>)
 
-<p>This is useful for understand golang goroutines.</p>
-
-
-
+}</code></pre></td></tr></table>
+</div>
+</div>
+  </div>
+</figure></p>
 
 
 <footer class=" footline" >
@@ -1812,6 +1977,41 @@
             
                 
                     
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -2572,7 +2772,7 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/programming/golang/" title="Golang"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/programming/golang/http-request/" title="Http Request"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="/installations/" title="Installations" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -2585,19 +2785,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1582382150"></script>
-    <script src="/js/perfect-scrollbar.min.js?1582382150"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1582382150"></script>
-    <script src="/js/jquery.sticky.js?1582382150"></script>
-    <script src="/js/featherlight.min.js?1582382150"></script>
-    <script src="/js/highlight.pack.js?1582382150"></script>
+    <script src="/js/clipboard.min.js?1590262375"></script>
+    <script src="/js/perfect-scrollbar.min.js?1590262375"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1590262375"></script>
+    <script src="/js/jquery.sticky.js?1590262375"></script>
+    <script src="/js/featherlight.min.js?1590262375"></script>
+    <script src="/js/highlight.pack.js?1590262375"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1582382150"></script>
-    <script src="/js/learn.js?1582382150"></script>
-    <script src="/js/hugo-learn.js?1582382150"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1590262375"></script>
+    <script src="/js/learn.js?1590262375"></script>
+    <script src="/js/hugo-learn.js?1590262375"></script>
 
-    <link href="/mermaid/mermaid.css?1582382150" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1582382150"></script>
+    <link href="/mermaid/mermaid.css?1590262375" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1590262375"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.61.0" />
+    <meta name="generator" content="Hugo 0.71.0" />
     <meta name="description" content="Purpose of this repository is create cheatsheet for own and also help everyone. ">
 <meta name="author" content="Pulkit Agrawal">
 
@@ -11,20 +11,20 @@
     <title>Mergesort :: Hackersoon - Documentation</title>
 
     
-    <link href="/css/nucleus.css?1582382150" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1582382150" rel="stylesheet">
-    <link href="/css/hybrid.css?1582382150" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1582382150" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1582382150" rel="stylesheet">
-    <link href="/css/auto-complete.css?1582382150" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1582382150" rel="stylesheet">
-    <link href="/css/theme.css?1582382150" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1582382150" rel="stylesheet">
+    <link href="/css/nucleus.css?1590262375" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1590262375" rel="stylesheet">
+    <link href="/css/hybrid.css?1590262375" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1590262375" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1590262375" rel="stylesheet">
+    <link href="/css/auto-complete.css?1590262375" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1590262375" rel="stylesheet">
+    <link href="/css/theme.css?1590262375" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1590262375" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1582382150" rel="stylesheet">
+      <link href="/css/theme-blue.css?1590262375" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1582382150"></script>
+    <script src="/js/jquery-3.3.1.min.js?1590262375"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1582382150"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1582382150"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1590262375"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1590262375"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.hackersoon.com";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1582382150"></script>
+<script type="text/javascript" src="/js/search.js?1590262375"></script>
 
     
   </div>
@@ -327,6 +327,44 @@
           
           
         
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/programming/golang/http-server/" title="Http Server" class="dd-item ">
+        <a href="/programming/golang/http-server/">
+        Http Server
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/programming/golang/http-request/" title="Http Request" class="dd-item ">
+        <a href="/programming/golang/http-request/">
+        Http Request
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
           
             
             
@@ -1706,10 +1744,10 @@
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">61
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">merge logic:</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">    This function merge two shorted arrays into one sorted array.</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">merge logic:
+</span><span style="color:#e6db74">    This function merge two shorted arrays into one sorted array.
+</span><span style="color:#e6db74">&#34;&#34;&#34;</span>
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">merge</span>(arr, l, m ,r):
 
     n1 <span style="color:#f92672">=</span> m <span style="color:#f92672">-</span> l <span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>
@@ -1728,33 +1766,33 @@
 
     <span style="color:#66d9ef">while</span> i<span style="color:#f92672">&lt;</span>n1 <span style="color:#f92672">and</span> j<span style="color:#f92672">&lt;</span>n2:
 
-        <span style="color:#66d9ef">if</span> L[i]<span style="color:#f92672">&lt;</span><span style="color:#f92672">=</span>R[j]:
+        <span style="color:#66d9ef">if</span> L[i]<span style="color:#f92672">&lt;=</span>R[j]:
             arr[k] <span style="color:#f92672">=</span> L[i]
-            i <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+            i <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
 
         <span style="color:#66d9ef">else</span>:
             arr[k] <span style="color:#f92672">=</span> R[j]
-            j <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-        k <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+            j <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+        k <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
 
     <span style="color:#66d9ef">while</span> i <span style="color:#f92672">&lt;</span> n1:
         arr[k] <span style="color:#f92672">=</span> L[i]
-        i <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-        k <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+        i <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+        k <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
 
     <span style="color:#66d9ef">while</span> j <span style="color:#f92672">&lt;</span> n2:
         arr[k] <span style="color:#f92672">=</span> R[j]
-        j <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-        k <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+        j <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+        k <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
 
-<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">Actual impelementation of merge short algorithm.</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+<span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">Actual impelementation of merge short algorithm.
+</span><span style="color:#e6db74">&#34;&#34;&#34;</span>
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">mergesort</span>(arr, l, r):
 
     <span style="color:#66d9ef">if</span> l <span style="color:#f92672">&lt;</span> r:
 
-        m <span style="color:#f92672">=</span> (l<span style="color:#f92672">+</span>r<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">/</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>
+        m <span style="color:#f92672">=</span> (l<span style="color:#f92672">+</span>r<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">//</span><span style="color:#ae81ff">2</span>
 
         mergesort(arr, l, m)
         mergesort(arr, m<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, r)
@@ -1764,9 +1802,9 @@
 
 arr <span style="color:#f92672">=</span> [<span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">13</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>]
 n <span style="color:#f92672">=</span> len(arr)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Given array is: </span><span style="color:#e6db74">&#34;</span>, arr)
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Given array is: &#34;</span>, arr)
 mergesort(arr, <span style="color:#ae81ff">0</span>, n <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Sorted array is: </span><span style="color:#e6db74">&#34;</span>, arr)</code></pre></td></tr></table>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n\n</span><span style="color:#e6db74">Sorted array is: &#34;</span>, arr)</code></pre></td></tr></table>
 </div>
 </div>
   </div>
@@ -1964,6 +2002,38 @@ mergesort(arr, <span style="color:#ae81ff">0</span>, n <span style="color:#f9267
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -2752,19 +2822,19 @@ mergesort(arr, <span style="color:#ae81ff">0</span>, n <span style="color:#f9267
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1582382150"></script>
-    <script src="/js/perfect-scrollbar.min.js?1582382150"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1582382150"></script>
-    <script src="/js/jquery.sticky.js?1582382150"></script>
-    <script src="/js/featherlight.min.js?1582382150"></script>
-    <script src="/js/highlight.pack.js?1582382150"></script>
+    <script src="/js/clipboard.min.js?1590262375"></script>
+    <script src="/js/perfect-scrollbar.min.js?1590262375"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1590262375"></script>
+    <script src="/js/jquery.sticky.js?1590262375"></script>
+    <script src="/js/featherlight.min.js?1590262375"></script>
+    <script src="/js/highlight.pack.js?1590262375"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1582382150"></script>
-    <script src="/js/learn.js?1582382150"></script>
-    <script src="/js/hugo-learn.js?1582382150"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1590262375"></script>
+    <script src="/js/learn.js?1590262375"></script>
+    <script src="/js/hugo-learn.js?1590262375"></script>
 
-    <link href="/mermaid/mermaid.css?1582382150" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1582382150"></script>
+    <link href="/mermaid/mermaid.css?1590262375" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1590262375"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

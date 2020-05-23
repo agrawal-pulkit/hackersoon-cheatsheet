@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.61.0" />
+    <meta name="generator" content="Hugo 0.71.0" />
     <meta name="description" content="Purpose of this repository is create cheatsheet for own and also help everyone. ">
 <meta name="author" content="Pulkit Agrawal">
 
@@ -11,20 +11,20 @@
     <title>Advancing through an array :: Hackersoon - Documentation</title>
 
     
-    <link href="/css/nucleus.css?1582382150" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1582382150" rel="stylesheet">
-    <link href="/css/hybrid.css?1582382150" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1582382150" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1582382150" rel="stylesheet">
-    <link href="/css/auto-complete.css?1582382150" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1582382150" rel="stylesheet">
-    <link href="/css/theme.css?1582382150" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1582382150" rel="stylesheet">
+    <link href="/css/nucleus.css?1590262375" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1590262375" rel="stylesheet">
+    <link href="/css/hybrid.css?1590262375" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1590262375" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1590262375" rel="stylesheet">
+    <link href="/css/auto-complete.css?1590262375" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1590262375" rel="stylesheet">
+    <link href="/css/theme.css?1590262375" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1590262375" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1582382150" rel="stylesheet">
+      <link href="/css/theme-blue.css?1590262375" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1582382150"></script>
+    <script src="/js/jquery-3.3.1.min.js?1590262375"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1582382150"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1582382150"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1590262375"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1590262375"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.hackersoon.com";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1582382150"></script>
+<script type="text/javascript" src="/js/search.js?1590262375"></script>
 
     
   </div>
@@ -327,6 +327,44 @@
           
           
         
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/programming/golang/http-server/" title="Http Server" class="dd-item ">
+        <a href="/programming/golang/http-server/">
+        Http Server
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/programming/golang/http-request/" title="Http Request" class="dd-item ">
+        <a href="/programming/golang/http-request/">
+        Http Request
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
           
             
             
@@ -1655,19 +1693,19 @@
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">Advancing through an array.</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">if A = &lt;3,3,7,0,2,0,1),we iteratively compute the furthest we can advance to as 0,3,4,4,4,6,6,7, which reaches the last index, 6. lf A = (3,2,0,0,2,0,7&gt;, we iteratively update the furthest we can advance to as 0,3,3,3,3, after which we cannot advance, so it is not possible to reach the last index.</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">Advancing through an array.
+</span><span style="color:#e6db74">if A = &lt;3,3,7,0,2,0,1),we iteratively compute the furthest we can advance to as 0,3,4,4,4,6,6,7, which reaches the last index, 6. lf A = (3,2,0,0,2,0,7&gt;, we iteratively update the furthest we can advance to as 0,3,3,3,3, after which we cannot advance, so it is not possible to reach the last index.
+</span><span style="color:#e6db74">&#34;&#34;&#34;</span>
 
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">iterateArray</span>(arr):
     furthest_reach_so_far, last_index <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, len(arr) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>
     i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-    <span style="color:#66d9ef">while</span> i <span style="color:#f92672">&lt;</span><span style="color:#f92672">=</span> furthest_reach_so_far <span style="color:#f92672">and</span> furthest_reach_so_far <span style="color:#f92672">&lt;</span><span style="color:#f92672">=</span> last_index:
+    <span style="color:#66d9ef">while</span> i <span style="color:#f92672">&lt;=</span> furthest_reach_so_far <span style="color:#f92672">and</span> furthest_reach_so_far <span style="color:#f92672">&lt;=</span> last_index:
         furthest_reach_so_far <span style="color:#f92672">=</span> max(furthest_reach_so_far, arr[i] <span style="color:#f92672">+</span> i)
         <span style="color:#66d9ef">print</span>(furthest_reach_so_far)
-        i <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-    <span style="color:#66d9ef">return</span> furthest_reach_so_far <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> last_index 
+        i <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+    <span style="color:#66d9ef">return</span> furthest_reach_so_far <span style="color:#f92672">&gt;=</span> last_index 
 
 arr <span style="color:#f92672">=</span> [<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>]
 <span style="color:#66d9ef">print</span>(iterateArray(arr))</code></pre></td></tr></table>
@@ -1868,6 +1906,38 @@ arr <span style="color:#f92672">=</span> [<span style="color:#ae81ff">3</span>,<
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -2652,19 +2722,19 @@ arr <span style="color:#f92672">=</span> [<span style="color:#ae81ff">3</span>,<
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1582382150"></script>
-    <script src="/js/perfect-scrollbar.min.js?1582382150"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1582382150"></script>
-    <script src="/js/jquery.sticky.js?1582382150"></script>
-    <script src="/js/featherlight.min.js?1582382150"></script>
-    <script src="/js/highlight.pack.js?1582382150"></script>
+    <script src="/js/clipboard.min.js?1590262375"></script>
+    <script src="/js/perfect-scrollbar.min.js?1590262375"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1590262375"></script>
+    <script src="/js/jquery.sticky.js?1590262375"></script>
+    <script src="/js/featherlight.min.js?1590262375"></script>
+    <script src="/js/highlight.pack.js?1590262375"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1582382150"></script>
-    <script src="/js/learn.js?1582382150"></script>
-    <script src="/js/hugo-learn.js?1582382150"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1590262375"></script>
+    <script src="/js/learn.js?1590262375"></script>
+    <script src="/js/hugo-learn.js?1590262375"></script>
 
-    <link href="/mermaid/mermaid.css?1582382150" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1582382150"></script>
+    <link href="/mermaid/mermaid.css?1590262375" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1590262375"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
